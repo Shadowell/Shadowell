@@ -1,19 +1,8 @@
-# Jie Feng
+# Hi, I'm Jie Feng
 
-I build AI-native trading and research systems across crypto, equities, and local model tooling.
+Big data engineer, currently exploring AI, quantitative research, and trading system tooling.
 
-- Building products around strategy research, backtesting, paper trading, and execution workflows
-- Shipping full-stack systems with Python, FastAPI, React, TypeScript, and automation-heavy developer workflows
-- Interested in market structure, trading infrastructure, AI agents, and operator-first product design
-
-## Featured projects
-
-### QuantDinger
-
-AI quantitative trading platform for crypto, stocks, and forex, with backtesting, market data, multi-agent research, and live trading workflows.
-
-- Website: [quantdinger.com](https://www.quantdinger.com)
-- Repo: [Shadowell/QuantDinger](https://github.com/Shadowell/QuantDinger)
+## Pinned Projects
 
 ### HyperTrade
 
@@ -33,21 +22,61 @@ Open-source quantitative research workbench focused on real market data, backtes
 
 - Repo: [Shadowell/QuantBase](https://github.com/Shadowell/QuantBase)
 
-### OllamaDesk
+### Alpha
 
-Local chat workspace for Ollama models with a Codex-like interaction flow.
+Self-evolving A-share stock selection system combining Kronos K-line forecasting, Hermes Agent loops, and a three-pool funnel workflow.
 
-- Repo: [Shadowell/OllamaDesk](https://github.com/Shadowell/OllamaDesk)
+- Repo: [Shadowell/Alpha](https://github.com/Shadowell/Alpha)
 
-## What I like building
+## About Me
 
-- Research and execution loops that go from data to signal to audit trail
-- Operator-facing dashboards with fast iteration cycles
-- Local-first AI tooling and developer automation
-- Trading systems that are explicit about paper/live boundaries and risk controls
+I work primarily as a big data development engineer, and I'm currently spending a lot of time exploring AI and quantitative workflows.
 
-## Current focus
+What interests me most is how data engineering, research systems, and execution tooling can connect into one practical loop:
 
+Market Data -> Research -> Strategy Logic -> Backtesting -> Paper Trading -> Execution -> Audit
+
+My work is centered around:
+
+- big data engineering and data pipelines
+- AI-assisted market research
+- quantitative research and strategy exploration
+- backtesting and paper trading workflows
+- operator-facing dashboards and tooling
+- local-first AI products and developer automation
+
+## What I'm Building
+
+I'm currently building and testing a practical toolchain around the areas I want to go deeper on:
+
+- research systems that turn market signals into structured decisions
+- strategy development paths that are testable and reviewable
+- paper-first execution infrastructure with clear live boundaries
+- A-share and crypto tooling that can be iterated on quickly
+- open-source foundations for private deployment and customization
+
+## Main Repositories
+
+### HyperTrade
+
+Focused on crypto market research and execution workflows.
+
+### StockPro
+
+Focused on A-share intelligence, monitoring, factor research, and simulation trading.
+
+### QuantBase
+
+Focused on the engineering loop from data sync to backtesting to paper execution and audit.
+
+### Alpha
+
+Focused on self-evolving stock selection workflows for the A-share market.
+
+## Current Focus
+
+- big data engineering that supports research and decision systems
 - AI-assisted trading research workflows
-- Practical backtesting and paper trading infrastructure
-- Public-facing open-source packaging for trading tools and local AI products
+- backtesting and paper trading infrastructure
+- A-share stock selection and signal evaluation
+- open-source packaging for trading and AI tools
