@@ -4,19 +4,19 @@ Big data engineer, currently exploring AI, quantitative research, and trading sy
 
 ## Pinned Projects
 
-### HyperTrade
+### [HyperTrade](https://github.com/Shadowell/HyperTrade)
 
 Crypto trading agent for market research and execution.
 
-### StockPro
+### [StockPro](https://github.com/Shadowell/StockPro)
 
 A-share research and monitoring platform covering real-time market data, AI stock analysis, factor research, strategy development, and simulation trading.
 
-### QuantBase
+### [QuantBase](https://github.com/Shadowell/QuantBase)
 
 Open-source quantitative research workbench focused on real market data, backtesting, paper trading, signal audit, and risk-first strategy development.
 
-### Alpha
+### [Alpha](https://github.com/Shadowell/Alpha)
 
 Self-evolving A-share stock selection system combining Kronos K-line forecasting, Hermes Agent loops, and a three-pool funnel workflow.
 
@@ -46,24 +46,6 @@ I'm currently building and testing a practical toolchain around the areas I want
 - paper-first execution infrastructure with clear live boundaries
 - A-share and crypto tooling that can be iterated on quickly
 - open-source foundations for private deployment and customization
-
-## Main Repositories
-
-### HyperTrade
-
-Focused on crypto market research and execution workflows.
-
-### StockPro
-
-Focused on A-share intelligence, monitoring, factor research, and simulation trading.
-
-### QuantBase
-
-Focused on the engineering loop from data sync to backtesting to paper execution and audit.
-
-### Alpha
-
-Focused on self-evolving stock selection workflows for the A-share market.
 
 ## Current Focus
 
