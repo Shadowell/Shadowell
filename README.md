@@ -1,23 +1,25 @@
-# Hi, I'm Jie Feng
-
-Big data engineer, currently exploring AI, quantitative research, and trading system tooling.
-
 ## About Me
 
-I work primarily as a big data development engineer, and I'm currently spending a lot of time exploring AI and quantitative workflows.
+I work primarily as a big data development engineer. My main professional foundation is in data engineering, data pipelines, and the kind of backend and data infrastructure work that supports analysis, reporting, and operational systems.
 
-What interests me most is how data engineering, research systems, and execution tooling can connect into one practical loop:
+At the same time, I have been actively expanding my focus into AI, Agent systems, quantitative research, and trading system tooling. I am especially interested in how data engineering, AI-assisted research workflows, Agent-based analysis, strategy evaluation, and execution infrastructure can connect into one practical loop:
 
 Market Data -> Research -> Strategy Logic -> Backtesting -> Paper Trading -> Execution -> Audit
 
-My work is centered around:
+From a work perspective, I try to keep a broad but grounded engineering view across:
 
 - big data engineering and data pipelines
-- AI-assisted market research
+- data infrastructure that supports research and decision systems
+- AI application workflows and AI-assisted analysis
+- AI Agent research workflows for analysis and decision support
 - quantitative research and strategy exploration
-- backtesting and paper trading workflows
-- operator-facing dashboards and tooling
+- backtesting and paper trading infrastructure
+- A-share stock selection and signal evaluation
+- operator-facing dashboards and internal tools
 - local-first AI products and developer automation
+- open-source packaging, private deployment, and practical system integration
+
+What I care about most is not just one isolated technology, but the full engineering chain from data to research to decision support to executable systems. That is the perspective I am trying to build further through my current AI, Agent, and quantitative projects.
 
 ## What I'm Building
 
@@ -50,11 +52,3 @@ A WeChat mini program I'm also building and promoting through WeChat 搜一搜.
 - paper-first execution infrastructure with clear live boundaries
 - A-share and crypto tooling that can be iterated on quickly
 - open-source foundations for private deployment and customization
-
-## Current Focus
-
-- big data engineering that supports research and decision systems
-- AI-assisted trading research workflows
-- backtesting and paper trading infrastructure
-- A-share stock selection and signal evaluation
-- open-source packaging for trading and AI tools
