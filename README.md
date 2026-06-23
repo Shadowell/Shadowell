@@ -43,12 +43,6 @@ Self-evolving A-share stock selection system combining Kronos K-line forecasting
 
 ### 配料君 (WeChat Mini Program)
 
-A WeChat mini program I'm also building and promoting through WeChat 搜一搜.
+A WeChat mini program I'm continuously operating and improving, with promotion through WeChat 搜一搜.
 
 <img src="./assets/wechat-mini-program-peiliaojun.png" alt="配料君 微信小程序码" width="360" />
-
-- research systems that turn market signals into structured decisions
-- strategy development paths that are testable and reviewable
-- paper-first execution infrastructure with clear live boundaries
-- A-share and crypto tooling that can be iterated on quickly
-- open-source foundations for private deployment and customization
