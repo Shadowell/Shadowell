@@ -2,24 +2,6 @@
 
 Big data engineer, currently exploring AI, quantitative research, and trading system tooling.
 
-## Pinned Projects
-
-### [HyperTrade](https://github.com/Shadowell/HyperTrade)
-
-Crypto trading agent for market research and execution.
-
-### [StockPro](https://github.com/Shadowell/StockPro)
-
-A-share research and monitoring platform covering real-time market data, AI stock analysis, factor research, strategy development, and simulation trading.
-
-### [QuantBase](https://github.com/Shadowell/QuantBase)
-
-Open-source quantitative research workbench focused on real market data, backtesting, paper trading, signal audit, and risk-first strategy development.
-
-### [Alpha](https://github.com/Shadowell/Alpha)
-
-Self-evolving A-share stock selection system combining Kronos K-line forecasting, Hermes Agent loops, and a three-pool funnel workflow.
-
 ## About Me
 
 I work primarily as a big data development engineer, and I'm currently spending a lot of time exploring AI and quantitative workflows.
@@ -40,6 +22,22 @@ My work is centered around:
 ## What I'm Building
 
 I'm currently building and testing a practical toolchain around the areas I want to go deeper on:
+
+### [HyperTrade](https://github.com/Shadowell/HyperTrade)
+
+Crypto trading agent for market research and execution.
+
+### [StockPro](https://github.com/Shadowell/StockPro)
+
+A-share research and monitoring platform covering real-time market data, AI stock analysis, factor research, strategy development, and simulation trading.
+
+### [QuantBase](https://github.com/Shadowell/QuantBase)
+
+Open-source quantitative research workbench focused on real market data, backtesting, paper trading, signal audit, and risk-first strategy development.
+
+### [Alpha](https://github.com/Shadowell/Alpha)
+
+Self-evolving A-share stock selection system combining Kronos K-line forecasting, Hermes Agent loops, and a three-pool funnel workflow.
 
 - research systems that turn market signals into structured decisions
 - strategy development paths that are testable and reviewable
