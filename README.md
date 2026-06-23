@@ -39,6 +39,12 @@ Open-source quantitative research workbench focused on real market data, backtes
 
 Self-evolving A-share stock selection system combining Kronos K-line forecasting, Hermes Agent loops, and a three-pool funnel workflow.
 
+### 配料君 (WeChat Mini Program)
+
+A WeChat mini program I'm also building and promoting through WeChat 搜一搜.
+
+<img src="./assets/wechat-mini-program-peiliaojun.png" alt="配料君 微信小程序码" width="360" />
+
 - research systems that turn market signals into structured decisions
 - strategy development paths that are testable and reviewable
 - paper-first execution infrastructure with clear live boundaries
