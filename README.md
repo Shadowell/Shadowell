@@ -46,3 +46,9 @@ Self-evolving A-share stock selection system combining Kronos K-line forecasting
 A WeChat mini program I'm continuously operating and improving, with promotion through WeChat 搜一搜.
 
 <img src="./assets/wechat-mini-program-peiliaojun.png" alt="配料君 微信小程序码" width="360" />
+
+### [TideNow · 今日潮汐表 (WeChat Mini Program)](https://github.com/Shadowell/TideNow)
+
+A fishing-focused tide and weather mini program I'm continuously operating and improving, with promotion through WeChat 搜一搜.
+
+<img src="./assets/wechat-mini-program-tidenow.png" alt="TideNow 今日潮汐表 微信小程序推广图" width="720" />
