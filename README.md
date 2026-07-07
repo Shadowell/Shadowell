@@ -47,7 +47,7 @@ A WeChat mini program I'm continuously operating and improving, with promotion t
 
 <img src="./assets/wechat-mini-program-peiliaojun.png" alt="配料君 微信小程序码" width="360" />
 
-### 野钓潮汐 [(WeChat Mini Program)](https://github.com/Shadowell/TideNow)
+### [野钓潮汐 (WeChat Mini Program)](https://github.com/Shadowell/TideNow)
 
 A fishing-focused tide and weather mini program I'm continuously operating and improving, with promotion through WeChat 搜一搜.
 
