@@ -7,24 +7,22 @@
 
 I am a **Big Data Engineer** specializing in quantitative research infrastructure, data pipelines, and AI-driven trading systems.
 
-My primary engineering foundation lies at the intersection of high-throughput data processing, quantitative strategy research, AI Agent architectures, and automated execution systems. I build practical, end-to-end quantitative infrastructures that seamlessly integrate the research and trading lifecycle:
+Dedicated to building practical, end-to-end quantitative infrastructures that seamlessly integrate the entire research and trading lifecycle.
 
-`Market Data Pipeline` ➔ `Factor Mining & Feature Engineering` ➔ `Strategy Research` ➔ `Backtesting` ➔ `Paper Trading & Audit` ➔ `Automated Execution`
+### 🔄 End-to-End Quantitative Pipeline
 
-### Big Data Infrastructure & Core Tech Stack
+```
+[ Market Data Pipeline ] ➔ [ Factor Mining & Feature Engineering ] ➔ [ Strategy & Alpha Research ]
+                                                                             │
+[ Automated Execution ]  ◄── [ Paper Trading & Signal Audit ]    ◄── [ Backtesting & Simulation ]
+```
 
-- **Real-Time Data Streaming**: Apache Flink, Kafka, Flink SQL, custom operators, large-state tuning & Checkpoint memory optimization.
-- **PB-Scale Batch Processing & DWH**: Apache Spark, Hive, Hadoop, ODS ➔ DWD ➔ DWS ➔ ADS layered data modeling, processing 600+TB/day pipelines.
-- **Workflow Scheduling & Governance**: Airflow, custom distributed Schedulers, 1,000+ job dependency DAG governance, SLA monitoring & backfill recovery.
-- **Storage & Query Engines**: ClickHouse, HBase, PostgreSQL, MySQL, and Time-Series Databases.
+### ⚡ Core Infrastructure & Technical Stack
 
-### Technical Focus & Quantitative Tooling
-
-- **Data Engineering & Infrastructure**: High-performance data pipelines, Tick/Bar market data streaming, time-series data storage, and ETL workflows.
-- **Quantitative Research & Strategy Evaluation**: Multi-factor model exploration, A-share alpha stock selection, time-series analysis, K-line pattern forecasting, and systematic signal auditing.
-- **Backtesting & Simulation Trading**: Event-driven and vector-based backtesting engines, paper trading simulation, transaction cost modeling, and real-time portfolio risk monitoring.
-- **AI Agent & Workflow Automation**: LLM-assisted quantitative research workflows, multi-agent evaluation funnels (combining forecasting models & agent loops), and local-first decision support tools.
-- **Trading System Infrastructure**: Execution gateways, risk management controls, interactive analytics dashboards, and production-grade private deployments.
+- **Real-Time Streaming**: `Apache Flink` · `Kafka` · `Tick/Bar Streaming` · `Flink SQL` · `Large-State Checkpoint Tuning`
+- **PB-Scale DWH & Batch Processing**: `Apache Spark` · `Hive` · `Hadoop` · `ODS ➔ DWD ➔ DWS Layered DWH` · `600+TB/day`
+- **Workflow Scheduling & Governance**: `Airflow` · `Custom Distributed Schedulers` · `1,000+ Job DAG Governance` · `SLA Recovery`
+- **Storage, Analytics & Execution**: `ClickHouse` · `HBase` · `PostgreSQL` · `MySQL` · `Execution Gateways` · `Risk Controls`
 
 ---
 
