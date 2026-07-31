@@ -23,7 +23,7 @@
 
 - **实时计算与流处理**：`Apache Flink` · `Kafka` · `Tick/Bar 流处理` · `Flink SQL` · `大状态 Checkpoint 调优`
 - **PB 级离线数仓与批处理**：`Apache Spark` · `Hive` · `Hadoop` · `ODS ➔ DWD ➔ DWS 分层建模` · `日均 600+TB 吞吐`
-- **任务调度与链路治理**：`Airflow` · `分布式自研调度器` · `千级任务 DAG 依赖治理` · `SLA 保障 & 自动补算`
+- **任务调度与链路治理**：`Airflow` · `自研分布式调度系统` · `千级任务 DAG 依赖治理` · `SLA 保障 & 自动补算/重跑`
 - **存储、时序与量化执行**：`ClickHouse` · `HBase` · `PostgreSQL` · `MySQL` · `执行网关` · `实时风控`
 
 ---

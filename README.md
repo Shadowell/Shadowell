@@ -23,7 +23,7 @@ Dedicated to building practical, end-to-end quantitative infrastructures that se
 
 - **Real-Time Streaming**: `Apache Flink` · `Kafka` · `Tick/Bar Streaming` · `Flink SQL` · `Large-State Checkpoint Tuning`
 - **PB-Scale DWH & Batch Processing**: `Apache Spark` · `Hive` · `Hadoop` · `ODS ➔ DWD ➔ DWS Layered DWH` · `600+TB/day`
-- **Workflow Scheduling & Governance**: `Airflow` · `Custom Distributed Schedulers` · `1,000+ Job DAG Governance` · `SLA Recovery`
+- **Workflow Scheduling & Governance**: `Airflow` · `In-House Distributed Scheduler` · `1,000+ Job DAG Governance` · `SLA Monitoring & Recovery`
 - **Storage, Analytics & Execution**: `ClickHouse` · `HBase` · `PostgreSQL` · `MySQL` · `Execution Gateways` · `Risk Controls`
 
 ---
