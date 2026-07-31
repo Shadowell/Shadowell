@@ -43,7 +43,12 @@ A production-grade, governed quantitative research and strategy incubation Agent
 
 ### [HyperARC](https://github.com/Shadowell/HyperARC)
 
-Universal autonomous program synthesis and AGI reasoning engine designed for ARC-AGI benchmarks using parallel MCTS search, 2D grid DSL primitives, and self-healing execution scaffolding.
+A universal autonomous program synthesis and AGI reasoning engine designed for the full ARC-AGI benchmark suite (ARC-AGI-1, 2, and 3 / ARC Prize 2026):
+
+- **Universal ARC Benchmark Suite**: Standardized task models (`ARCTask`) and automated dataset loaders supporting ARC-AGI-1, 2, and 3.
+- **Parallel MCTS Solver Engine**: Multi-threaded AST search engine (`HyperARCParallelMCTSEngine`) executing parallel program mutation rollouts over 2D spatial grid transformations.
+- **2D Grid DSL Primitives**: Rich domain-specific primitives for spatial operations (`rotate_90`, `flip_horizontal`, `replace_color`, `crop_bounding_box`).
+- **Self-Healing Harness & Exact Matching**: Scaffolding with error recovery (`HyperARCHarness`) that enforces 100% pixel-exact matching on training grid examples before predicting unseen test grids.
 
 ### [StockPro](https://github.com/Shadowell/StockPro)
 

@@ -43,7 +43,12 @@
 
 ### [HyperARC](https://github.com/Shadowell/HyperARC)
 
-面向 ARC-AGI (1, 2 & 3) 基准的通用自主程序合成与 AGI 推理引擎，结合并行 MCTS 搜索、2D 网格 DSL 原语与自愈控制架。
+面向 ARC-AGI (1, 2 & 3 / ARC Prize 2026) 基准套件的通用自主程序合成与 AGI 推理引擎，源自 HyperTrade 的高吞吐 MCTS 搜寻与工业级控制架：
+
+- **通用 ARC 测评基准集成**：统一支持 ARC-AGI-1、ARC-AGI-2 及 ARC-AGI-3 标准任务模型 (`ARCTask`) 与自动化数据集加载器。
+- **并行 MCTS 程序搜寻**：多线程 AST 树节点突变与并行 Rollout 求解引擎，高维探索二维空间图形变换解空间。
+- **2D 网格 DSL 算子原语**：内置旋转、镜像、颜色替换、边界框裁剪等原子级图形变换 DSL Primitive。
+- **自愈控制架与像素级匹配**：具备自愈错误恢复机制（`HyperARCHarness`），要求合成程序在训练集上达成 100% 像素完全精确匹配后应用于测试集。
 
 ### [StockPro](https://github.com/Shadowell/StockPro)
 
