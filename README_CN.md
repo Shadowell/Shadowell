@@ -12,6 +12,13 @@
 
 `行情数据 Pipeline` ➔ `因子挖掘与特征工程` ➔ `策略研发` ➔ `策略回测` ➔ `模拟交易与审计` ➔ `自动化执行`
 
+### 大数据基础设施与核心技术栈
+
+- **实时计算与流处理**：Apache Flink、Kafka、Flink SQL、自定义算子开发、大状态作业 Checkpoint 调优与内存治理。
+- **PB 级离线数仓与批处理**：Apache Spark、Hive、Hadoop，ODS ➔ DWD ➔ DWS ➔ ADS 分层模型设计，支撑日均 600+TB 数据量级。
+- **任务调度与链路治理**：Airflow、分布式自研调度器、千级任务依赖 DAG 治理、SLA 保证与数据补算/重跑恢复机制。
+- **存储与查询引擎**：ClickHouse、HBase、PostgreSQL、MySQL 及时序数据库。
+
 ### 技术焦点与量化工具链
 
 - **数据工程与基础设施**：高性能数据管道、Tick/Bar 行情数据流处理、时序数据存储与 ETL 工作流。

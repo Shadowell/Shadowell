@@ -12,6 +12,13 @@ My primary engineering foundation lies at the intersection of high-throughput da
 
 `Market Data Pipeline` ➔ `Factor Mining & Feature Engineering` ➔ `Strategy Research` ➔ `Backtesting` ➔ `Paper Trading & Audit` ➔ `Automated Execution`
 
+### Big Data Infrastructure & Core Tech Stack
+
+- **Real-Time Data Streaming**: Apache Flink, Kafka, Flink SQL, custom operators, large-state tuning & Checkpoint memory optimization.
+- **PB-Scale Batch Processing & DWH**: Apache Spark, Hive, Hadoop, ODS ➔ DWD ➔ DWS ➔ ADS layered data modeling, processing 600+TB/day pipelines.
+- **Workflow Scheduling & Governance**: Airflow, custom distributed Schedulers, 1,000+ job dependency DAG governance, SLA monitoring & backfill recovery.
+- **Storage & Query Engines**: ClickHouse, HBase, PostgreSQL, MySQL, and Time-Series Databases.
+
 ### Technical Focus & Quantitative Tooling
 
 - **Data Engineering & Infrastructure**: High-performance data pipelines, Tick/Bar market data streaming, time-series data storage, and ETL workflows.
