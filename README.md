@@ -34,7 +34,12 @@ I am actively developing and maintaining a suite of quantitative research tools 
 
 ### [HyperTrade](https://github.com/Shadowell/HyperTrade)
 
-Multi-asset algorithmic trading agent framework for real-time market research, quantitative execution, and risk control.
+A production-grade, governed quantitative research and strategy incubation Agent Runtime powered by the universal **ARC (Autonomous Research Core)** engine:
+
+- **MCTS & MAP-Elites Search Engine**: Combines Monte Carlo Tree Search over strategy code ASTs with Quality-Diversity grid archiving to explore high-dimensional strategy spaces without premature convergence.
+- **Adversarial Red-Teaming**: Blue Team quant agents formulate Alpha hypotheses while Red Team agents stress-test for black swan shocks, liquidity traps, and stop-loss vulnerabilities.
+- **Multi-Regime Causal Attribution & Reflexion**: Deconstructs performance across market regimes (trending, volatile, range-bound) and distills structured negative constraints for continuous prompt feedback.
+- **Voyager-Style Skill Distillation & Paper Trading**: Automatically distills validated code sub-functions into an immutable skill library, deploying robust candidate strategies to paper trading environments zero-touch.
 
 ### [HyperARC](https://github.com/Shadowell/HyperARC)
 
