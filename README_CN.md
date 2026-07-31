@@ -30,6 +30,10 @@
 
 面向实时市场研究、量化执行与风险控制的多资产算法交易 Agent 框架。
 
+### [HyperARC](https://github.com/Shadowell/HyperARC)
+
+面向 ARC-AGI (1, 2 & 3) 基准的通用自主程序合成与 AGI 推理引擎，结合并行 MCTS 搜索、2D 网格 DSL 原语与自愈控制架。
+
 ### [StockPro](https://github.com/Shadowell/StockPro)
 
 A股研究与监控平台，涵盖实时行情接入、AI 股票评估、因子研究、策略研发与模拟交易。

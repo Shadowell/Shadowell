@@ -48,6 +48,10 @@ I am actively developing and maintaining a suite of quantitative research tools 
 
 Multi-asset algorithmic trading agent framework for real-time market research, quantitative execution, and risk control.
 
+### [HyperARC](https://github.com/Shadowell/HyperARC)
+
+Universal autonomous program synthesis and AGI reasoning engine designed for ARC-AGI benchmarks using parallel MCTS search, 2D grid DSL primitives, and self-healing execution scaffolding.
+
 ### [StockPro](https://github.com/Shadowell/StockPro)
 
 A-share research and monitoring platform covering real-time market data, AI stock evaluation, factor research, strategy development, and simulation trading.
