@@ -1,7 +1,6 @@
 <p align="right">
-  <strong>Languages / 语言:</strong>
-  <strong>🇺🇸 English</strong> |
-  <a href="README_CN.md">🇨🇳 简体中文</a>
+  <strong>English</strong> |
+  <a href="README_CN.md">简体中文</a>
 </p>
 
 ## About Me
