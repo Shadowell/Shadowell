@@ -14,9 +14,9 @@ Dedicated to building practical, end-to-end quantitative infrastructures that se
 ### 🔄 End-to-End Quantitative Pipeline
 
 ```
-[ Market Data Pipeline ] ➔ [ Factor Mining & Feature Engineering ] ➔ [ Strategy & Alpha Research ]
-                                                                             │
-[ Automated Execution ]  ◄── [ Paper Trading & Signal Audit ]    ◄── [ Backtesting & Simulation ]
+[ Market Data Pipeline ] ──> [ Factor Mining & Feature Engineering ] ──> [ Strategy & Alpha Research ]
+                                                                                   │
+[ Automated Execution  ] <── [ Paper Trading & Signal Audit        ] <── [ Backtesting & Simulation  ]
 ```
 
 ### ⚡ Core Infrastructure & Technical Stack
