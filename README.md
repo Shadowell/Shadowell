@@ -9,6 +9,8 @@ I am a **Big Data Engineer** specializing in quantitative research infrastructur
 
 Dedicated to building practical, end-to-end quantitative infrastructures that seamlessly integrate the entire research and trading lifecycle.
 
+> 🎯 **Ultimate Vision**: Powered by Autonomous Reasoning & Control (ARC) principles, my ultimate goal is to engineer self-evolving, autonomous agent systems capable of independent exploration, continuous strategy discovery, and adaptive execution within highly complex financial environments.
+
 ### 🔄 End-to-End Quantitative Pipeline
 
 ```
