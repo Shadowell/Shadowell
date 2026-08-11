@@ -61,6 +61,22 @@ I treat market-data quality, reproducible computation, costs, fills, and audit t
 
 I use Codex, Cursor, GLM, Grok, and other models according to their capabilities and limits. I remain responsible for business judgment, requirement decomposition, constraints, acceptance criteria, and verification through real data, automated tests, runtime logs, and user-visible outcomes.
 
+### Independently Operated WeChat Products
+
+#### 配料君
+
+A food-ingredient analysis and health-literacy mini program that I continuously operate and improve, covering data organization, product iteration, and promotion through WeChat Search.
+
+<img src="./assets/wechat-mini-program-peiliaojun.png" alt="配料君 WeChat Mini Program QR Code" width="320" />
+
+#### 野钓潮汐
+
+A fishing-focused tide and weather mini program integrating time-series tide and weather data, backend services, and a mobile-facing product experience.
+
+<img src="./assets/wechat-mini-program-tidenow.png" alt="野钓潮汐 WeChat Mini Program QR Code" width="320" />
+
+Both products are continuously operated and iterated—not one-off demos.
+
 ## Big Data Foundation
 
 | Scale | Engineering outcome |
