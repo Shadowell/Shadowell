@@ -55,7 +55,6 @@ I treat market-data quality, reproducible computation, costs, fills, and audit t
 
 ## AI Product Delivery
 
-- [CommentX](https://github.com/Shadowell/CommentX) — Content-operations workspace with research, review, scheduling, multi-platform delivery, observability, and safe-stop controls
 - **Zora · Private Product** — AI animation workspace connecting story, characters, storyboards, video generation, voice, composition, quality review, and publishing
 - **FrameLab · Private Product** — AI video platform integrating model APIs, ComfyUI/GPU workers, asynchronous jobs, storage, credits, moderation, testing, and deployment
 

@@ -55,7 +55,6 @@
 
 ## AI 产品端到端交付
 
-- [CommentX](https://github.com/Shadowell/CommentX)：覆盖研究、审核、排期、多平台分发、可观测性与安全停机的内容运营工作台
 - **Zora · 私有产品**：串联故事、角色、分镜、视频生成、配音、合成、质量审核和发布的 AI 动画工作台
 - **FrameLab · 私有产品**：集成模型 API、ComfyUI/GPU Worker、异步任务、存储、积分、审核、测试与部署的 AI 视频平台
 
