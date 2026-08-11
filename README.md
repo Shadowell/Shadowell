@@ -3,73 +3,62 @@
   <a href="README_CN.md">简体中文</a>
 </p>
 
-## About Me
+# Jie Feng
 
-I am a **Big Data Engineer** specializing in quantitative research infrastructure, data pipelines, and AI-driven trading systems.
+**Big Data Engineer · Data Architecture · Reliable Data Systems**
 
-Dedicated to building practical, end-to-end quantitative infrastructures that seamlessly integrate the entire research and trading lifecycle.
+Big Data Engineer with **9 years of hands-on development experience** across PB-scale offline data warehouses, large-scale streaming pipelines, workflow governance, data quality, and performance optimization.
 
-> 🎯 **Ultimate Vision**: Powered by Autonomous Reasoning & Control (ARC) principles, my ultimate goal is to engineer self-evolving, autonomous agent systems capable of independent exploration, continuous strategy discovery, and adaptive execution within highly complex financial environments.
+At Shopee, I work on production data paths processing **600+ TB per day** across **10 international sites**. My focus is turning complex business rules into stable data models, reusable shared layers, traceable SLAs, and recoverable delivery workflows.
 
-### 🔄 End-to-End Quantitative Pipeline
+[中文主页](README_CN.md) · [Email](mailto:jie.f@outlook.com)
 
-```
-[ Market Data Pipeline ] ──> [ Factor Mining & Feature Engineering ] ──> [ Strategy & Alpha Research ]
-                                                                                   │
-[ Automated Execution  ] <── [ Paper Trading & Signal Audit        ] <── [ Backtesting & Simulation  ]
-```
+## Production Impact
 
-### ⚡ Core Infrastructure & Technical Stack
+| Scale | Engineering outcome |
+| --- | --- |
+| **600+ TB/day** | Production data paths serving analytics across 10 international sites |
+| **1,000+ jobs** | Dependency, resource, rollout, SLA, backfill, and recovery governance during scheduler migration |
+| **10B events/day** | Real-time warehouse path built with Flink, Kafka, MySQL, and HBase |
+| **PB-scale DWH** | Layered modeling, shared data layers, metric consistency, cross-region synchronization, and data quality |
 
-- **Real-Time Streaming**: `Apache Flink` · `Kafka` · `Tick/Bar Streaming` · `Flink SQL` · `Large-State Checkpoint Tuning`
-- **PB-Scale DWH & Batch Processing**: `Apache Spark` · `Hive` · `Hadoop` · `ODS ➔ DWD ➔ DWS Layered DWH`
-- **Workflow Scheduling & Governance**: `Airflow` · `In-House Distributed Scheduler` · `1,000+ Job DAG Governance` · `SLA Monitoring & Recovery`
-- **Storage, Analytics & Execution**: `ClickHouse` · `HBase` · `PostgreSQL` · `MySQL` · `Execution Gateways` · `Risk Controls`
+## Core Competencies
 
----
+- **Offline Data Warehousing** — Hadoop, Hive, Spark, Spark SQL, dimensional modeling, ODS/DWD/DWS layers, shared-layer design
+- **Real-Time Computing** — Flink, Flink SQL, Kafka, HBase, window aggregation, large-state checkpoints, memory and backpressure diagnosis
+- **Workflow & SLA Governance** — Airflow, distributed scheduling, DAG dependency governance, staged migration, monitoring, backfills, recovery
+- **Data Reliability** — metric definitions, data quality, reconciliation, deduplication, historical backfills, observability, incident diagnosis
+- **Storage & Services** — MySQL, PostgreSQL, ClickHouse, REST APIs, Python, Java, Scala
+- **AI-Assisted Engineering** — Codex and Cursor for requirement decomposition, implementation, testing, troubleshooting, and delivery verification
 
-## What I'm Building
+## Selected Engineering Case Studies
 
-I am actively developing and maintaining a suite of quantitative research tools and production-grade software:
+### Large-Scale Job Migration & SLA Governance
 
-### [HyperTrade](https://github.com/Shadowell/HyperTrade)
+Migrated and governed 1,000+ offline jobs from Airflow to an in-house scheduler. The work covered dependency mapping, resource configuration, staged rollout, SLA alignment, backfills, monitoring, and recovery—moving critical data availability forward by more than two hours.
 
-A production-grade, governed quantitative research and strategy incubation Agent Runtime powered by the universal **ARC (Autonomous Research Core)** engine:
+### 10B-Event-Per-Day Real-Time Data Warehouse
 
-- **MCTS & MAP-Elites Search Engine**: Combines Monte Carlo Tree Search over strategy code ASTs with Quality-Diversity grid archiving to explore high-dimensional strategy spaces without premature convergence.
-- **Adversarial Red-Teaming**: Blue Team quant agents formulate Alpha hypotheses while Red Team agents stress-test for black swan shocks, liquidity traps, and stop-loss vulnerabilities.
-- **Multi-Regime Causal Attribution & Reflexion**: Deconstructs performance across market regimes (trending, volatile, range-bound) and distills structured negative constraints for continuous prompt feedback.
-- **Voyager-Style Skill Distillation & Paper Trading**: Automatically distills validated code sub-functions into an immutable skill library, deploying robust candidate strategies to paper trading environments zero-touch.
+Built a real-time data warehouse path from ingestion and detail processing to window aggregation and metric serving. Standardized ODS → DWD → DWS modeling and increased Kafka data reuse by 80%.
 
-### [HyperARC](https://github.com/Shadowell/HyperARC)
+### Data Reliability & Performance
 
-A universal autonomous program synthesis and AGI reasoning engine designed for the full ARC-AGI benchmark suite (ARC-AGI-1, 2, and 3 / ARC Prize 2026):
+Worked on cross-region synchronization, large-scale traffic deduplication, historical backfills, large-state checkpoint tuning, memory diagnosis, and failure recovery for batch and streaming workloads.
 
-- **Universal ARC Benchmark Suite**: Standardized task models (`ARCTask`) and automated dataset loaders supporting ARC-AGI-1, 2, and 3.
-- **Parallel MCTS Solver Engine**: Multi-threaded AST search engine (`HyperARCParallelMCTSEngine`) executing parallel program mutation rollouts over 2D spatial grid transformations.
-- **2D Grid DSL Primitives**: Rich domain-specific primitives for spatial operations (`rotate_90`, `flip_horizontal`, `replace_color`, `crop_bounding_box`).
-- **Self-Healing Harness & Exact Matching**: Scaffolding with error recovery (`HyperARCHarness`) that enforces 100% pixel-exact matching on training grid examples before predicting unseen test grids.
+> These case studies describe architecture and engineering outcomes only. Employer source code, data, and internal implementation details remain confidential.
 
-### [StockPro](https://github.com/Shadowell/StockPro)
+## Independent Engineering Work
 
-A-share research and monitoring platform covering real-time market data, AI stock evaluation, factor research, strategy development, and simulation trading.
+- [Alpha](https://github.com/Shadowell/Alpha) — Open-source A-share research system with trusted market-data ingestion, reproducible workflows, CI, and a public release
+- [StockPro](https://github.com/Shadowell/StockPro) — Real-time A-share research and monitoring platform with data-quality and controlled simulation workflows
+- [QuantBase](https://github.com/Shadowell/QuantBase) — Research workbench for real market data, backtesting, paper trading, signal audit, and risk-first validation
+- [CommentX](https://github.com/Shadowell/CommentX) — Content-operations workspace with review, scheduling, multi-platform delivery, and controlled execution
 
-### [QuantBase](https://github.com/Shadowell/QuantBase)
+These projects demonstrate product ownership and end-to-end delivery. My primary professional focus remains **big-data engineering and data architecture**.
 
-Open-source quantitative research workbench focused on real market data, backtesting, paper trading, signal audit, and risk-first strategy development.
+## Current Focus
 
-### [Alpha](https://github.com/Shadowell/Alpha)
-
-Self-evolving A-share stock selection system combining Kronos K-line forecasting, Hermes Agent loops, and a three-pool funnel workflow.
-
-### [配料君 (WeChat Mini Program)](#%E5%B0%8F%E7%A8%8B%E5%BA%8F%3A%2F%2F%E9%85%8D%E6%96%99%E5%90%9B%2FBxq9NHM7YIjXgxe)
-
-A WeChat mini program I'm continuously operating and improving, with promotion through WeChat 搜一搜.
-
-<img src="./assets/wechat-mini-program-peiliaojun.png" alt="配料君 微信小程序码" width="360" />
-
-### [野钓潮汐 (WeChat Mini Program)](https://github.com/Shadowell/TideNow)
-
-A fishing-focused tide and weather mini program I'm continuously operating and improving, with promotion through WeChat 搜一搜.
-
-<img src="./assets/wechat-mini-program-tidenow.png" alt="TideNow 今日潮汐表 微信小程序推广图" width="360" />
+- Reliable batch and streaming data systems
+- Data architecture, governance, and observability
+- AI-assisted software delivery with explicit requirements and acceptance criteria
+- Open-source maintenance with tests, CI, releases, and documented operating boundaries

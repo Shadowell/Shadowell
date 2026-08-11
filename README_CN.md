@@ -3,73 +3,62 @@
   <strong>简体中文</strong>
 </p>
 
-## 关于我
+# 冯杰
 
-我是一名专注于**量化研究基础设施、数据 Pipelines 与 AI 驱动交易系统**的**大数据开发工程师**。
+**大数据开发工程师 · 数据架构 · 高可靠数据系统**
 
-致力于构建实用且贯穿研发与交易全生命周期的端到端量化基础设施与大数据平台。
+拥有 **9 年大数据开发经验**，长期从事 PB 级离线数仓、大规模实时计算、任务治理、数据质量与性能优化。
 
-> 🎯 **终极目标与核心理念**：依托自主推理与控制（ARC）的核心理念，我的最高目标是打造具备自演进能力的自主 Agent 系统，使其能够在极其复杂的金融环境中实现独立的环境探索、持续的策略探索与稳健的交易执行。
+目前在 Shopee 负责 **600+TB/日**生产数据链路，覆盖 **10 个国际站点**。擅长将复杂业务规则沉淀为稳定的数据模型、可复用公共层、可追踪 SLA 和可恢复的数据交付流程。
 
-### 🔄 端到端量化全生命周期
+[English](README.md) · [邮箱](mailto:jie.f@outlook.com)
 
-```
-[ 行情数据 Pipeline ]  ──>  [ 因子挖掘与特征工程 ]  ──>  [ 策略研发 & Alpha 探索 ]
-                                                                   │
-[ 自动化执行与风控 ]  <──  [ 模拟交易与信号审计 ]  <──  [ 向量化/事件驱动回测  ]
-```
+## 生产规模与成果
 
-### ⚡ 核心基础设施与技术栈
+| 规模 | 工程成果 |
+| --- | --- |
+| **600+TB/日** | 支撑 10 个国际站点分析业务的生产数据链路 |
+| **1000+ 任务** | 调度迁移中的依赖、资源、灰度、SLA、回补与恢复治理 |
+| **百亿事件/日** | 基于 Flink、Kafka、MySQL 与 HBase 建设实时数仓链路 |
+| **PB 级数仓** | 分层建模、公共层、指标口径、跨区域同步与数据质量治理 |
 
-- **实时计算与流处理**：`Apache Flink` · `Kafka` · `Tick/Bar 流处理` · `Flink SQL` · `大状态 Checkpoint 调优`
-- **PB 级离线数仓与批处理**：`Apache Spark` · `Hive` · `Hadoop` · `ODS ➔ DWD ➔ DWS 分层建模`
-- **任务调度与链路治理**：`Airflow` · `自研分布式调度系统` · `千级任务 DAG 依赖治理` · `SLA 保障 & 自动补算/重跑`
-- **存储、时序与量化执行**：`ClickHouse` · `HBase` · `PostgreSQL` · `MySQL` · `执行网关` · `实时风控`
+## 核心能力
 
----
+- **离线数仓**：Hadoop、Hive、Spark、Spark SQL、维度建模、ODS/DWD/DWS 分层、公共层设计
+- **实时计算**：Flink、Flink SQL、Kafka、HBase、窗口聚合、大状态 Checkpoint、内存与反压排查
+- **任务与 SLA 治理**：Airflow、分布式调度、DAG 依赖治理、灰度迁移、监控、回补与恢复
+- **数据可靠性**：指标口径、数据质量、对账、去重、历史回补、可观测性与故障诊断
+- **存储与服务**：MySQL、PostgreSQL、ClickHouse、REST API、Python、Java、Scala
+- **AI 协作研发**：使用 Codex、Cursor 辅助需求拆解、实现、测试、排障和交付验收
 
-## 我在构建的项目
+## 脱敏工程案例
 
-我正在积极开发和维护一系列量化研究工具与生产级软件：
+### 大规模任务迁移与 SLA 治理
 
-### [HyperTrade](https://github.com/Shadowell/HyperTrade)
+推动 1000+ 离线任务从 Airflow 迁移至自研调度系统，覆盖依赖梳理、资源配置、灰度迁移、SLA 对齐、数据回补、监控与异常恢复，使核心数据产出提前 2 小时以上。
 
-面向多资产量化研究与策略孵化的受治理 Agent Runtime，由通用 **ARC (Autonomous Research Core)** 控制内核驱动，实现从自然语言目标到自演进策略研发与模拟盘自动上线的全流程闭环：
+### 百亿事件级实时数仓
 
-- **MCTS & MAP-Elites 搜寻引擎**：基于蒙特卡洛树搜索与质量-多样性（Quality-Diversity）网格，在策略代码 AST 节点树上高维探索解空间，防止早熟收敛。
-- **红蓝对抗博弈 (Adversarial Red-Teaming)**：蓝队生成策略与代码突变，红队施加黑天鹅、流动性踩踏与宽止损陷阱攻防测试，确保策略健壮性。
-- **多 Regime 定量因果归因 & Reflexion 账本**：拆解牛熊震荡市场下的性能表现，提取结构化否定约束注入进化 Prompt。
-- **Voyager 技能蒸馏与模拟盘孵化**：自动提取优良子函数注册为不可变技能库，通过攻防测试的策略自动部署上线模拟盘运行。
+从接入、明细加工、窗口聚合到指标服务建设实时数据链路，推动 ODS → DWD → DWS 分层规范落地，并使 Kafka 数据复用率提升 80%。
 
-### [HyperARC](https://github.com/Shadowell/HyperARC)
+### 数据可靠性与性能优化
 
-面向 ARC-AGI (1, 2 & 3 / ARC Prize 2026) 基准套件的通用自主程序合成与 AGI 推理引擎，源自 HyperTrade 的高吞吐 MCTS 搜寻与工业级控制架：
+具备跨区域同步、大规模流量去重、历史回补、大状态 Checkpoint 调优、内存问题定位和失败恢复经验，覆盖离线与实时工作负载。
 
-- **通用 ARC 测评基准集成**：统一支持 ARC-AGI-1、ARC-AGI-2 及 ARC-AGI-3 标准任务模型 (`ARCTask`) 与自动化数据集加载器。
-- **并行 MCTS 程序搜寻**：多线程 AST 树节点突变与并行 Rollout 求解引擎，高维探索二维空间图形变换解空间。
-- **2D 网格 DSL 算子原语**：内置旋转、镜像、颜色替换、边界框裁剪等原子级图形变换 DSL Primitive。
-- **自愈控制架与像素级匹配**：具备自愈错误恢复机制（`HyperARCHarness`），要求合成程序在训练集上达成 100% 像素完全精确匹配后应用于测试集。
+> 以上仅展示脱敏后的架构思路和工程成果，不公开雇主源代码、业务数据或内部实现细节。
 
-### [StockPro](https://github.com/Shadowell/StockPro)
+## 独立工程项目
 
-A股研究与监控平台，涵盖实时行情接入、AI 股票评估、因子研究、策略研发与模拟交易。
+- [Alpha](https://github.com/Shadowell/Alpha)：开源 A 股研究系统，包含可信行情接入、可复现工作流、CI 与公开 Release
+- [StockPro](https://github.com/Shadowell/StockPro)：实时 A 股研究与监控平台，强调数据质量和受控仿真流程
+- [QuantBase](https://github.com/Shadowell/QuantBase)：覆盖真实行情、回测、模拟交易、信号审计与风险优先验证的研究工作台
+- [CommentX](https://github.com/Shadowell/CommentX)：覆盖审核、排期、多平台分发与受控执行的内容运营工作台
 
-### [QuantBase](https://github.com/Shadowell/QuantBase)
+这些项目用于证明产品意识和端到端交付能力；我的核心职业方向仍是 **大数据开发与数据架构**。
 
-开源量化研究工作台，专注于真实市场数据分析、稳健的回测引擎、模拟交易验证、信号审计与风控优先的策略开发。
+## 当前关注方向
 
-### [Alpha](https://github.com/Shadowell/Alpha)
-
-自演进 A股选股系统，结合 Kronos K线预测模型、Hermes Agent 循环与多阶段漏斗筛选流程。
-
-### [配料君 (微信小程序)](#%E5%B0%8F%E7%A8%8B%E5%BA%8F%3A%2F%2F%E9%85%8D%E6%96%99%E5%90%9B%2FBxq9NHM7YIjXgxe)
-
-持续运营与迭代的食品配料分析与健康认知微信小程序，通过微信搜一搜进行推广。
-
-<img src="./assets/wechat-mini-program-peiliaojun.png" alt="配料君 微信小程序码" width="360" />
-
-### [野钓潮汐 (微信小程序)](https://github.com/Shadowell/TideNow)
-
-面向户外钓鱼爱好者的切片潮汐与天气预报小程序，集成实时气象与潮汐数据流。
-
-<img src="./assets/wechat-mini-program-tidenow.png" alt="TideNow 今日潮汐表 微信小程序推广图" width="360" />
+- 高可靠离线与实时数据系统
+- 数据架构、治理与可观测性
+- 以明确目标和验收标准驱动的 AI 协作研发
+- 具备测试、CI、Release 与能力边界说明的开源维护
