@@ -1,0 +1,75 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Shadowell/Shadowell/strategy-card/performance.schema.json",
+  "title": "BitPro public Paper strategy-card snapshot",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "mode",
+    "status",
+    "currency",
+    "account_equity",
+    "total_pnl",
+    "return_pct",
+    "sharpe",
+    "win_rate_pct",
+    "profit_factor",
+    "trade_count",
+    "max_drawdown_30d_pct",
+    "runtime_seconds",
+    "symbols",
+    "equity_curve",
+    "drawdown_curve",
+    "includes_fees",
+    "includes_slippage",
+    "as_of"
+  ],
+  "properties": {
+    "schema_version": { "const": 1 },
+    "mode": { "const": "paper" },
+    "status": { "enum": ["running", "paused", "stopped"] },
+    "currency": { "type": "string", "minLength": 1, "maxLength": 12 },
+    "account_equity": { "type": "number" },
+    "total_pnl": { "type": "number" },
+    "return_pct": { "type": "number" },
+    "sharpe": { "type": "number" },
+    "win_rate_pct": { "type": "number", "minimum": 0, "maximum": 100 },
+    "profit_factor": { "type": "number", "minimum": 0 },
+    "trade_count": { "type": "integer", "minimum": 0 },
+    "max_drawdown_30d_pct": { "type": "number", "minimum": 0, "maximum": 100 },
+    "runtime_seconds": { "type": "integer", "minimum": 0 },
+    "symbols": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "type": "string", "minLength": 1 }
+    },
+    "equity_curve": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["at", "value"],
+        "properties": {
+          "at": { "type": "string", "format": "date-time" },
+          "value": { "type": "number" }
+        }
+      }
+    },
+    "drawdown_curve": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["at", "value_pct"],
+        "properties": {
+          "at": { "type": "string", "format": "date-time" },
+          "value_pct": { "type": "number", "maximum": 0 }
+        }
+      }
+    },
+    "includes_fees": { "type": "boolean" },
+    "includes_slippage": { "type": "boolean" },
+    "as_of": { "type": "string", "format": "date-time" }
+  }
+}

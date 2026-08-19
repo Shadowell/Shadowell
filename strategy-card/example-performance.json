@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "mode": "paper",
+  "status": "running",
+  "currency": "USDT",
+  "account_equity": 102.42,
+  "total_pnl": 2.42,
+  "return_pct": 2.42,
+  "sharpe": 0.25,
+  "win_rate_pct": 51.9,
+  "profit_factor": 1.13,
+  "trade_count": 54,
+  "max_drawdown_30d_pct": 11.4,
+  "runtime_seconds": 110640,
+  "symbols": [
+    "BTC/USDT:USDT",
+    "ETH/USDT:USDT",
+    "SNDK/USDT:USDT",
+    "SPCX/USDT:USDT",
+    "SOL/USDT:USDT"
+  ],
+  "equity_curve": [
+    { "at": "2026-08-19T00:00:00Z", "value": 100.00 },
+    { "at": "2026-08-19T04:00:00Z", "value": 100.22 },
+    { "at": "2026-08-19T08:00:00Z", "value": 100.18 },
+    { "at": "2026-08-19T12:00:00Z", "value": 100.73 },
+    { "at": "2026-08-19T16:00:00Z", "value": 100.58 },
+    { "at": "2026-08-19T20:00:00Z", "value": 101.11 },
+    { "at": "2026-08-20T00:00:00Z", "value": 102.42 }
+  ],
+  "drawdown_curve": [
+    { "at": "2026-08-19T00:00:00Z", "value_pct": 0.0 },
+    { "at": "2026-08-19T04:00:00Z", "value_pct": -0.4 },
+    { "at": "2026-08-19T08:00:00Z", "value_pct": -1.1 },
+    { "at": "2026-08-19T12:00:00Z", "value_pct": -0.3 },
+    { "at": "2026-08-19T16:00:00Z", "value_pct": -1.2 },
+    { "at": "2026-08-19T20:00:00Z", "value_pct": -0.6 },
+    { "at": "2026-08-20T00:00:00Z", "value_pct": -0.2 }
+  ],
+  "includes_fees": true,
+  "includes_slippage": true,
+  "as_of": "2026-08-20T00:00:00Z"
+}
