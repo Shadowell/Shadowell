@@ -32,7 +32,7 @@ A governed quantitative-research Agent runtime that turns open-ended research go
 - Uses red-team stress tests, regime attribution, and structured negative constraints
 - Keeps research, backtesting, Paper trading, and real effects behind explicit control boundaries
 
-### HyperARC · Private Research
+### [HyperARC](https://arcprize.org/competitions/2026) · Private Research
 
 An ARC-AGI research system spanning ARC-AGI-1/2 program synthesis and ARC-AGI-3 interactive-Agent experiments.
 

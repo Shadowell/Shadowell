@@ -32,7 +32,7 @@
 - 引入红队压力测试、市场 Regime 归因和结构化否定约束
 - 将研究、回测、Paper Trading 与真实效果隔离在明确的控制边界之后
 
-### HyperARC · 私有研究项目
+### [HyperARC](https://arcprize.org/competitions/2026) · 私有研究项目
 
 覆盖 ARC-AGI-1/2 程序合成与 ARC-AGI-3 交互式 Agent 实验的研究系统。
 
