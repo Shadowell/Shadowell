@@ -11,8 +11,6 @@ I build governed **AI Agent runtimes, quantitative research systems, and end-to-
 
 This work is backed by **9 years of big-data development experience** across PB-scale offline data warehouses, large-scale streaming, workflow governance, data quality, and performance optimization.
 
-[中文主页](README_CN.md) · [Email](mailto:jie.f@outlook.com)
-
 ## What I Build
 
 | Direction | Current work |
