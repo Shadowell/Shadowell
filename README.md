@@ -34,6 +34,8 @@ A governed quantitative-research Agent runtime that turns open-ended research go
 
 ### [HyperARC](https://arcprize.org/competitions/2026) · Private Research
 
+**Competitions:** [ARC-AGI-2](https://www.kaggle.com/competitions/arc-prize-2026-arc-agi-2) · [ARC-AGI-3](https://www.kaggle.com/competitions/arc-prize-2026-arc-agi-3)
+
 An ARC-AGI research system spanning ARC-AGI-1/2 program synthesis and ARC-AGI-3 interactive-Agent experiments.
 
 - Grid-transformation DSLs, candidate generation, exact-match validation, and restricted code execution

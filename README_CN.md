@@ -34,6 +34,8 @@
 
 ### [HyperARC](https://arcprize.org/competitions/2026) · 私有研究项目
 
+**比赛：** [ARC-AGI-2](https://www.kaggle.com/competitions/arc-prize-2026-arc-agi-2) · [ARC-AGI-3](https://www.kaggle.com/competitions/arc-prize-2026-arc-agi-3)
+
 覆盖 ARC-AGI-1/2 程序合成与 ARC-AGI-3 交互式 Agent 实验的研究系统。
 
 - 网格变换 DSL、候选生成、精确匹配验证与受限代码执行
