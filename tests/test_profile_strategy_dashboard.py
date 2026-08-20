@@ -66,6 +66,31 @@ class StrategyDashboardPageTests(unittest.TestCase):
     def test_pages_source_disables_jekyll_processing(self) -> None:
         self.assertTrue((ROOT / "docs/.nojekyll").exists())
 
+    def test_bilingual_readmes_place_linked_preview_immediately_after_bitpro(self) -> None:
+        dashboard_url = "https://shadowell.github.io/Shadowell/strategy/"
+        preview = "./assets/bitpro-paper-performance.png"
+        for name, bitpro_marker, following_copy in (
+            ("README.md", "**BitPro · Private Product**", "I treat market-data quality"),
+            ("README_CN.md", "**BitPro · 私有产品**", "我把行情数据质量"),
+        ):
+            text = (ROOT / name).read_text(encoding="utf-8")
+            bitpro_at = text.index(bitpro_marker)
+            dashboard_at = text.index(dashboard_url)
+            preview_at = text.index(preview)
+            following_at = text.index(following_copy)
+            self.assertLess(bitpro_at, dashboard_at)
+            self.assertLess(dashboard_at, preview_at)
+            self.assertLess(preview_at, following_at)
+            self.assertNotIn("bitpro-paper-performance.svg", text)
+
+    def test_profile_preview_is_a_real_png_and_svg_renderer_is_removed(self) -> None:
+        preview = ROOT / "assets/bitpro-paper-performance.png"
+        self.assertTrue(preview.exists())
+        self.assertGreater(preview.stat().st_size, 10_000)
+        self.assertFalse((ROOT / "assets/bitpro-paper-performance.svg").exists())
+        self.assertFalse((ROOT / "scripts/render_strategy_card.py").exists())
+        self.assertFalse((ROOT / "strategy-card/example-performance.json").exists())
+
 
 if __name__ == "__main__":
     unittest.main()

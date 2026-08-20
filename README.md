@@ -51,11 +51,11 @@ An ARC-AGI research system spanning ARC-AGI-1/2 program synthesis and ARC-AGI-3 
 - [QuantBase](https://github.com/Shadowell/QuantBase) — Research workbench for real market data, Backtrader validation, Paper trading, signal audit, and risk-first development
 - **BitPro · Private Product** — Digital-asset research platform covering exchange data, strategy versions, asynchronous backtests, simulation, controlled execution, and monitoring
 
-### BitPro Paper Performance · Snapshot Preview
+<a href="https://shadowell.github.io/Shadowell/strategy/">
+  <img src="./assets/bitpro-paper-performance.png" alt="Open the live BitPro Paper telemetry dashboard" width="100%" />
+</a>
 
-This screenshot-derived preview is for layout review and is not a live feed.
-
-<img src="./assets/bitpro-paper-performance.svg" alt="BitPro Paper strategy performance snapshot preview" width="100%" />
+<p align="center"><sub>Live Paper telemetry · refreshed every 60 seconds · click the card to open the animated dashboard</sub></p>
 
 I treat market-data quality, reproducible computation, costs, fills, and audit trails as prerequisites. Strategy research is presented as research evidence—not as unverified return claims.
 

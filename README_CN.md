@@ -53,11 +53,11 @@
 - [QuantBase](https://github.com/Shadowell/QuantBase)：覆盖真实行情、Backtrader 验证、模拟交易、信号审计与风险优先研发的研究工作台
 - **BitPro · 私有产品**：数字资产研究平台，覆盖交易所行情、策略版本、异步回测、仿真、受控执行与监控
 
-### BitPro Paper 策略表现 · 快照预览
+<a href="https://shadowell.github.io/Shadowell/strategy/">
+  <img src="./assets/bitpro-paper-performance.png" alt="打开 BitPro Paper 实时指标页" width="100%" />
+</a>
 
-这是用于版式 Review 的截图数据预览，不是实时数据。
-
-<img src="./assets/bitpro-paper-performance.svg" alt="BitPro Paper 策略表现快照预览" width="100%" />
+<p align="center"><sub>Paper 实时指标 · 每 60 秒刷新 · 点击卡片打开动态页面</sub></p>
 
 我把行情数据质量、计算可复现性、成本、成交明细和审计记录视为研究前提；展示研究证据，不包装未经验证的收益。
 
