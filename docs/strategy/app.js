@@ -79,6 +79,13 @@ export function tweenValue(from, to, progress) {
   return Number(from) + (Number(to) - Number(from)) * eased;
 }
 
+export function performanceTone(value) {
+  const number = Number(value) || 0;
+  if (number > 0) return 'up';
+  if (number < 0) return 'down';
+  return 'flat';
+}
+
 const METRIC_BINDINGS = [
   ['account-equity', 'account_equity'],
   ['total-pnl', 'total_pnl'],
@@ -105,7 +112,7 @@ function animateMetric(element, field, target) {
     return;
   }
   const started = performance.now();
-  const duration = 760;
+  const duration = 560;
   const frame = (now) => {
     const progress = Math.min(1, (now - started) / duration);
     element.textContent = formatMetric(field, tweenValue(from, to, progress));
@@ -189,6 +196,7 @@ function renderUnavailable(view) {
   const dashboard = document.querySelector('#dashboard');
   dashboard.dataset.state = view.state || 'unavailable';
   dashboard.dataset.status = 'unavailable';
+  dashboard.dataset.tone = 'flat';
   dashboard.setAttribute('aria-busy', 'false');
   document.querySelector('#status-label').textContent = (view.state || 'unavailable').replace('-', ' ').toUpperCase();
   document.querySelector('#as-of').textContent = view.asOf ? readableTimestamp(view.asOf) : 'No verified snapshot';
@@ -205,6 +213,7 @@ function renderDashboard(view) {
   const dashboard = document.querySelector('#dashboard');
   dashboard.dataset.state = 'ok';
   dashboard.dataset.status = data.status;
+  dashboard.dataset.tone = performanceTone(data.return_pct);
   dashboard.setAttribute('aria-busy', 'false');
   document.querySelector('#empty-state').hidden = true;
   document.querySelector('#status-label').textContent = data.status.toUpperCase();

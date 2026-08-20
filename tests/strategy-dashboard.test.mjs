@@ -7,6 +7,7 @@ import {
   formatRuntime,
   formatSymbols,
   normalizeCardPayload,
+  performanceTone,
   tweenValue,
 } from '../docs/strategy/app.js';
 
@@ -83,4 +84,11 @@ test('numeric tween uses eased intermediate values and lands exactly on target',
   assert.equal(tweenValue(10, 20, 1), 20);
   assert.ok(tweenValue(10, 20, 0.5) > 15);
   assert.ok(tweenValue(10, 20, 0.5) < 20);
+});
+
+
+test('uses Chinese market colors with red for gains and green for losses', () => {
+  assert.equal(performanceTone(1.2), 'up');
+  assert.equal(performanceTone(-1.2), 'down');
+  assert.equal(performanceTone(0), 'flat');
 });

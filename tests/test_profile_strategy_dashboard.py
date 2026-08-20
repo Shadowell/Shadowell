@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import unittest
+import struct
 from html.parser import HTMLParser
 from pathlib import Path
 
@@ -62,6 +63,9 @@ class StrategyDashboardPageTests(unittest.TestCase):
         self.assertIn("@media (max-width: 760px)", css)
         self.assertIn("metric-value--flash", css)
         self.assertIn("scan-beacon", css)
+        self.assertIn("--up: #ff4d6d", css.lower())
+        self.assertIn("--down: #20c997", css.lower())
+        self.assertIn("max-width: 1080px", css)
 
     def test_pages_source_disables_jekyll_processing(self) -> None:
         self.assertTrue((ROOT / "docs/.nojekyll").exists())
@@ -87,6 +91,15 @@ class StrategyDashboardPageTests(unittest.TestCase):
         preview = ROOT / "assets/bitpro-paper-performance.png"
         self.assertTrue(preview.exists())
         self.assertGreater(preview.stat().st_size, 10_000)
+        with preview.open("rb") as handle:
+            self.assertEqual(handle.read(8), b"\x89PNG\r\n\x1a\n")
+            length = struct.unpack(">I", handle.read(4))[0]
+            self.assertEqual(handle.read(4), b"IHDR")
+            width, height = struct.unpack(">II", handle.read(8))
+        self.assertEqual(length, 13)
+        self.assertGreaterEqual(width, 1000)
+        self.assertGreaterEqual(width / height, 1.65)
+        self.assertIn('width="760"', (ROOT / "README.md").read_text(encoding="utf-8"))
         self.assertFalse((ROOT / "assets/bitpro-paper-performance.svg").exists())
         self.assertFalse((ROOT / "scripts/render_strategy_card.py").exists())
         self.assertFalse((ROOT / "strategy-card/example-performance.json").exists())
