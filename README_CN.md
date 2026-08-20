@@ -54,7 +54,7 @@
 - **BitPro · 私有产品**：数字资产研究平台，覆盖交易所行情、策略版本、异步回测、仿真、受控执行与监控
 
 <p align="center">
-  <a href="https://shadowell.github.io/Shadowell/strategy/"><img src="./assets/bitpro-paper-performance.png" alt="打开 BitPro Paper 实时指标页" width="760" /></a><br />
+  <a href="https://shadowell.github.io/Shadowell/strategy/"><img src="./assets/bitpro-paper-performance.png" alt="打开 BitPro Paper 实时指标页" width="680" /></a><br />
   <sub>Paper 实时指标 · 每 60 秒刷新 · 点击卡片打开动态页面</sub>
 </p>
 

@@ -148,8 +148,8 @@ function animateCurve(element) {
 function renderCurves(data) {
   const equity = data.equity_curve.map((point) => Number(point.value));
   const drawdown = data.drawdown_curve.map((point) => Number(point.value_pct));
-  const equityPoints = buildPolylinePoints(equity, 1000, 175);
-  const drawdownPoints = translatePoints(buildPolylinePoints(drawdown, 1000, 48), 202);
+  const equityPoints = buildPolylinePoints(equity, 1000, 96);
+  const drawdownPoints = translatePoints(buildPolylinePoints(drawdown, 1000, 28), 124);
   const equityCurve = document.querySelector('#equity-curve');
   const equityFill = document.querySelector('#equity-fill-line');
   const drawdownCurve = document.querySelector('#drawdown-curve');

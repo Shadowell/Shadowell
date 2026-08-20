@@ -7,9 +7,6 @@
     <meta name="description" content="Live, read-only BitPro Paper strategy telemetry." />
     <title>BitPro Paper Telemetry · Shadowell</title>
     <link rel="icon" href="data:," />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
@@ -22,20 +19,17 @@
       <section id="dashboard" class="telemetry-shell" aria-live="polite" aria-busy="true">
         <header class="telemetry-head">
           <div class="brand-lockup">
-            <p class="eyebrow">LIVE STRATEGY EVIDENCE</p>
-            <h1>BITPRO <span>/ PAPER PERFORMANCE</span></h1>
-            <p class="subhead">Verified simulation metrics · refreshed every 60 seconds</p>
+            <div class="brand-line">
+              <h1>BITPRO <span>/ PAPER PERFORMANCE</span></h1>
+              <span class="paper-chip">PAPER</span>
+            </div>
+            <p id="symbols" class="symbols">Loading public market scope…</p>
           </div>
           <div class="status-stack">
             <div class="status-pill"><span id="status-dot" class="status-dot"></span><span id="status-label">CONNECTING</span></div>
             <p id="as-of" class="timestamp">Waiting for verified data</p>
           </div>
         </header>
-
-        <div class="scope-row">
-          <span class="paper-chip">PAPER TRADING</span>
-          <p id="symbols" class="symbols">Loading public market scope…</p>
-        </div>
 
         <section class="hero-metrics" aria-label="Primary performance metrics">
           <article class="hero-metric">
@@ -71,7 +65,7 @@
           </div>
           <div class="chart-stage">
             <div class="grid-lines" aria-hidden="true"></div>
-            <svg viewBox="0 0 1000 260" preserveAspectRatio="none" role="img" aria-label="Paper equity and drawdown curves">
+            <svg viewBox="0 0 1000 160" preserveAspectRatio="none" role="img" aria-label="Paper equity and drawdown curves">
               <defs>
                 <linearGradient id="equity-fill" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#39e6b3" stop-opacity=".28" /><stop offset="1" stop-color="#39e6b3" stop-opacity="0" /></linearGradient>
               </defs>

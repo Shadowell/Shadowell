@@ -63,8 +63,9 @@ class StrategyDashboardPageTests(unittest.TestCase):
         self.assertIn("@media (max-width: 760px)", css)
         self.assertIn("metric-value--flash", css)
         self.assertIn("scan-beacon", css)
-        self.assertIn("--up: #ff4d6d", css.lower())
-        self.assertIn("--down: #20c997", css.lower())
+        self.assertIn("--up: #ff1744", css.lower())
+        self.assertIn("--down: #00c853", css.lower())
+        self.assertIn("font-family: inter, system-ui", css.lower())
         self.assertIn("max-width: 1080px", css)
 
     def test_pages_source_disables_jekyll_processing(self) -> None:
@@ -98,8 +99,9 @@ class StrategyDashboardPageTests(unittest.TestCase):
             width, height = struct.unpack(">II", handle.read(8))
         self.assertEqual(length, 13)
         self.assertGreaterEqual(width, 1000)
-        self.assertGreaterEqual(width / height, 1.65)
-        self.assertIn('width="760"', (ROOT / "README.md").read_text(encoding="utf-8"))
+        self.assertLessEqual(height, 300)
+        self.assertGreaterEqual(width / height, 3.6)
+        self.assertIn('width="680"', (ROOT / "README.md").read_text(encoding="utf-8"))
         self.assertFalse((ROOT / "assets/bitpro-paper-performance.svg").exists())
         self.assertFalse((ROOT / "scripts/render_strategy_card.py").exists())
         self.assertFalse((ROOT / "strategy-card/example-performance.json").exists())
