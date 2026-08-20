@@ -1,75 +1,45 @@
-# GitHub Paper Strategy Card Design
+# GitHub Paper Strategy Dashboard Design
 
 ## Objective
 
-Add a reviewable BitPro Paper-strategy performance card to the bilingual GitHub profile README. The card must support changing the backing Paper instance without changing its public URL, while never displaying the strategy name or internal instance ID.
+Place a reviewable BitPro Paper-performance preview directly below the BitPro project entry in both profile READMEs. The preview links to a responsive GitHub Pages dashboard that loads real public JSON from BitPro and animates metric changes without exposing internal strategy identity.
 
-## Public presentation
+## Presentation
 
-- Display `BITPRO / PAPER PERFORMANCE`, an explicit `PAPER TRADING` label, running/data state, public market symbols, and the last update time.
-- Display exactly these strategy-level metrics: account equity, total P&L, return, Sharpe, win rate, profit factor, trade count, 30-day maximum drawdown, and runtime.
-- Display equity and drawdown curves when the source provides points.
-- Do not display the strategy name, internal strategy ID, Paper instance ID, positions, orders, signals, strategy parameters, or the ID-switching mechanism.
-- State whether fees and slippage are included, and show the Paper-performance risk disclaimer.
+- The README shows a captured preview from the deployed dashboard because GitHub README sanitization does not permit an interactive iframe or JavaScript.
+- The preview links to `https://shadowell.github.io/Shadowell/strategy/`.
+- The live page shows Paper status, public symbols, data time, account equity, total P&L, return, Sharpe, win rate, profit factor, trade count, 30-day maximum drawdown, runtime, equity and drawdown curves.
+- Numbers count from the previous value to the new value, metrics enter in sequence, curves draw on refresh, and the latest equity point carries a subtle scanning beacon.
+- Reduced-motion users receive the same information without sustained animation.
+- Strategy name, strategy ID, Paper instance ID, positions, orders, signals, source code and parameters never appear.
 
-## Strategy switching
+## BitPro data contract and switching
 
-The public image URL is stable:
+The page reads one stable alias:
 
 ```text
-GET https://bitpro.notenap.com/api/public/v1/strategy-cards/github-profile.svg
+GET https://bitpro.notenap.com/api/public/v1/strategy-cards/github-profile
 ```
 
-BitPro owns a protected mapping from the public alias `github-profile` to an internal Paper instance ID. Changing the mapped instance changes the card data without modifying the Shadowell README and without exposing the ID publicly.
+BitPro returns JSON with `schema_version`, `state`, `mode`, `data` and `as_of`. `data` is present only for a valid current Paper snapshot. The protected administrator route below changes the backing strategy without changing Shadowell code, Pages URL or README:
 
-## BitPro interface contract
-
-The public SVG endpoint must return:
-
-- `Content-Type: image/svg+xml; charset=utf-8`
-- `Cache-Control: no-cache, max-age=60`
-- `ETag` based on the metric snapshot
-- `X-Strategy-Card-State: ok | stale | unavailable | not-paper`
-
-The endpoint renders from an internal snapshot with these fields:
-
-```json
-{
-  "schema_version": 1,
-  "mode": "paper",
-  "status": "running",
-  "currency": "USDT",
-  "account_equity": 102.42,
-  "total_pnl": 2.42,
-  "return_pct": 2.42,
-  "sharpe": 0.25,
-  "win_rate_pct": 51.9,
-  "profit_factor": 1.13,
-  "trade_count": 54,
-  "max_drawdown_30d_pct": 11.4,
-  "runtime_seconds": 110640,
-  "symbols": ["BTC/USDT:USDT", "ETH/USDT:USDT"],
-  "equity_curve": [{"at": "2026-08-19T00:00:00Z", "value": 100.0}],
-  "drawdown_curve": [{"at": "2026-08-19T00:00:00Z", "value_pct": 0.0}],
-  "includes_fees": true,
-  "includes_slippage": true,
-  "as_of": "2026-08-20T00:00:00Z"
-}
+```text
+PUT https://bitpro.notenap.com/api/v2/settings/public-strategy-cards/github-profile
+{"strategy_id": 441}
 ```
 
-BitPro must reject or render a safe non-performance state when the mapped source is missing, is not Paper, lacks required fields, or is stale. It must not reuse the previous successful metrics in those states.
+BitPro validates that the target strategy exists and owns a current Paper session before replacing the mapping. A failed switch preserves the previous mapping. The public response never includes the configured ID.
 
-## Shadowell implementation
+## Failure and freshness
 
-- Keep a JSON Schema for the snapshot payload.
-- Provide a dependency-free Python renderer that validates and escapes input, computes the display runtime, and emits the approved SVG layout.
-- Store a screenshot-derived example payload without a strategy name or ID.
-- Generate a local SVG preview and embed it in both READMEs for review.
-- Do not push the implementation. The local preview is not described as real-time. After BitPro deploys the public SVG endpoint, replace the local image source with the stable URL and verify GitHub rendering before publishing.
+- The page refreshes every 60 seconds with `cache: no-store`.
+- `stale`, `unavailable`, `not-paper`, malformed JSON and request failures clear all previous metrics and display a safe empty state.
+- The public page identifies itself as Paper Trading and includes the historical-performance disclaimer.
+- Fees and slippage disclosure comes from the API response.
 
 ## Verification
 
-- Unit tests cover a valid payload, missing metrics, non-Paper mode, stale data, escaping, and absence of strategy names/IDs from SVG output.
-- The generated SVG parses as XML and contains all nine metric labels.
-- README image references resolve locally.
-- Git diff contains only strategy-card implementation and profile integration files.
+- Node tests cover payload normalization, metric formatting, chart coordinates and numeric easing.
+- Python tests cover semantic page structure, mobile styles and reduced-motion support.
+- Browser QA covers desktop and 390px layouts, live API loading, console/network state and screenshots from real deployed data.
+- README placement is checked in both languages, and the preview must link to the live Pages dashboard.

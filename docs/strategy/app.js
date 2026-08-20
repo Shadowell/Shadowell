@@ -49,6 +49,14 @@ export function formatMetric(field, value) {
   return number.toFixed(2);
 }
 
+export function formatSymbols(symbols, limit = 10) {
+  const values = Array.isArray(symbols) ? symbols.filter(Boolean) : [];
+  const visible = values.slice(0, Math.max(1, limit));
+  const remaining = values.length - visible.length;
+  if (remaining > 0) visible.push(`+${remaining} MORE MARKET${remaining === 1 ? '' : 'S'}`);
+  return visible.join('  ·  ');
+}
+
 export function buildPolylinePoints(values, width, height) {
   if (!Array.isArray(values) || values.length === 0) return '';
   const finite = values.map(Number).filter(Number.isFinite);
@@ -201,7 +209,7 @@ function renderDashboard(view) {
   document.querySelector('#empty-state').hidden = true;
   document.querySelector('#status-label').textContent = data.status.toUpperCase();
   document.querySelector('#as-of').textContent = `VERIFIED ${readableTimestamp(view.asOf)}`;
-  document.querySelector('#symbols').textContent = data.symbols.join('  ·  ');
+  document.querySelector('#symbols').textContent = formatSymbols(data.symbols);
   document.querySelector('#cost-model').textContent = data.includes_fees && data.includes_slippage
     ? 'FEES + SLIPPAGE MODELED'
     : 'COST MODEL PARTIALLY AVAILABLE';

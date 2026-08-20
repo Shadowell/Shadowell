@@ -5,6 +5,7 @@ import {
   buildPolylinePoints,
   formatMetric,
   formatRuntime,
+  formatSymbols,
   normalizeCardPayload,
   tweenValue,
 } from '../docs/strategy/app.js';
@@ -68,6 +69,12 @@ test('formats runtime and generates bounded chart points', () => {
   assert.equal(formatMetric('trade_count', 54), '54');
   assert.equal(buildPolylinePoints([100, 102.4], 100, 40), '0.00,40.00 100.00,0.00');
   assert.equal(buildPolylinePoints([], 100, 40), '');
+});
+
+
+test('summarizes large public market scopes without pushing metrics below the fold', () => {
+  assert.equal(formatSymbols(['BTC', 'ETH', 'SOL'], 2), 'BTC  ·  ETH  ·  +1 MORE MARKET');
+  assert.equal(formatSymbols(['BTC', 'ETH'], 10), 'BTC  ·  ETH');
 });
 
 
