@@ -172,10 +172,17 @@ h1 span { margin-left: 7px; color: #91a4b6; font-weight: 500; }
 
 .symbols { max-width: 760px; overflow: hidden; margin: 4px 0 0; color: #71869a; font-family: var(--mono); font-size: 6px; text-overflow: ellipsis; white-space: nowrap; }
 
+.content-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 48fr) minmax(0, 52fr);
+  border-top: 1px solid var(--line);
+}
+
+.metrics-panel { min-width: 0; border-right: 1px solid var(--line); }
+
 .hero-metrics {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  border-top: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
   background: rgba(3, 10, 16, .42);
 }
@@ -208,14 +215,16 @@ h1 span { margin-left: 7px; color: #91a4b6; font-weight: 500; }
 .metric-value--flash { animation: value-flash 540ms ease-out; }
 .metric-unit { display: block; margin-top: 3px; color: #52697d; font-family: var(--mono); font-size: 5px; letter-spacing: .1em; }
 
-.detail-grid { display: grid; grid-template-columns: repeat(6, 1fr); }
-.detail-metric { min-width: 0; padding: 5px 10px 6px; opacity: 0; animation: metric-enter 420ms both; animation-delay: calc(var(--enter-order) * 35ms + 60ms); }
+.detail-grid { display: grid; grid-template-columns: repeat(3, 1fr); }
+.detail-metric { min-width: 0; padding: 3px 8px; opacity: 0; animation: metric-enter 420ms both; animation-delay: calc(var(--enter-order) * 35ms + 60ms); }
 .detail-metric + .detail-metric { border-left: 1px solid var(--line); }
-.detail-metric span { display: block; min-height: 10px; color: var(--muted); font-family: var(--mono); font-size: 5px; line-height: 1.2; letter-spacing: .06em; }
-.detail-metric strong { display: block; overflow: hidden; color: #c9d7e2; font-family: var(--display); font-size: clamp(12px, 1.4vw, 15px); font-weight: 700; font-variant-numeric: tabular-nums; text-overflow: ellipsis; }
+.detail-metric:nth-child(4) { border-left: 0; }
+.detail-metric:nth-child(n + 4) { border-top: 1px solid var(--line); }
+.detail-metric span { display: block; min-height: 7px; color: var(--muted); font-family: var(--mono); font-size: 5px; line-height: 1.1; letter-spacing: .05em; }
+.detail-metric strong { display: block; overflow: hidden; color: #c9d7e2; font-family: var(--display); font-size: clamp(11px, 1.2vw, 13px); font-weight: 700; line-height: 1.1; font-variant-numeric: tabular-nums; text-overflow: ellipsis; }
 .detail-metric.risk strong { color: var(--down); }
 
-.chart-panel { border-top: 1px solid var(--line); background: rgba(4, 12, 19, .55); }
+.chart-panel { min-width: 0; background: rgba(4, 12, 19, .55); }
 .chart-head { display: flex; align-items: center; justify-content: space-between; padding: 4px 14px 3px; }
 .chart-kicker { margin-bottom: 1px; font-size: 5px; }
 .chart-head h2 { margin: 0; font-family: var(--display); font-size: 10px; font-weight: 700; }
@@ -227,7 +236,7 @@ h1 span { margin-left: 7px; color: #91a4b6; font-weight: 500; }
 .legend-equity::before { background: var(--performance); }
 .legend-drawdown::before { background: repeating-linear-gradient(90deg, var(--down) 0 5px, transparent 5px 8px); }
 
-.chart-stage { position: relative; height: 68px; margin: 0 14px; overflow: hidden; border: 1px solid #172838; background: #07111a; }
+.chart-stage { position: relative; height: 58px; margin: 0 14px; overflow: hidden; border: 1px solid #172838; background: #07111a; }
 .grid-lines { position: absolute; inset: 0; background-image: linear-gradient(rgba(93, 123, 148, .12) 1px, transparent 1px), linear-gradient(90deg, rgba(93, 123, 148, .08) 1px, transparent 1px); background-size: 100% 25%, 10% 100%; }
 .chart-stage svg { position: absolute; inset: 5px 8px; width: calc(100% - 16px); height: calc(100% - 10px); overflow: visible; }
 .curve { fill: none; vector-effect: non-scaling-stroke; stroke-linecap: round; stroke-linejoin: round; }
@@ -243,9 +252,7 @@ h1 span { margin-left: 7px; color: #91a4b6; font-weight: 500; }
 .empty-code { color: var(--warning); font-size: 10px; letter-spacing: .15em; }
 .empty-state h2 { margin: 16px 0 10px; font-family: var(--display); font-size: 28px; }
 .empty-state p { margin: 0; color: var(--muted); font-size: 12px; line-height: 1.6; }
-.telemetry-shell[data-state]:not([data-state="ok"]) .hero-metrics,
-.telemetry-shell[data-state]:not([data-state="ok"]) .detail-grid,
-.telemetry-shell[data-state]:not([data-state="ok"]) .chart-panel { display: none; }
+.telemetry-shell[data-state]:not([data-state="ok"]) .content-grid { display: none; }
 
 .disclosure { display: flex; justify-content: space-between; padding: 4px 14px; border-top: 1px solid var(--line); color: #506679; font-family: var(--mono); font-size: 5px; letter-spacing: .06em; }
 
@@ -256,9 +263,7 @@ h1 span { margin-left: 7px; color: #91a4b6; font-weight: 500; }
 @keyframes beacon-breathe { 50% { r: 9px; opacity: .58; } }
 
 @media (max-width: 900px) {
-  .detail-grid { grid-template-columns: repeat(3, 1fr); }
-  .detail-metric:nth-child(4) { border-left: 0; border-top: 1px solid var(--line); }
-  .detail-metric:nth-child(5), .detail-metric:nth-child(6) { border-top: 1px solid var(--line); }
+  .content-grid { grid-template-columns: minmax(0, 52fr) minmax(0, 48fr); }
 }
 
 @media (max-width: 760px) {
@@ -272,6 +277,8 @@ h1 span { margin-left: 7px; color: #91a4b6; font-weight: 500; }
   .status-stack { min-width: 100px; text-align: right; }
   .scope-row { display: block; padding: 0 18px 12px; }
   .symbols { margin-top: 13px; white-space: normal; line-height: 1.55; }
+  .content-grid { display: block; }
+  .metrics-panel { border-right: 0; }
   .hero-metrics { grid-template-columns: repeat(2, 1fr); }
   .hero-metric { padding: 14px 18px; }
   .hero-metric:first-child { grid-column: 1 / -1; }
@@ -281,6 +288,7 @@ h1 span { margin-left: 7px; color: #91a4b6; font-weight: 500; }
   .detail-grid { grid-template-columns: repeat(3, 1fr); }
   .detail-metric:nth-child(n) { border-top: 1px solid var(--line); }
   .detail-metric:nth-child(3n + 1) { border-left: 0; }
+  .chart-panel { border-top: 1px solid var(--line); }
   .chart-head { padding: 12px 16px 8px; }
   .legend { gap: 10px; }
   .chart-stage { height: 150px; margin: 0 12px; }

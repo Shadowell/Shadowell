@@ -31,7 +31,9 @@
           </div>
         </header>
 
-        <section class="hero-metrics" aria-label="Primary performance metrics">
+        <div class="content-grid">
+          <section class="metrics-panel" aria-label="Paper performance metrics">
+            <section class="hero-metrics" aria-label="Primary performance metrics">
           <article class="hero-metric">
             <span class="metric-label">ACCOUNT EQUITY</span>
             <strong id="account-equity" class="metric-value" data-value="0">—</strong>
@@ -47,18 +49,19 @@
             <strong id="return-pct" class="metric-value" data-value="0">—</strong>
             <span class="metric-unit">CURRENT PAPER SESSION</span>
           </article>
-        </section>
+            </section>
 
-        <section class="detail-grid" aria-label="Supporting metrics">
+            <section class="detail-grid" aria-label="Supporting metrics">
           <article class="detail-metric" style="--enter-order: 0"><span>SHARPE</span><strong id="sharpe" data-value="0">—</strong></article>
           <article class="detail-metric" style="--enter-order: 1"><span>WIN RATE</span><strong id="win-rate" data-value="0">—</strong></article>
           <article class="detail-metric" style="--enter-order: 2"><span>PROFIT FACTOR</span><strong id="profit-factor" data-value="0">—</strong></article>
           <article class="detail-metric" style="--enter-order: 3"><span>TRADES</span><strong id="trade-count" data-value="0">—</strong></article>
           <article class="detail-metric risk" style="--enter-order: 4"><span>30D MAX DRAWDOWN</span><strong id="max-drawdown" data-value="0">—</strong></article>
           <article class="detail-metric" style="--enter-order: 5"><span>RUNTIME</span><strong id="runtime" data-value="0">—</strong></article>
-        </section>
+            </section>
+          </section>
 
-        <section class="chart-panel" aria-label="Equity and drawdown chart">
+          <section class="chart-panel" aria-label="Equity and drawdown chart">
           <div class="chart-head">
             <div><span class="chart-kicker">EQUITY / DRAWDOWN</span><h2>Session trajectory</h2></div>
             <div class="legend"><span class="legend-equity">EQUITY</span><span class="legend-drawdown">DRAWDOWN</span></div>
@@ -76,7 +79,8 @@
             </svg>
           </div>
           <div class="chart-foot"><span id="cost-model">Cost model pending</span><span>REFRESH / 60 SEC</span></div>
-        </section>
+          </section>
+        </div>
 
         <section id="empty-state" class="empty-state" hidden>
           <span class="empty-code">DATA / UNAVAILABLE</span>
