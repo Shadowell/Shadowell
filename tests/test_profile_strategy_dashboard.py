@@ -90,6 +90,10 @@ class StrategyDashboardPageTests(unittest.TestCase):
             self.assertLess(bitpro_at, dashboard_at)
             self.assertLess(dashboard_at, preview_at)
             self.assertLess(preview_at, following_at)
+            block = text[bitpro_at:following_at]
+            self.assertIn('\n\n  <a href="https://shadowell.github.io/Shadowell/strategy/">', block)
+            self.assertIn('width="100%"', block)
+            self.assertNotIn('<p align="center">', block)
             self.assertNotIn("bitpro-paper-performance.svg", text)
 
     def test_profile_preview_is_a_real_png_and_svg_renderer_is_removed(self) -> None:
@@ -103,9 +107,9 @@ class StrategyDashboardPageTests(unittest.TestCase):
             width, height = struct.unpack(">II", handle.read(8))
         self.assertEqual(length, 13)
         self.assertGreaterEqual(width, 1000)
-        self.assertLessEqual(height, 210)
+        self.assertGreaterEqual(width, 2000)
         self.assertGreaterEqual(width / height, 5.1)
-        self.assertIn('width="680"', (ROOT / "README.md").read_text(encoding="utf-8"))
+        self.assertIn('width="100%"', (ROOT / "README.md").read_text(encoding="utf-8"))
         self.assertFalse((ROOT / "assets/bitpro-paper-performance.svg").exists())
         self.assertFalse((ROOT / "scripts/render_strategy_card.py").exists())
         self.assertFalse((ROOT / "strategy-card/example-performance.json").exists())
