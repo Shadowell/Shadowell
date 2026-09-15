@@ -29,6 +29,70 @@ class StructureParser(HTMLParser):
 
 
 class StrategyDashboardPageTests(unittest.TestCase):
+    def test_bilingual_profiles_lead_with_big_data_then_research_then_outcomes(self) -> None:
+        profiles = (
+            (
+                "README_CN.md",
+                "**大数据开发工程师 · AI Agent 与量化系统研究者**",
+                "## 主业｜大数据开发",
+                "## 副业研究｜AI Agent、量化与 AI 产品",
+                "## 代表成果与能力证明",
+            ),
+            (
+                "README.md",
+                "**Big Data Engineer · AI Agent & Quant Systems Researcher**",
+                "## Primary Career | Big Data Engineering",
+                "## Ongoing Side Research | AI Agents, Quant, and AI Products",
+                "## Selected Outcomes & Capability Evidence",
+            ),
+        )
+        for name, title, primary, research, outcomes in profiles:
+            text = (ROOT / name).read_text(encoding="utf-8")
+            self.assertIn(title, text)
+            self.assertLess(text.index(primary), text.index(research))
+            self.assertLess(text.index(research), text.index(outcomes))
+
+    def test_bilingual_profiles_preserve_core_results_and_product_inventory(self) -> None:
+        shared_markers = (
+            "600+",
+            "1000+",
+            "HyperTrade",
+            "HyperARC",
+            "Alpha",
+            "StockPro",
+            "QuantBase",
+            "BitPro",
+            "Zora",
+            "FrameLab",
+            "配料君",
+            "野钓潮汐",
+        )
+        for name in ("README.md", "README_CN.md"):
+            text = (ROOT / name).read_text(encoding="utf-8")
+            for marker in shared_markers:
+                self.assertIn(marker, text, f"{marker} missing from {name}")
+
+    def test_readme_captions_distinguish_static_preview_from_dynamic_dashboard(self) -> None:
+        captions = (
+            (
+                "README_CN.md",
+                "静态预览",
+                "点击进入动态 Paper 页面（每 60 秒刷新）",
+                "Paper 实时指标 · 每 60 秒刷新",
+            ),
+            (
+                "README.md",
+                "Static preview",
+                "dynamic Paper dashboard (refreshed every 60 seconds)",
+                "Live Paper telemetry · refreshed every 60 seconds",
+            ),
+        )
+        for name, static_label, dynamic_label, misleading_copy in captions:
+            text = (ROOT / name).read_text(encoding="utf-8")
+            self.assertIn(static_label, text)
+            self.assertIn(dynamic_label, text)
+            self.assertNotIn(misleading_copy, text)
+
     def test_page_contains_live_metrics_curves_and_accessible_states(self) -> None:
         html = (ROOT / "docs/strategy/index.html").read_text(encoding="utf-8")
         parser = StructureParser()

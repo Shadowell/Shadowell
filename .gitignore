@@ -1,0 +1,17 @@
+.DS_Store
+Thumbs.db
+*.tmp
+*.swp
+*.log
+.env*
+.idea/
+.vscode/
+__pycache__/
+*.pyc
+.venv/
+venv/
+node_modules/
+dist/
+build/
+.playwright-cli/
+output/playwright/
