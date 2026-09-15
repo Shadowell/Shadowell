@@ -13,6 +13,8 @@
 在主业之外，我持续研究 **AI Agent、量化系统和端到端 AI 产品**。这些工作用于探索模型如何接入
 真实数据与工具，并通过持久状态、证据、评测、权限、人工确认和运行验证形成可持续迭代的系统。
 
+**熟悉的市场：永续合约、A 股。量化研究尤其聚焦永续合约**，将数据工程能力用于行情处理、策略验证、模拟交易与风险监控。
+
 [English](README.md) · [邮箱](mailto:jie.f@outlook.com)
 
 ## 主业｜大数据开发
@@ -31,8 +33,9 @@
 
 | 在研方向 | 当前工作 |
 | --- | --- |
+| **永续合约量化研究 · 重点** | 多空策略、交易所行情、回测与 Paper 验证；关注杠杆、保证金、资金费率、手续费与滑点对策略表现的影响 |
+| **A 股量化研究** | 行情与数据质量、选股与策略研究、可复现回测、模拟交易和市场监控 |
 | **AI Agent 与自主研究** | 受治理运行时、工具编排、持久目标与证据、程序合成、评测和失败恢复 |
-| **量化研究基础设施** | 真实行情、可复现研究、回测、Paper Trading、信号审计、风险门禁和监控 |
 | **AI 产品与运营系统** | AI 视频生产、GPU/模型接入、内容运营、人工审核、测试、部署与可观测性 |
 
 这些方向仍在持续研究和迭代。我会明确区分本地验证、研究实验、Paper、比赛结果与生产效果，
@@ -74,18 +77,23 @@
 Agent 工程能力：`任务规划` · `Tool Calling` · `MCP` · `JSON Schema` · `状态机` ·
 `记忆` · `评测` · `人工确认` · `失败恢复` · `审计`
 
-### 量化研究基础设施
+### 量化研究｜永续合约与 A 股
 
-- [Alpha](https://github.com/Shadowell/Alpha)：开源 A 股研究系统，包含可信行情接入、可复现工作流、CI 与公开 Release
-- [StockPro](https://github.com/Shadowell/StockPro)：实时 A 股研究与监控平台，覆盖数据质量、策略生命周期、回测、Paper Trading 与运行检查
-- [QuantBase](https://github.com/Shadowell/QuantBase)：覆盖真实行情、Backtrader 验证、模拟交易、信号审计与风险优先研发的研究工作台
-- **BitPro · 私有产品**：数字资产研究平台，覆盖交易所行情、策略版本、异步回测、仿真、受控执行与监控
+**永续合约是我的量化研究重点，A 股是另一条熟悉且持续投入的研究方向。**
+
+- **BitPro · 私有产品**：以**永续合约研究与模拟交易**为重点的数字资产研究平台，覆盖交易所行情、多空策略、策略版本、异步回测、Paper 验证、受控执行与监控
 
   <a href="https://shadowell.github.io/Shadowell/strategy/"><img src="./assets/bitpro-paper-performance.png" alt="打开 BitPro Paper 动态指标页" width="100%" /></a><br />
   <sub>Paper 收益快照 · 每 10 分钟定时更新（调度与图片缓存可能延迟） · 点击进入动态页面</sub>
 
 我把行情数据质量、计算可复现性、成本、成交明细和审计记录视为研究前提；展示研究证据，
 不包装未经验证的收益。
+
+**A 股研究与工程实践：**
+
+- [Alpha](https://github.com/Shadowell/Alpha)：开源 A 股研究系统，包含可信行情接入、可复现工作流、CI 与公开 Release
+- [StockPro](https://github.com/Shadowell/StockPro)：实时 A 股研究与监控平台，覆盖数据质量、策略生命周期、回测、Paper Trading 与运行检查
+- [QuantBase](https://github.com/Shadowell/QuantBase)：覆盖真实行情、Backtrader 验证、模拟交易、信号审计与风险优先研发的研究工作台
 
 ### AI 产品与独立产品
 
@@ -117,5 +125,5 @@ Agent 工程能力：`任务规划` · `Tool Calling` · `MCP` · `JSON Schema` 
 
 - 可靠的离线、实时与数据治理体系，以及面向模型和 Agent 工作负载的数据底座
 - 具备证据、评测、记忆和安全工具调用的受治理 Agent 运行时
-- 基于真实数据、可复现计算与 Paper 优先验证的量化研究
+- 永续合约多空策略与成本、风险研究，以及 A 股策略和数据研究，以真实数据与 Paper 验证推进
 - 包含人工审核和可观测交付的 AI 视频与内容生产系统

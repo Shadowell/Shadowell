@@ -16,6 +16,8 @@ AI products**. I explore how models can work with real data and tools, then add 
 evidence, evaluation, permissions, human approval, and runtime verification so the systems can be
 iterated responsibly.
 
+**Markets I know: perpetual futures and Chinese A-shares. Perpetual futures are my main quantitative research focus**, connecting data engineering with market-data processing, strategy validation, Paper trading, and risk monitoring.
+
 ## Primary Career | Big Data Engineering
 
 | Core area | Capability scope |
@@ -32,8 +34,9 @@ Core stack: `Flink` · `Kafka` · `Spark` · `Hive` · `Hadoop` · `HBase` · `A
 
 | Research direction | Current work |
 | --- | --- |
+| **Perpetual Futures Research · Primary Quant Focus** | Long/short strategies, exchange data, backtesting, and Paper validation; studying the effects of leverage, margin, funding rates, fees, and slippage |
+| **Chinese A-share Research** | Market data and data quality, stock selection and strategy research, reproducible backtesting, Paper trading, and market monitoring |
 | **AI Agents & Autonomous Research** | Governed runtimes, tool orchestration, persistent goals and evidence, program synthesis, evaluation, and recovery |
-| **Quantitative Research Infrastructure** | Real market data, reproducible research, backtesting, Paper trading, signal audit, risk gates, and monitoring |
 | **AI Products & Operations** | AI video production, GPU/model integration, content operations, human review, testing, deployment, and observability |
 
 These tracks remain active research and ongoing iteration. I distinguish local validation, research
@@ -78,18 +81,23 @@ experiments.
 Agent engineering capabilities: `Planning` · `Tool Calling` · `MCP` · `JSON Schema` ·
 `State Machines` · `Memory` · `Evaluation` · `Human Approval` · `Recovery` · `Audit`
 
-### Quantitative Research Infrastructure
+### Quantitative Research | Perpetual Futures & Chinese A-shares
 
-- [Alpha](https://github.com/Shadowell/Alpha) — Open-source A-share research system with trusted market-data ingestion, reproducible workflows, CI, and a public release
-- [StockPro](https://github.com/Shadowell/StockPro) — Real-time A-share research and monitoring platform with data quality, strategy lifecycle, backtesting, Paper trading, and operational checks
-- [QuantBase](https://github.com/Shadowell/QuantBase) — Research workbench for real market data, Backtrader validation, Paper trading, signal audit, and risk-first development
-- **BitPro · Private Product** — Digital-asset research platform covering exchange data, strategy versions, asynchronous backtests, simulation, controlled execution, and monitoring
+**Perpetual futures are my main quantitative research focus; Chinese A-shares are another familiar market I continue to research.**
+
+- **BitPro · Private Product** — Digital-asset research platform focused on **perpetual futures research and Paper trading**, covering exchange data, long/short strategies, strategy versions, asynchronous backtests, Paper validation, controlled execution, and monitoring
 
   <a href="https://shadowell.github.io/Shadowell/strategy/"><img src="./assets/bitpro-paper-performance.png" alt="Open the dynamic BitPro Paper telemetry dashboard" width="100%" /></a><br />
   <sub>Paper performance snapshot · scheduled every 10 minutes (scheduling and image caching may delay updates) · click for the dynamic dashboard</sub>
 
 I treat market-data quality, reproducible computation, costs, fills, and audit trails as prerequisites.
 Strategy research is presented as research evidence—not as unverified return claims.
+
+**Chinese A-share research and engineering:**
+
+- [Alpha](https://github.com/Shadowell/Alpha) — Open-source A-share research system with trusted market-data ingestion, reproducible workflows, CI, and a public release
+- [StockPro](https://github.com/Shadowell/StockPro) — Real-time A-share research and monitoring platform with data quality, strategy lifecycle, backtesting, Paper trading, and operational checks
+- [QuantBase](https://github.com/Shadowell/QuantBase) — Research workbench for real market data, Backtrader validation, Paper trading, signal audit, and risk-first development
 
 ### AI Products & Independent Products
 
@@ -125,5 +133,5 @@ Both products are continuously operated and iterated—not one-off demos.
 
 - Reliable batch, streaming, and data-governance systems, including data foundations for model and Agent workloads
 - Governed Agent runtimes with evidence, evaluation, memory, and safe tool use
-- Real-data quantitative research with reproducible computation and Paper-first validation
+- Perpetual futures long/short strategies, costs, and risk, alongside A-share strategy and data research using real data and Paper validation
 - AI video and content-production systems with human review and observable delivery
