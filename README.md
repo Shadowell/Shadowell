@@ -84,6 +84,7 @@ Agent engineering capabilities: `Planning` · `Tool Calling` · `MCP` · `JSON S
 ### Kaggle Competition Research
 
 - **[RSNA Knee Abnormality Detection](https://www.kaggle.com/competitions/rsna-knee-abnormality-detection)** — An ongoing medical-imaging competition focused on multimodal knee abnormality detection using MRI scans and radiology reports.
+- **[Kaggriculture](https://www.kaggle.com/competitions/kaggriculture)** — An ongoing farming strategy competition focused on resource allocation, market decisions, and agent strategy evaluation.
 
 ### Quantitative Research | Perpetual Futures & Chinese A-shares
 

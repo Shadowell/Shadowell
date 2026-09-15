@@ -80,6 +80,7 @@ Agent 工程能力：`任务规划` · `Tool Calling` · `MCP` · `JSON Schema` 
 ### Kaggle 竞赛研究
 
 - **[RSNA Knee Abnormality Detection](https://www.kaggle.com/competitions/rsna-knee-abnormality-detection)**：正在参与的医学影像竞赛，围绕膝关节 MRI 与影像报告的多模态异常检测开展研究。
+- **[Kaggriculture](https://www.kaggle.com/competitions/kaggriculture)**：正在参与的农业经营策略竞赛，围绕资源分配、市场决策与 Agent 策略评测开展研究。
 
 ### 量化研究｜永续合约与 A 股
 
