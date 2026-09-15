@@ -76,14 +76,14 @@ class StrategyDashboardPageTests(unittest.TestCase):
         captions = (
             (
                 "README_CN.md",
-                "静态预览",
-                "点击进入动态 Paper 页面（每 60 秒刷新）",
+                "Paper 收益快照",
+                "每 10 分钟定时更新（调度与图片缓存可能延迟）",
                 "Paper 实时指标 · 每 60 秒刷新",
             ),
             (
                 "README.md",
-                "Static preview",
-                "dynamic Paper dashboard (refreshed every 60 seconds)",
+                "Paper performance snapshot",
+                "scheduled every 10 minutes (scheduling and image caching may delay updates)",
                 "Live Paper telemetry · refreshed every 60 seconds",
             ),
         )

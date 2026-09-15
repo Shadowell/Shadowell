@@ -86,7 +86,7 @@ Agent engineering capabilities: `Planning` · `Tool Calling` · `MCP` · `JSON S
 - **BitPro · Private Product** — Digital-asset research platform covering exchange data, strategy versions, asynchronous backtests, simulation, controlled execution, and monitoring
 
   <a href="https://shadowell.github.io/Shadowell/strategy/"><img src="./assets/bitpro-paper-performance.png" alt="Open the dynamic BitPro Paper telemetry dashboard" width="100%" /></a><br />
-  <sub>Static preview · click for the dynamic Paper dashboard (refreshed every 60 seconds) · research evidence, not live-trading returns</sub>
+  <sub>Paper performance snapshot · scheduled every 10 minutes (scheduling and image caching may delay updates) · click for the dynamic dashboard</sub>
 
 I treat market-data quality, reproducible computation, costs, fills, and audit trails as prerequisites.
 Strategy research is presented as research evidence—not as unverified return claims.

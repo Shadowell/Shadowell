@@ -1,5 +1,5 @@
 export const API_URL = 'https://bitpro.notenap.com/api/public/v1/strategy-cards/github-profile';
-export const POLL_INTERVAL_MS = 60_000;
+export const POLL_INTERVAL_MS = 600_000;
 
 const NUMBER_FIELDS = [
   'account_equity',

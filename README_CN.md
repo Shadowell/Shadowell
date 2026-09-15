@@ -82,7 +82,7 @@ Agent 工程能力：`任务规划` · `Tool Calling` · `MCP` · `JSON Schema` 
 - **BitPro · 私有产品**：数字资产研究平台，覆盖交易所行情、策略版本、异步回测、仿真、受控执行与监控
 
   <a href="https://shadowell.github.io/Shadowell/strategy/"><img src="./assets/bitpro-paper-performance.png" alt="打开 BitPro Paper 动态指标页" width="100%" /></a><br />
-  <sub>静态预览 · 点击进入动态 Paper 页面（每 60 秒刷新） · 研究证据，非实盘收益</sub>
+  <sub>Paper 收益快照 · 每 10 分钟定时更新（调度与图片缓存可能延迟） · 点击进入动态页面</sub>
 
 我把行情数据质量、计算可复现性、成本、成交明细和审计记录视为研究前提；展示研究证据，
 不包装未经验证的收益。
