@@ -79,6 +79,15 @@ Agent 工程能力：`任务规划` · `Tool Calling` · `MCP` · `JSON Schema` 
 
 ### Kaggle 竞赛研究
 
+截至 **2026-09-15 17:43（北京时间）** 的公开榜单快照；比赛进行中，排名会变化。
+
+| 比赛 | 队伍 | 当前排名 | 榜单分数 |
+| --- | --- | ---: | ---: |
+| [ARC-AGI-2](https://www.kaggle.com/competitions/arc-prize-2026-arc-agi-2/leaderboard) | HyperARC | 542 | 30.56 |
+| [ARC-AGI-3](https://www.kaggle.com/competitions/arc-prize-2026-arc-agi-3/leaderboard) | HyperARC | 2103 | 0.17 |
+| [RSNA Knee Abnormality Detection](https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/leaderboard) | Shadowell888 | 389 | 0.941 |
+| [Kaggriculture](https://www.kaggle.com/competitions/kaggriculture/leaderboard) | Shadowell888 | 1561 | 2001.2 |
+
 - **[RSNA Knee Abnormality Detection](https://www.kaggle.com/competitions/rsna-knee-abnormality-detection)**：正在参与的医学影像竞赛，围绕膝关节 MRI 与影像报告的多模态异常检测开展研究。
 - **[Kaggriculture](https://www.kaggle.com/competitions/kaggriculture)**：正在参与的农业经营策略竞赛，围绕资源分配、市场决策与 Agent 策略评测开展研究。
 

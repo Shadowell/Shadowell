@@ -83,6 +83,15 @@ Agent engineering capabilities: `Planning` · `Tool Calling` · `MCP` · `JSON S
 
 ### Kaggle Competition Research
 
+Public leaderboard snapshot as of **15 September 2026, 17:43 (UTC+8)**. Competitions are ongoing and ranks may change.
+
+| Competition | Team | Current rank | Leaderboard score |
+| --- | --- | ---: | ---: |
+| [ARC-AGI-2](https://www.kaggle.com/competitions/arc-prize-2026-arc-agi-2/leaderboard) | HyperARC | 542 | 30.56 |
+| [ARC-AGI-3](https://www.kaggle.com/competitions/arc-prize-2026-arc-agi-3/leaderboard) | HyperARC | 2103 | 0.17 |
+| [RSNA Knee Abnormality Detection](https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/leaderboard) | Shadowell888 | 389 | 0.941 |
+| [Kaggriculture](https://www.kaggle.com/competitions/kaggriculture/leaderboard) | Shadowell888 | 1561 | 2001.2 |
+
 - **[RSNA Knee Abnormality Detection](https://www.kaggle.com/competitions/rsna-knee-abnormality-detection)** — An ongoing medical-imaging competition focused on multimodal knee abnormality detection using MRI scans and radiology reports.
 - **[Kaggriculture](https://www.kaggle.com/competitions/kaggriculture)** — An ongoing farming strategy competition focused on resource allocation, market decisions, and agent strategy evaluation.
 
