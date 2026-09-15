@@ -97,6 +97,8 @@ Agent 工程能力：`任务规划` · `Tool Calling` · `MCP` · `JSON Schema` 
 
 - **BitPro · 私有产品**：以**永续合约研究与模拟交易**为重点的数字资产研究平台，覆盖交易所行情、多空策略、策略版本、异步回测、Paper 验证、受控执行与监控
 
+  **策略已实盘运行**：Top20 · 微结构多空突破反马丁。下图为该策略的**模拟验证曲线**；实盘当日绩效截至 2026-09-15 17:41（北京时间）为 **+2.12% / +$2.37**（包含归属该策略的未实现盈亏变化）。
+
   <a href="https://shadowell.github.io/Shadowell/strategy/"><img src="./assets/bitpro-paper-performance.png" alt="打开 BitPro Paper 动态指标页" width="100%" /></a><br />
   <sub>Paper 收益快照 · 每 10 分钟定时更新（调度与图片缓存可能延迟） · 点击进入动态页面</sub>
 

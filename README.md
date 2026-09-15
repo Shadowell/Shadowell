@@ -101,6 +101,8 @@ Public leaderboard snapshot as of **15 September 2026, 17:43 (UTC+8)**. Competit
 
 - **BitPro · Private Product** — Digital-asset research platform focused on **perpetual futures research and Paper trading**, covering exchange data, long/short strategies, strategy versions, asynchronous backtests, Paper validation, controlled execution, and monitoring
 
+  **Strategy running live**: Top20 microstructure long/short breakout with pyramiding. The chart below shows **Paper validation performance**. Verified live results for 15 September 2026, as of 17:41 (UTC+8): **+2.12% / +$2.37**, including the change in attributed unrealized PnL.
+
   <a href="https://shadowell.github.io/Shadowell/strategy/"><img src="./assets/bitpro-paper-performance.png" alt="Open the dynamic BitPro Paper telemetry dashboard" width="100%" /></a><br />
   <sub>Paper performance snapshot · scheduled every 10 minutes (scheduling and image caching may delay updates) · click for the dynamic dashboard</sub>
 
