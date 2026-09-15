@@ -81,6 +81,10 @@ experiments.
 Agent engineering capabilities: `Planning` · `Tool Calling` · `MCP` · `JSON Schema` ·
 `State Machines` · `Memory` · `Evaluation` · `Human Approval` · `Recovery` · `Audit`
 
+### Kaggle Competition Research
+
+- **[RSNA Knee Abnormality Detection](https://www.kaggle.com/competitions/rsna-knee-abnormality-detection)** — An ongoing medical-imaging competition focused on multimodal knee abnormality detection using MRI scans and radiology reports.
+
 ### Quantitative Research | Perpetual Futures & Chinese A-shares
 
 **Perpetual futures are my main quantitative research focus; Chinese A-shares are another familiar market I continue to research.**

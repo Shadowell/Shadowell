@@ -79,6 +79,23 @@ export function tweenValue(from, to, progress) {
   return Number(from) + (Number(to) - Number(from)) * eased;
 }
 
+export function buildTimedPolylinePoints(points, field, width, height, zeroBaseline = false) {
+  if (!points.length) return '';
+  const times = points.map((point) => Date.parse(point.at));
+  const values = points.map((point) => Number(point[field]));
+  if (![...times, ...values].every(Number.isFinite)) return '';
+  const start = Math.min(...times);
+  const duration = Math.max(...times) - start;
+  const low = Math.min(...values);
+  const high = zeroBaseline ? 0 : Math.max(...values);
+  const span = high - low;
+  return values.map((value, i) => {
+    const x = duration ? (times[i] - start) / duration * width : width / 2;
+    const y = span ? (high - value) / span * height : (zeroBaseline ? 0 : height / 2);
+    return `${x.toFixed(2)},${y.toFixed(2)}`;
+  }).join(' ');
+}
+
 export function performanceTone(value) {
   const number = Number(value) || 0;
   if (number > 0) return 'up';
@@ -148,8 +165,14 @@ function animateCurve(element) {
 function renderCurves(data) {
   const equity = data.equity_curve.map((point) => Number(point.value));
   const drawdown = data.drawdown_curve.map((point) => Number(point.value_pct));
-  const equityPoints = buildPolylinePoints(equity, 1000, 96);
-  const drawdownPoints = translatePoints(buildPolylinePoints(drawdown, 1000, 28), 124);
+  document.querySelector('#equity-high').textContent = equity.length ? Math.max(...equity).toFixed(2) : '—';
+  document.querySelector('#equity-low').textContent = equity.length ? Math.min(...equity).toFixed(2) : '—';
+  document.querySelector('#drawdown-low').textContent = drawdown.length ? `${Math.min(...drawdown).toFixed(1)}%` : '—';
+  const dateLabel = (point) => point ? new Intl.DateTimeFormat('en-GB', {month: 'short', day: '2-digit', hour: '2-digit', minute: '2-digit', timeZone: 'UTC'}).format(new Date(point.at)) + ' UTC' : '—';
+  document.querySelector('#chart-start').textContent = dateLabel(data.equity_curve[0]);
+  document.querySelector('#chart-end').textContent = dateLabel(data.equity_curve.at(-1));
+  const equityPoints = buildTimedPolylinePoints(data.equity_curve, 'value', 1000, 96);
+  const drawdownPoints = translatePoints(buildTimedPolylinePoints(data.drawdown_curve, 'value_pct', 1000, 28, true), 124);
   const equityCurve = document.querySelector('#equity-curve');
   const equityFill = document.querySelector('#equity-fill-line');
   const drawdownCurve = document.querySelector('#drawdown-curve');
@@ -218,7 +241,7 @@ function renderDashboard(view) {
   document.querySelector('#empty-state').hidden = true;
   document.querySelector('#status-label').textContent = data.status.toUpperCase();
   document.querySelector('#as-of').textContent = `VERIFIED ${readableTimestamp(view.asOf)}`;
-  document.querySelector('#symbols').textContent = formatSymbols(data.symbols);
+  document.querySelector('#symbols').textContent = formatSymbols(data.symbols, 4);
   document.querySelector('#cost-model').textContent = data.includes_fees && data.includes_slippage
     ? 'FEES + SLIPPAGE MODELED'
     : 'COST MODEL PARTIALLY AVAILABLE';

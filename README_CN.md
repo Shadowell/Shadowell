@@ -77,6 +77,10 @@
 Agent 工程能力：`任务规划` · `Tool Calling` · `MCP` · `JSON Schema` · `状态机` ·
 `记忆` · `评测` · `人工确认` · `失败恢复` · `审计`
 
+### Kaggle 竞赛研究
+
+- **[RSNA Knee Abnormality Detection](https://www.kaggle.com/competitions/rsna-knee-abnormality-detection)**：正在参与的医学影像竞赛，围绕膝关节 MRI 与影像报告的多模态异常检测开展研究。
+
 ### 量化研究｜永续合约与 A 股
 
 **永续合约是我的量化研究重点，A 股是另一条熟悉且持续投入的研究方向。**

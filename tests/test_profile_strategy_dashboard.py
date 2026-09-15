@@ -134,7 +134,6 @@ class StrategyDashboardPageTests(unittest.TestCase):
         self.assertIn("--down: #00c853", css.lower())
         self.assertIn("font-family: inter, system-ui", css.lower())
         self.assertIn("max-width: 1080px", css)
-        self.assertIn("grid-template-columns: minmax(0, 48fr) minmax(0, 52fr)", css)
 
     def test_pages_source_disables_jekyll_processing(self) -> None:
         self.assertTrue((ROOT / "docs/.nojekyll").exists())
@@ -172,7 +171,7 @@ class StrategyDashboardPageTests(unittest.TestCase):
         self.assertEqual(length, 13)
         self.assertGreaterEqual(width, 1000)
         self.assertGreaterEqual(width, 2000)
-        self.assertGreaterEqual(width / height, 5.1)
+        self.assertGreaterEqual(height, 600)
         self.assertIn('width="100%"', (ROOT / "README.md").read_text(encoding="utf-8"))
         self.assertFalse((ROOT / "assets/bitpro-paper-performance.svg").exists())
         self.assertFalse((ROOT / "scripts/render_strategy_card.py").exists())

@@ -3,6 +3,7 @@ import assert from 'node:assert/strict';
 
 import {
   buildPolylinePoints,
+  buildTimedPolylinePoints,
   formatMetric,
   formatRuntime,
   formatSymbols,
@@ -10,6 +11,16 @@ import {
   performanceTone,
   tweenValue,
 } from '../docs/strategy/app.js';
+
+test('performance chart spaces samples by time and anchors drawdown at zero', () => {
+  const points = [
+    {at: '2026-09-15T00:00:00Z', value: 100, value_pct: -1},
+    {at: '2026-09-15T01:00:00Z', value: 102, value_pct: -2},
+    {at: '2026-09-15T04:00:00Z', value: 101, value_pct: -1},
+  ];
+  assert.equal(buildTimedPolylinePoints(points, 'value', 100, 40), '0.00,40.00 25.00,0.00 100.00,20.00');
+  assert.equal(buildTimedPolylinePoints(points, 'value_pct', 100, 40, true), '0.00,20.00 25.00,40.00 100.00,20.00');
+});
 
 
 const payload = {

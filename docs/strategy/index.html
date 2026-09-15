@@ -56,14 +56,14 @@
           <article class="detail-metric" style="--enter-order: 1"><span>WIN RATE</span><strong id="win-rate" data-value="0">—</strong></article>
           <article class="detail-metric" style="--enter-order: 2"><span>PROFIT FACTOR</span><strong id="profit-factor" data-value="0">—</strong></article>
           <article class="detail-metric" style="--enter-order: 3"><span>TRADES</span><strong id="trade-count" data-value="0">—</strong></article>
-          <article class="detail-metric risk" style="--enter-order: 4"><span>30D MAX DRAWDOWN</span><strong id="max-drawdown" data-value="0">—</strong></article>
+          <article class="detail-metric risk" style="--enter-order: 4"><span>SAMPLED DRAWDOWN</span><strong id="max-drawdown" data-value="0">—</strong></article>
           <article class="detail-metric" style="--enter-order: 5"><span>RUNTIME</span><strong id="runtime" data-value="0">—</strong></article>
             </section>
           </section>
 
           <section class="chart-panel" aria-label="Equity and drawdown chart">
           <div class="chart-head">
-            <div><span class="chart-kicker">EQUITY / DRAWDOWN</span><h2>Session trajectory</h2></div>
+            <div><span class="chart-kicker">EQUITY · USDT</span><h2>Recent performance</h2></div>
             <div class="legend"><span class="legend-equity">EQUITY</span><span class="legend-drawdown">DRAWDOWN</span></div>
           </div>
           <div class="chart-stage">
@@ -75,10 +75,15 @@
               <polyline id="equity-fill-line" class="equity-fill-line" points=""></polyline>
               <polyline id="equity-curve" class="curve curve-equity" points=""></polyline>
               <polyline id="drawdown-curve" class="curve curve-drawdown" points=""></polyline>
-              <circle id="scan-beacon" class="scan-beacon" cx="0" cy="0" r="6"></circle>
+              <circle id="scan-beacon" class="scan-beacon" cx="0" cy="0" r="2"></circle>
             </svg>
+            <span id="equity-high" class="axis-value"></span>
+            <span id="equity-low" class="axis-value"></span>
+            <span class="drawdown-label">DRAWDOWN · 0% BASELINE</span>
+            <span id="drawdown-low" class="axis-value"></span>
           </div>
-          <div class="chart-foot"><span id="cost-model">Cost model pending</span><span>REFRESH / 10 MIN</span></div>
+          <div class="chart-dates"><span id="chart-start"></span><span id="chart-end"></span></div>
+          <div class="chart-foot"><span id="cost-model">Cost model pending</span><span>UPDATE / 10 MIN</span></div>
           </section>
         </div>
 
