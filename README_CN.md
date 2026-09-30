@@ -3,30 +3,29 @@
   <strong>简体中文</strong>
 </p>
 
-# 冯杰
+<p align="center">
+  <a href="https://git.io/typing-svg">
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=00F2FE&center=true&vcenter=true&width=750&lines=%E5%A4%A7%E6%95%B0%E6%8D%AE%E5%BC%80%E5%8F%91%E5%B7%A5%E7%A8%8B%E5%B8%88;%E9%87%8F%E5%8C%96%E7%A0%94%E7%A9%B6%E5%9F%BA%E7%A1%80%E8%AE%BE%E6%96%BD;%E8%87%AA%E4%B8%BB+AI+Agent+%E6%99%B9%E8%83%BD%E4%BD%93;ARC-AGI+%E7%A8%8B%E5%BA%8F%E5%90%88%E6%88%90%E4%B8%8E%E6%8E%A8%E7%90%86" alt="Typing SVG" />
+  </a>
+</p>
 
-**大数据开发工程师 · AI Agent 与量化系统研究者**
+## 关于我
 
-我的主业是大数据开发，拥有 **9 年生产级大数据开发经验**，长期参与 PB 级离线数仓、
-大规模实时计算、任务治理、数据质量与性能优化。
+我是一名专注于**量化研究基础设施、数据 Pipelines 与 AI 驱动交易系统**的**大数据开发工程师**。
 
-在主业之外，我持续研究 **AI Agent、量化系统和端到端 AI 产品**。这些工作用于探索模型如何接入
-真实数据与工具，并通过持久状态、证据、评测、权限、人工确认和运行验证形成可持续迭代的系统。
+致力于构建实用且贯穿研发与交易全生命周期的端到端量化基础设施与大数据平台。
 
-**熟悉的市场：永续合约、A 股。量化研究尤其聚焦永续合约**，将数据工程能力用于行情处理、策略验证、模拟交易与风险监控。
+> 🎯 **终极目标与核心理念**：依托自主推理与控制（ARC）的核心理念，我的最高目标是打造具备自演进能力的自主 Agent 系统，使其能够在极其复杂的金融环境中实现独立的环境探索、持续的策略探索与稳健的交易执行。
 
-[English](README.md) · [邮箱](mailto:jie.f@outlook.com)
+### 🔄 端到端量化全生命周期
 
-## 主业｜大数据开发
+```mermaid
+flowchart LR
+    A["行情数据 Pipeline"] --> B["因子挖掘与特征工程"] --> C["策略研发 & Alpha 探索"]
+    C --> D["向量化/事件驱动回测"] --> E["模拟交易与信号审计"] --> F["自动化执行与风控"]
+```
 
-| 核心方向 | 能力范围 |
-| --- | --- |
-| **离线数仓** | 维度与分层建模、公共层、指标口径、跨区域同步与历史回补 |
-| **实时计算** | Flink/Kafka 链路、大状态 Checkpoint、吞吐与延迟优化、故障恢复 |
-| **任务治理** | 依赖、资源、灰度、SLA、补数、迁移与可观测性 |
-| **数据质量** | 真实数据校验、血缘与审计、异常定位、可复现计算与稳定性治理 |
-
-**核心技术栈：**
+### ⚡ 核心基础设施与技术栈
 
 <p>
   <img src="https://img.shields.io/badge/Apache%20Flink-E6526F?style=flat-square&logo=apacheflink&logoColor=white" alt="Flink"/>
@@ -44,111 +43,64 @@
   <img src="https://img.shields.io/badge/Scala-DC322F?style=flat-square&logo=scala&logoColor=white" alt="Scala"/>
 </p>
 
-## 副业研究｜AI Agent、量化与 AI 产品
+- **实时计算与流处理**：`Apache Flink` · `Kafka` · `Tick/Bar 流处理` · `Flink SQL` · `大状态 Checkpoint 调优`
+- **PB 级离线数仓与批处理**：`Apache Spark` · `Hive` · `Hadoop` · `ODS ➔ DWD ➔ DWS 分层建模`
+- **任务调度与链路治理**：`Airflow` · `自研分布式调度系统` · `千级任务 DAG 依赖治理` · `SLA 保障 & 自动补算/重跑`
+- **存储、时序与量化执行**：`ClickHouse` · `HBase` · `PostgreSQL` · `MySQL` · `执行网关` · `实时风控`
 
-| 在研方向 | 当前工作 |
-| --- | --- |
-| **永续合约量化研究 · 重点** | 多空策略、交易所行情、回测与 Paper 验证；关注杠杆、保证金、资金费率、手续费与滑点对策略表现的影响 |
-| **A 股量化研究** | 行情与数据质量、选股与策略研究、可复现回测、模拟交易和市场监控 |
-| **AI Agent 与自主研究** | 受治理运行时、工具编排、持久目标与证据、程序合成、评测和失败恢复 |
-| **AI 产品与运营系统** | AI 视频生产、GPU/模型接入、内容运营、人工审核、测试、部署与可观测性 |
+---
 
-这些方向仍在持续研究和迭代。我会明确区分本地验证、研究实验、Paper、比赛结果与生产效果，
-不把过程状态包装成未经验证的成果。
+## 📊 数据面板与研发活跃度
 
-## 代表成果与能力证明
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=Shadowell&show_icons=true&theme=tokyonight&hide_border=true" alt="GitHub Stats" width="48%" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Shadowell&layout=compact&theme=tokyonight&hide_border=true" alt="Top Languages" width="48%" />
+</p>
 
-### 大数据工程成果
+<p align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Shadowell&theme=tokyonight&hide_border=true" alt="GitHub Streak" width="97%" />
+</p>
 
-| 规模 | 工程成果 |
-| --- | --- |
-| **600+TB/日** | 支撑 10 个国际站点分析业务的生产数据链路 |
-| **1000+ 任务** | 调度迁移中的依赖、资源、灰度、SLA、回补与恢复治理 |
-| **百亿事件/日** | 基于 Flink、Kafka、MySQL 与 HBase 建设实时数仓链路 |
-| **PB 级数仓** | 分层建模、公共层、指标口径、跨区域同步与数据质量治理 |
+---
 
-### AI Agent 研究系统
+## 我在构建的项目
 
-#### [HyperTrade](https://github.com/Shadowell/HyperTrade)
+我正在积极开发和维护一系列量化研究工具与生产级软件：
 
-面向量化研究的受治理 Agent 运行时，将开放式研究目标收敛为持久、可复查的任务。
+### [HyperTrade](https://github.com/Shadowell/HyperTrade)
 
-- 持久化目标、计划、步骤、证据、预算和完成条件
-- 组合 MCTS 与 MAP-Elites，进行多样化策略代码探索
-- 引入红队压力测试、市场 Regime 归因和结构化否定约束
-- 将研究、回测、Paper Trading 与真实效果隔离在明确的控制边界之后
+面向多资产量化研究与策略孵化的受治理 Agent Runtime，由通用 **ARC (Autonomous Research Core)** 控制内核驱动，实现从自然语言目标到自演进策略研发与模拟盘自动上线的全流程闭环：
 
-#### [HyperARC](https://arcprize.org/competitions/2026) · 私有研究项目
+- **MCTS & MAP-Elites 搜寻引擎**：基于蒙特卡洛树搜索与质量-多样性（Quality-Diversity）网格，在策略代码 AST 节点树上高维探索解空间，防止早熟收敛。
+- **红蓝对抗博弈 (Adversarial Red-Teaming)**：蓝队生成策略与代码突变，红队施加黑天鹅、流动性踩踏与宽止损陷阱攻防测试，确保策略健壮性。
+- **多 Regime 定量因果归因 & Reflexion 账本**：拆解牛熊震荡市场下的性能表现，提取结构化否定约束注入进化 Prompt。
+- **Voyager 技能蒸馏与模拟盘孵化**：自动提取优良子函数注册为不可变技能库，通过攻防测试的策略自动部署上线模拟盘运行。
 
-**比赛：** [ARC-AGI-2](https://www.kaggle.com/competitions/arc-prize-2026-arc-agi-2) ·
-[ARC-AGI-3](https://www.kaggle.com/competitions/arc-prize-2026-arc-agi-3)
+### [HyperARC](https://github.com/Shadowell/HyperARC)
 
-覆盖 ARC-AGI-1/2 程序合成与 ARC-AGI-3 交互式 Agent 实验的研究系统。
+面向 ARC-AGI (1, 2 & 3 / ARC Prize 2026) 基准套件的通用自主程序合成与 AGI 推理引擎，源自 HyperTrade 的高吞吐 MCTS 搜寻与工业级控制架：
 
-- 网格变换 DSL、候选生成、精确匹配验证与受限代码执行
-- 视觉状态抽象、动作历史、技能路由与轨迹评测
-- 严格区分本地诊断与官方基准结果，并保留可复现实验证据
+- **通用 ARC 测评基准集成**：统一支持 ARC-AGI-1、ARC-AGI-2 及 ARC-AGI-3 标准任务模型 (`ARCTask`) 与自动化数据集加载器。
+- **并行 MCTS 程序搜寻**：多线程 AST 树节点突变与并行 Rollout 求解引擎，高维探索二维空间图形变换解空间。
+- **2D 网格 DSL 算子原语**：内置旋转、镜像、颜色替换、边界框裁剪等原子级图形变换 DSL Primitive。
+- **自愈控制架与像素级匹配**：具备自愈错误恢复机制（`HyperARCHarness`），要求合成程序在训练集上达成 100% 像素完全精确匹配后应用于测试集。
 
-Agent 工程能力：`任务规划` · `Tool Calling` · `MCP` · `JSON Schema` · `状态机` ·
-`记忆` · `评测` · `人工确认` · `失败恢复` · `审计`
+### [StockPro](https://github.com/Shadowell/StockPro)
 
-### Kaggle 竞赛研究
+A股研究与监控平台，涵盖实时行情接入、AI 股票评估、因子研究、策略研发与模拟交易。
 
-截至 **2026-09-15 17:48（北京时间）** 的公开榜单快照；四项比赛均持续进行中。排名按“当前排名 / 榜单总队伍数”展示，随比赛进展变化。
+### [QuantBase](https://github.com/Shadowell/QuantBase)
 
-| 比赛 | 队伍 | 当前排名 / 总队伍数 | 榜单分数 | 状态 |
-| --- | --- | ---: | ---: | --- |
-| [ARC-AGI-2](https://www.kaggle.com/competitions/arc-prize-2026-arc-agi-2/leaderboard) | HyperARC | 542 / 2027 | 30.56 | 持续进行中 |
-| [ARC-AGI-3](https://www.kaggle.com/competitions/arc-prize-2026-arc-agi-3/leaderboard) | HyperARC | 2103 / 3056 | 0.17 | 持续进行中 |
-| [RSNA Knee Abnormality Detection](https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/leaderboard) | Shadowell888 | 389 / 3773 | 0.941 | 持续进行中 |
-| [Kaggriculture](https://www.kaggle.com/competitions/kaggriculture/leaderboard) | Shadowell888 | 1557 / 9101 | 2001.2 | 持续进行中 |
+开源量化研究工作台，专注于真实市场数据分析、稳健的回测引擎、模拟交易验证、信号审计与风控优先的策略开发。
 
-- **[RSNA Knee Abnormality Detection](https://www.kaggle.com/competitions/rsna-knee-abnormality-detection)**：正在参与的医学影像竞赛，围绕膝关节 MRI 与影像报告的多模态异常检测开展研究。
-- **[Kaggriculture](https://www.kaggle.com/competitions/kaggriculture)**：正在参与的农业经营策略竞赛，围绕资源分配、市场决策与 Agent 策略评测开展研究。
+### [Alpha](https://github.com/Shadowell/Alpha)
 
-### 量化研究｜永续合约与 A 股
+自演进 A股选股系统，结合 Kronos K线预测模型、Hermes Agent 循环与多阶段漏斗筛选流程。
 
-**永续合约是我的量化研究重点，A 股是另一条熟悉且持续投入的研究方向。**
+### [配料君 (微信小程序)](#%E5%B0%8F%E7%A8%8B%E5%BA%8F%3A%2F%2F%E9%85%8D%E6%96%99%E5%90%9B%2FBxq9NHM7YIjXgxe)
 
-- **BitPro · 私有产品**：以**永续合约研究与模拟交易**为重点的数字资产研究平台，覆盖交易所行情、多空策略、策略版本、异步回测、Paper 验证、受控执行与监控
-
-  **策略已实盘运行**：Top20 · 微结构多空突破反马丁。下图为该策略的**模拟验证曲线**；实盘当日绩效截至 2026-09-15 17:41（北京时间）为 **+2.12% / +$2.37**（包含归属该策略的未实现盈亏变化）。
-
-  <a href="https://shadowell.github.io/Shadowell/strategy/"><img src="./assets/bitpro-paper-performance.png" alt="打开 BitPro Paper 动态指标页" width="100%" /></a><br />
-  <sub>Paper 收益快照 · 每 10 分钟定时更新（调度与图片缓存可能延迟） · 点击进入动态页面</sub>
-
-我把行情数据质量、计算可复现性、成本、成交明细和审计记录视为研究前提；展示研究证据，
-不包装未经验证的收益。
-
-**A 股研究与工程实践：**
-
-- [Alpha](https://github.com/Shadowell/Alpha)：开源 A 股研究系统，包含可信行情接入、可复现工作流、CI 与公开 Release
-- [StockPro](https://github.com/Shadowell/StockPro)：实时 A 股研究与监控平台，覆盖数据质量、策略生命周期、回测、Paper Trading 与运行检查
-- [QuantBase](https://github.com/Shadowell/QuantBase)：覆盖真实行情、Backtrader 验证、模拟交易、信号审计与风险优先研发的研究工作台
-
-### AI 产品与独立产品
-
-- **Zora · 私有产品**：串联故事、角色、分镜、视频生成、配音、合成、质量审核和发布的 AI 动画工作台
-- **FrameLab · 私有产品**：集成模型 API、ComfyUI/GPU Worker、异步任务、存储、积分、审核、测试与部署的 AI 视频平台
-
-我会根据能力边界选择 Codex、Cursor、GLM、Grok 等模型和工具；由我负责业务判断、需求拆解、
-约束、验收标准，并通过真实数据、自动化测试、运行日志和用户可见结果验证交付。
-
-#### 独立运营的微信小程序
-
-##### 配料君
-
-持续运营与迭代的食品配料分析与健康认知小程序，覆盖数据整理、产品迭代与微信搜一搜推广。
+持续运营与迭代的食品配料分析与健康认知微信小程序，涵盖数据整理、产品迭代与微信搜一搜推广。
 
 <img src="./assets/wechat-mini-program-peiliaojun.png" alt="配料君微信小程序码" width="320" />
 
 该小程序是持续运营和迭代的真实产品，不是一次性 Demo。
-
-> 雇主源代码、业务数据和内部实现细节保持保密；私有项目只展示能力与已验证结果，不公开仓库内容。
-
-## 当前关注方向
-
-- 可靠的离线、实时与数据治理体系，以及面向模型和 Agent 工作负载的数据底座
-- 具备证据、评测、记忆和安全工具调用的受治理 Agent 运行时
-- 永续合约多空策略与成本、风险研究，以及 A 股策略和数据研究，以真实数据与 Paper 验证推进
-- 包含人工审核和可观测交付的 AI 视频与内容生产系统

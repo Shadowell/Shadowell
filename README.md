@@ -3,31 +3,29 @@
   <a href="README_CN.md">简体中文</a>
 </p>
 
-# Jie Feng
+<p align="center">
+  <a href="https://git.io/typing-svg">
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=00F2FE&center=true&vcenter=true&width=750&lines=Big+Data+Engineer;Quantitative+Research+Infrastructure;Autonomous+AI+Agents;ARC-AGI+Program+Synthesis+%26+Reasoning" alt="Typing SVG" />
+  </a>
+</p>
 
-**Big Data Engineer · AI Agent & Quant Systems Researcher**
+## About Me
 
-My primary profession is big-data development, backed by **9 years of production big-data
-engineering experience** across PB-scale offline data warehouses, large-scale streaming,
-workflow governance, data quality, and performance optimization.
+I am a **Big Data Engineer** specializing in quantitative research infrastructure, data pipelines, and AI-driven trading systems.
 
-Outside my primary role, I continuously research **AI Agents, quantitative systems, and end-to-end
-AI products**. I explore how models can work with real data and tools, then add durable state,
-evidence, evaluation, permissions, human approval, and runtime verification so the systems can be
-iterated responsibly.
+Dedicated to building practical, end-to-end quantitative infrastructures that seamlessly integrate the entire research and trading lifecycle.
 
-**Markets I know: perpetual futures and Chinese A-shares. Perpetual futures are my main quantitative research focus**, connecting data engineering with market-data processing, strategy validation, Paper trading, and risk monitoring.
+> 🎯 **Ultimate Vision**: Powered by Autonomous Reasoning & Control (ARC) principles, my ultimate goal is to engineer self-evolving, autonomous agent systems capable of independent exploration, continuous strategy discovery, and adaptive execution within highly complex financial environments.
 
-## Primary Career | Big Data Engineering
+### 🔄 End-to-End Quantitative Pipeline
 
-| Core area | Capability scope |
-| --- | --- |
-| **Offline data warehousing** | Dimensional and layered modeling, shared layers, metric consistency, cross-region synchronization, and backfills |
-| **Streaming systems** | Flink/Kafka pipelines, large-state checkpoints, throughput and latency tuning, and failure recovery |
-| **Workflow governance** | Dependencies, resources, staged rollouts, SLAs, backfills, migration, and observability |
-| **Data quality** | Real-data validation, lineage and audit, anomaly diagnosis, reproducible computation, and reliability governance |
+```mermaid
+flowchart LR
+    A["Market Data Pipeline"] --> B["Factor Mining & Feature Engineering"] --> C["Strategy & Alpha Research"]
+    C --> D["Backtesting & Simulation"] --> E["Paper Trading & Signal Audit"] --> F["Automated Execution & Risk"]
+```
 
-**Core stack:**
+### ⚡ Core Infrastructure & Technical Stack
 
 <p>
   <img src="https://img.shields.io/badge/Apache%20Flink-E6526F?style=flat-square&logo=apacheflink&logoColor=white" alt="Flink"/>
@@ -45,117 +43,64 @@ iterated responsibly.
   <img src="https://img.shields.io/badge/Scala-DC322F?style=flat-square&logo=scala&logoColor=white" alt="Scala"/>
 </p>
 
-## Ongoing Side Research | AI Agents, Quant, and AI Products
+- **Real-Time Streaming**: `Apache Flink` · `Kafka` · `Tick/Bar Streaming` · `Flink SQL` · `Large-State Checkpoint Tuning`
+- **PB-Scale DWH & Batch Processing**: `Apache Spark` · `Hive` · `Hadoop` · `ODS ➔ DWD ➔ DWS Layered DWH`
+- **Workflow Scheduling & Governance**: `Airflow` · `In-House Distributed Scheduler` · `1,000+ Job DAG Governance` · `SLA Monitoring & Recovery`
+- **Storage, Analytics & Execution**: `ClickHouse` · `HBase` · `PostgreSQL` · `MySQL` · `Execution Gateways` · `Risk Controls`
 
-| Research direction | Current work |
-| --- | --- |
-| **Perpetual Futures Research · Primary Quant Focus** | Long/short strategies, exchange data, backtesting, and Paper validation; studying the effects of leverage, margin, funding rates, fees, and slippage |
-| **Chinese A-share Research** | Market data and data quality, stock selection and strategy research, reproducible backtesting, Paper trading, and market monitoring |
-| **AI Agents & Autonomous Research** | Governed runtimes, tool orchestration, persistent goals and evidence, program synthesis, evaluation, and recovery |
-| **AI Products & Operations** | AI video production, GPU/model integration, content operations, human review, testing, deployment, and observability |
+---
 
-These tracks remain active research and ongoing iteration. I distinguish local validation, research
-experiments, Paper sessions, competition results, and production outcomes instead of presenting
-process states as verified achievements.
+## 📊 Analytics & Activity
 
-## Selected Outcomes & Capability Evidence
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=Shadowell&show_icons=true&theme=tokyonight&hide_border=true" alt="GitHub Stats" width="48%" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Shadowell&layout=compact&theme=tokyonight&hide_border=true" alt="Top Languages" width="48%" />
+</p>
 
-### Big Data Engineering Outcomes
+<p align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Shadowell&theme=tokyonight&hide_border=true" alt="GitHub Streak" width="97%" />
+</p>
 
-| Scale | Engineering outcome |
-| --- | --- |
-| **600+ TB/day** | Production data paths serving analytics across 10 international sites |
-| **1000+ jobs** | Dependency, resource, rollout, SLA, backfill, and recovery governance during scheduler migration |
-| **10B events/day** | Real-time warehouse path built with Flink, Kafka, MySQL, and HBase |
-| **PB-scale DWH** | Layered modeling, shared data layers, metric consistency, cross-region synchronization, and data quality |
+---
 
-### AI Agent Research Systems
+## What I'm Building
 
-#### [HyperTrade](https://github.com/Shadowell/HyperTrade)
+I am actively developing and maintaining a suite of quantitative research tools and production-grade software:
 
-A governed quantitative-research Agent runtime that turns open-ended research goals into durable,
-reviewable missions.
+### [HyperTrade](https://github.com/Shadowell/HyperTrade)
 
-- Persists goals, plans, steps, evidence, budgets, and completion conditions
-- Combines MCTS and MAP-Elites for diverse strategy-code exploration
-- Uses red-team stress tests, regime attribution, and structured negative constraints
-- Keeps research, backtesting, Paper trading, and real effects behind explicit control boundaries
+A production-grade, governed quantitative research and strategy incubation Agent Runtime powered by the universal **ARC (Autonomous Research Core)** engine:
 
-#### [HyperARC](https://arcprize.org/competitions/2026) · Private Research
+- **MCTS & MAP-Elites Search Engine**: Combines Monte Carlo Tree Search over strategy code ASTs with Quality-Diversity grid archiving to explore high-dimensional strategy spaces without premature convergence.
+- **Adversarial Red-Teaming**: Blue Team quant agents formulate Alpha hypotheses while Red Team agents stress-test for black swan shocks, liquidity traps, and stop-loss vulnerabilities.
+- **Multi-Regime Causal Attribution & Reflexion**: Deconstructs performance across market regimes (trending, volatile, range-bound) and distills structured negative constraints for continuous prompt feedback.
+- **Voyager-Style Skill Distillation & Paper Trading**: Automatically distills validated code sub-functions into an immutable skill library, deploying robust candidate strategies to paper trading environments zero-touch.
 
-**Competitions:** [ARC-AGI-2](https://www.kaggle.com/competitions/arc-prize-2026-arc-agi-2) ·
-[ARC-AGI-3](https://www.kaggle.com/competitions/arc-prize-2026-arc-agi-3)
+### [HyperARC](https://github.com/Shadowell/HyperARC)
 
-An ARC-AGI research system spanning ARC-AGI-1/2 program synthesis and ARC-AGI-3 interactive-Agent
-experiments.
+A universal autonomous program synthesis and AGI reasoning engine designed for the full ARC-AGI benchmark suite (ARC-AGI-1, 2, and 3 / ARC Prize 2026):
 
-- Grid-transformation DSLs, candidate generation, exact-match validation, and restricted code execution
-- Visual-state abstraction, action history, skill routing, and trajectory-based evaluation
-- Separates local diagnostics from official benchmark results and retains reproducible evidence
+- **Universal ARC Benchmark Suite**: Standardized task models (`ARCTask`) and automated dataset loaders supporting ARC-AGI-1, 2, and 3.
+- **Parallel MCTS Solver Engine**: Multi-threaded AST search engine (`HyperARCParallelMCTSEngine`) executing parallel program mutation rollouts over 2D spatial grid transformations.
+- **2D Grid DSL Primitives**: Rich domain-specific primitives for spatial operations (`rotate_90`, `flip_horizontal`, `replace_color`, `crop_bounding_box`).
+- **Self-Healing Harness & Exact Matching**: Scaffolding with error recovery (`HyperARCHarness`) that enforces 100% pixel-exact matching on training grid examples before predicting unseen test grids.
 
-Agent engineering capabilities: `Planning` · `Tool Calling` · `MCP` · `JSON Schema` ·
-`State Machines` · `Memory` · `Evaluation` · `Human Approval` · `Recovery` · `Audit`
+### [StockPro](https://github.com/Shadowell/StockPro)
 
-### Kaggle Competition Research
+A-share research and monitoring platform covering real-time market data, AI stock evaluation, factor research, strategy development, and simulation trading.
 
-Public leaderboard snapshot as of **15 September 2026, 17:48 (UTC+8)**. All four competitions are ongoing. Rankings use “current rank / total leaderboard teams” and may change.
+### [QuantBase](https://github.com/Shadowell/QuantBase)
 
-| Competition | Team | Rank / Total teams | Leaderboard score | Status |
-| --- | --- | ---: | ---: | --- |
-| [ARC-AGI-2](https://www.kaggle.com/competitions/arc-prize-2026-arc-agi-2/leaderboard) | HyperARC | 542 / 2027 | 30.56 | Ongoing |
-| [ARC-AGI-3](https://www.kaggle.com/competitions/arc-prize-2026-arc-agi-3/leaderboard) | HyperARC | 2103 / 3056 | 0.17 | Ongoing |
-| [RSNA Knee Abnormality Detection](https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/leaderboard) | Shadowell888 | 389 / 3773 | 0.941 | Ongoing |
-| [Kaggriculture](https://www.kaggle.com/competitions/kaggriculture/leaderboard) | Shadowell888 | 1557 / 9101 | 2001.2 | Ongoing |
+Open-source quantitative research workbench focused on real market data, backtesting, paper trading, signal audit, and risk-first strategy development.
 
-- **[RSNA Knee Abnormality Detection](https://www.kaggle.com/competitions/rsna-knee-abnormality-detection)** — An ongoing medical-imaging competition focused on multimodal knee abnormality detection using MRI scans and radiology reports.
-- **[Kaggriculture](https://www.kaggle.com/competitions/kaggriculture)** — An ongoing farming strategy competition focused on resource allocation, market decisions, and agent strategy evaluation.
+### [Alpha](https://github.com/Shadowell/Alpha)
 
-### Quantitative Research | Perpetual Futures & Chinese A-shares
+Self-evolving A-share stock selection system combining Kronos K-line forecasting, Hermes Agent loops, and a three-pool funnel workflow.
 
-**Perpetual futures are my main quantitative research focus; Chinese A-shares are another familiar market I continue to research.**
+### [配料君 (WeChat Mini Program)](#%E5%B0%8F%E7%A8%8B%E5%BA%8F%3A%2F%2F%E9%85%8D%E6%96%99%E5%90%9B%2FBxq9NHM7YIjXgxe)
 
-- **BitPro · Private Product** — Digital-asset research platform focused on **perpetual futures research and Paper trading**, covering exchange data, long/short strategies, strategy versions, asynchronous backtests, Paper validation, controlled execution, and monitoring
-
-  **Strategy running live**: Top20 microstructure long/short breakout with pyramiding. The chart below shows **Paper validation performance**. Verified live results for 15 September 2026, as of 17:41 (UTC+8): **+2.12% / +$2.37**, including the change in attributed unrealized PnL.
-
-  <a href="https://shadowell.github.io/Shadowell/strategy/"><img src="./assets/bitpro-paper-performance.png" alt="Open the dynamic BitPro Paper telemetry dashboard" width="100%" /></a><br />
-  <sub>Paper performance snapshot · scheduled every 10 minutes (scheduling and image caching may delay updates) · click for the dynamic dashboard</sub>
-
-I treat market-data quality, reproducible computation, costs, fills, and audit trails as prerequisites.
-Strategy research is presented as research evidence—not as unverified return claims.
-
-**Chinese A-share research and engineering:**
-
-- [Alpha](https://github.com/Shadowell/Alpha) — Open-source A-share research system with trusted market-data ingestion, reproducible workflows, CI, and a public release
-- [StockPro](https://github.com/Shadowell/StockPro) — Real-time A-share research and monitoring platform with data quality, strategy lifecycle, backtesting, Paper trading, and operational checks
-- [QuantBase](https://github.com/Shadowell/QuantBase) — Research workbench for real market data, Backtrader validation, Paper trading, signal audit, and risk-first development
-
-### AI Products & Independent Products
-
-- **Zora · Private Product** — AI animation workspace connecting story, characters, storyboards, video generation, voice, composition, quality review, and publishing
-- **FrameLab · Private Product** — AI video platform integrating model APIs, ComfyUI/GPU workers, asynchronous jobs, storage, credits, moderation, testing, and deployment
-
-I use Codex, Cursor, GLM, Grok, and other models according to their capabilities and limits. I remain
-responsible for business judgment, requirement decomposition, constraints, acceptance criteria,
-and verification through real data, automated tests, runtime logs, and user-visible outcomes.
-
-#### Independently Operated WeChat Products
-
-##### 配料君
-
-A food-ingredient analysis and health-literacy mini program that I continuously operate and improve,
-covering data organization, product iteration, and promotion through WeChat Search.
+A food-ingredient analysis and health-literacy mini program that I continuously operate and improve, covering data organization, product iteration, and promotion through WeChat Search.
 
 <img src="./assets/wechat-mini-program-peiliaojun.png" alt="配料君 WeChat Mini Program QR Code" width="320" />
 
 This product is continuously operated and iterated—not a one-off demo.
-
-> Employer source code, business data, and internal implementation details remain confidential.
-> Private projects are described by capability and verified outcomes without exposing their repositories.
-
-## Current Focus
-
-- Reliable batch, streaming, and data-governance systems, including data foundations for model and Agent workloads
-- Governed Agent runtimes with evidence, evaluation, memory, and safe tool use
-- Perpetual futures long/short strategies, costs, and risk, alongside A-share strategy and data research using real data and Paper validation
-- AI video and content-production systems with human review and observable delivery
