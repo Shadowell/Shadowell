@@ -142,13 +142,7 @@ Agent 工程能力：`任务规划` · `Tool Calling` · `MCP` · `JSON Schema` 
 
 <img src="./assets/wechat-mini-program-peiliaojun.png" alt="配料君微信小程序码" width="320" />
 
-##### 野钓潮汐
-
-面向钓鱼爱好者的潮汐与天气小程序，整合潮汐与气象时序数据、后端服务和移动端产品体验。
-
-<img src="./assets/wechat-mini-program-tidenow.png" alt="野钓潮汐微信小程序码" width="320" />
-
-这两个小程序都是持续运营和迭代的真实产品，不是一次性 Demo。
+该小程序是持续运营和迭代的真实产品，不是一次性 Demo。
 
 > 雇主源代码、业务数据和内部实现细节保持保密；私有项目只展示能力与已验证结果，不公开仓库内容。
 

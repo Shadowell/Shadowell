@@ -148,14 +148,7 @@ covering data organization, product iteration, and promotion through WeChat Sear
 
 <img src="./assets/wechat-mini-program-peiliaojun.png" alt="配料君 WeChat Mini Program QR Code" width="320" />
 
-##### 野钓潮汐
-
-A fishing-focused tide and weather mini program integrating time-series tide and weather data,
-backend services, and a mobile-facing product experience.
-
-<img src="./assets/wechat-mini-program-tidenow.png" alt="野钓潮汐 WeChat Mini Program QR Code" width="320" />
-
-Both products are continuously operated and iterated—not one-off demos.
+This product is continuously operated and iterated—not a one-off demo.
 
 > Employer source code, business data, and internal implementation details remain confidential.
 > Private projects are described by capability and verified outcomes without exposing their repositories.
