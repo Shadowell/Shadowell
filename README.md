@@ -11,48 +11,21 @@ Dedicated to building practical, end-to-end quantitative infrastructures that se
 
 > **Ultimate Vision**: Powered by Autonomous Reasoning & Control (ARC) principles, my ultimate goal is to engineer self-evolving, autonomous agent systems capable of independent exploration, continuous strategy discovery, and adaptive execution within highly complex financial environments.
 
-### End-to-End Quantitative & Data Architecture
+### End-to-End Quantitative Pipeline
 
-```mermaid
-flowchart TD
-    subgraph DataTier ["01. Big Data Infrastructure Tier"]
-        direction LR
-        Tick["Tick & Orderbook Feeds"] --> Flink["Apache Flink<br/>Real-Time ETL & Operators"]
-        KLine["Historical Market Data"] --> Spark["Apache Spark & Hive<br/>PB-Scale Feature Engineering"]
-        Flink --> Store[("ClickHouse & Time-Series DBs")]
-        Spark --> Store
-    end
-
-    subgraph AlphaTier ["02. Factor Mining & Strategy Discovery Tier"]
-        direction LR
-        Store --> FactorEngine["Factor Research & Feature Pipeline"]
-        FactorEngine --> StrategyEngine["Multi-Factor Alpha & Time-Series Models"]
-    end
-
-    subgraph ARCTier ["03. ARC Autonomous Reasoning & Evolution Core"]
-        direction LR
-        StrategyEngine --> MCTS["MCTS Code AST Search<br/>(Quality-Diversity / MAP-Elites)"]
-        MCTS <--> RedBlue["Adversarial Red-Teaming<br/>(Blue Inventor vs. Red Falsifier)"]
-        RedBlue --> Reflexion["Reflexion Causal Ledger<br/>(Regime Constraint Feedback)"]
-        Reflexion -. Negative Constraints .-> MCTS
-    end
-
-    subgraph ExecTier ["04. Backtesting, Risk & Automated Execution Tier"]
-        direction LR
-        MCTS --> Backtest["Vectorized & Event-Driven Engine"]
-        Backtest --> Audit["Signal Audit & Cost Modeling"]
-        Audit --> Paper["Zero-Touch Paper Deployment"]
-        Paper --> LiveGate["Automated Risk & Execution Gateway"]
-    end
-
-    DataTier ==> AlphaTier ==> ARCTier ==> ExecTier
-    ExecTier -. Runtime Logs & Execution Feedback .-> ARCTier
-
-    classDef tierStyle fill:#161b22,stroke:#30363d,stroke-width:1.5px,color:#e6edf3;
-    classDef nodeStyle fill:#21262d,stroke:#58a6ff,stroke-width:1px,color:#f0f6fc;
-    class DataTier,AlphaTier,ARCTier,ExecTier tierStyle;
-    class Tick,Flink,KLine,Spark,Store,FactorEngine,StrategyEngine,MCTS,RedBlue,Reflexion,Backtest,Audit,Paper,LiveGate nodeStyle;
+```text
+[ Market Data Pipeline ] ──> [ Factor Mining & Feature Engineering ] ──> [ Strategy & Alpha Research ]
+                                                                                   │
+[ Automated Execution  ] <── [ Paper Trading & Signal Audit        ] <── [ Backtesting & Simulation  ]
 ```
+
+| Pipeline Stage | Primary Focus | Core Tooling & Infrastructure |
+| :--- | :--- | :--- |
+| **01. Market Data** | Tick/Bar streaming ETL, orderbook replay & high-throughput time-series storage | `Flink` · `Kafka` · `ClickHouse` |
+| **02. Factor Mining** | Cross-sectional factor mining, microstructural features & IC/IR evaluation | `PySpark` · `DolphinDB` · `NumPy` |
+| **03. Strategy Discovery** | Multi-factor Alpha models, time-series forecasting & ARC MCTS AST search | `MCTS` · `Chronos` · `Red-Teaming` |
+| **04. Backtesting** | Vectorized screening, event-driven matching & realistic fee/slippage modeling | `Backtrader` · `Custom Matching Engine` |
+| **05. Paper & Risk** | Zero-touch paper trading deployment, real-time signal audit & exposure guards | `Paper Trading` · `Execution Gateway` |
 
 ### Core Infrastructure & Technical Stack
 

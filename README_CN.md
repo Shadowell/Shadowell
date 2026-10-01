@@ -11,48 +11,21 @@
 
 > **终极目标与核心理念**：依托自主推理与控制（ARC）的核心理念，我的最高目标是打造具备自演进能力的自主 Agent 系统，使其能够在极其复杂的金融环境中实现独立的环境探索、持续的策略探索与稳健的交易执行。
 
-### 端到端量化与大数据分层架构
+### 端到端量化全生命周期
 
-```mermaid
-flowchart TD
-    subgraph DataTier ["01. 数据基础设施层 (Big Data Tier)"]
-        direction LR
-        Tick["实时 Tick / 订单簿"] --> Flink["Apache Flink<br/>流式清洗 & 实时算子"]
-        KLine["历史 K 线 / 盘口"] --> Spark["Apache Spark & Hive<br/>PB级特征批处理"]
-        Flink --> Store[("ClickHouse / 时序存储")]
-        Spark --> Store
-    end
-
-    subgraph AlphaTier ["02. 因子挖掘与策略探索 (Alpha & Strategy Tier)"]
-        direction LR
-        Store --> FactorEngine["因子挖掘 & 特征工程<br/>(DolphinDB / PySpark)"]
-        FactorEngine --> StrategyEngine["多因子模型 & 趋势跟踪<br/>(Chronos / ML / Agent)"]
-    end
-
-    subgraph ARCTier ["03. ARC 自主进化推理引擎 (Autonomous Research Core)"]
-        direction LR
-        StrategyEngine --> MCTS["MCTS 策略解空间搜寻<br/>(AST 节点突变)"]
-        MCTS <--> RedBlue["红蓝对抗博弈<br/>(蓝队发掘 vs 红队攻防)"]
-        RedBlue --> Reflexion["Reflexion 记忆账本<br/>(多 Regime 因果归因)"]
-        Reflexion -. 负向约束反馈 .-> MCTS
-    end
-
-    subgraph ExecTier ["04. 回测、风控与自动化执行 (Execution & Risk Tier)"]
-        direction LR
-        MCTS --> Backtest["向量化 / 事件驱动回测"]
-        Backtest --> Audit["信号审计 & 成本建模"]
-        Audit --> Paper["模拟盘零触碰部署<br/>(Paper Trading)"]
-        Paper --> LiveGate["自动化执行风控网关<br/>(动态止损 & 敞口监控)"]
-    end
-
-    DataTier ==> AlphaTier ==> ARCTier ==> ExecTier
-    ExecTier -. 运行日志与 Regime 表现反馈 .-> ARCTier
-
-    classDef tierStyle fill:#161b22,stroke:#30363d,stroke-width:1.5px,color:#e6edf3;
-    classDef nodeStyle fill:#21262d,stroke:#58a6ff,stroke-width:1px,color:#f0f6fc;
-    class DataTier,AlphaTier,ARCTier,ExecTier tierStyle;
-    class Tick,Flink,KLine,Spark,Store,FactorEngine,StrategyEngine,MCTS,RedBlue,Reflexion,Backtest,Audit,Paper,LiveGate nodeStyle;
+```text
+[ 行情数据 Pipeline ]  ──>  [ 因子挖掘与特征工程 ]  ──>  [ 策略研发 & Alpha 探索 ]
+                                                                   │
+[ 自动化执行与风控 ]  <──  [ 模拟交易与信号审计 ]  <──  [ 向量化/事件驱动回测  ]
 ```
+
+| 阶段 | 核心任务 | 底层工具与架构 |
+| :--- | :--- | :--- |
+| **01. 行情数据** | Tick/Bar 实时流处理、历史盘口数据清洗与高吞吐时序存储 | `Flink` · `Kafka` · `ClickHouse` |
+| **02. 因子挖掘** | 截面多因子挖掘、微观特征工程与因子有效性检验 | `PySpark` · `DolphinDB` · `NumPy` |
+| **03. 策略研发** | 多因子 Alpha 模型、K线形态预测与 ARC 智能体策略搜寻 | `MCTS` · `Chronos` · `红蓝对抗` |
+| **04. 策略回测** | 向量化快速初筛、事件驱动高精度撮合与滑点/手续费成本建模 | `Backtrader` · `自研撮合内核` |
+| **05. 模拟与风控**| 零触碰模拟盘自动部署、实时信号审计与组合敞口动态风控 | `Paper Trading` · `执行网关` |
 
 ### 核心基础设施与技术栈
 
