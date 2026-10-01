@@ -11,12 +11,47 @@ Dedicated to building practical, end-to-end quantitative infrastructures that se
 
 > 🎯 **Ultimate Vision**: Powered by Autonomous Reasoning & Control (ARC) principles, my ultimate goal is to engineer self-evolving, autonomous agent systems capable of independent exploration, continuous strategy discovery, and adaptive execution within highly complex financial environments.
 
-### 🔄 End-to-End Quantitative Pipeline
+### 🔄 End-to-End Quantitative & Data Architecture
 
 ```mermaid
-flowchart LR
-    A["Market Data Pipeline"] --> B["Factor Mining & Feature Engineering"] --> C["Strategy & Alpha Research"]
-    C --> D["Backtesting & Simulation"] --> E["Paper Trading & Signal Audit"] --> F["Automated Execution & Risk"]
+flowchart TD
+    subgraph DataTier ["01. Big Data Infrastructure Tier"]
+        direction LR
+        Tick["Tick & Orderbook Feeds"] --> Flink["Apache Flink<br/>Real-Time ETL & Operators"]
+        KLine["Historical Market Data"] --> Spark["Apache Spark & Hive<br/>PB-Scale Feature Engineering"]
+        Flink --> Store[("ClickHouse & Time-Series DBs")]
+        Spark --> Store
+    end
+
+    subgraph AlphaTier ["02. Factor Mining & Strategy Discovery Tier"]
+        direction LR
+        Store --> FactorEngine["Factor Research & Feature Pipeline"]
+        FactorEngine --> StrategyEngine["Multi-Factor Alpha & Time-Series Models"]
+    end
+
+    subgraph ARCTier ["03. ARC Autonomous Reasoning & Evolution Core"]
+        direction LR
+        StrategyEngine --> MCTS["MCTS Code AST Search<br/>(Quality-Diversity / MAP-Elites)"]
+        MCTS <--> RedBlue["Adversarial Red-Teaming<br/>(Blue Inventor vs. Red Falsifier)"]
+        RedBlue --> Reflexion["Reflexion Causal Ledger<br/>(Regime Constraint Feedback)"]
+        Reflexion -. Negative Constraints .-> MCTS
+    end
+
+    subgraph ExecTier ["04. Backtesting, Risk & Automated Execution Tier"]
+        direction LR
+        MCTS --> Backtest["Vectorized & Event-Driven Engine"]
+        Backtest --> Audit["Signal Audit & Cost Modeling"]
+        Audit --> Paper["Zero-Touch Paper Deployment"]
+        Paper --> LiveGate["Automated Risk & Execution Gateway"]
+    end
+
+    DataTier ==> AlphaTier ==> ARCTier ==> ExecTier
+    ExecTier -. Runtime Logs & Execution Feedback .-> ARCTier
+
+    classDef tierStyle fill:#161b22,stroke:#30363d,stroke-width:1.5px,color:#e6edf3;
+    classDef nodeStyle fill:#21262d,stroke:#58a6ff,stroke-width:1px,color:#f0f6fc;
+    class DataTier,AlphaTier,ARCTier,ExecTier tierStyle;
+    class Tick,Flink,KLine,Spark,Store,FactorEngine,StrategyEngine,MCTS,RedBlue,Reflexion,Backtest,Audit,Paper,LiveGate nodeStyle;
 ```
 
 ### ⚡ Core Infrastructure & Technical Stack
@@ -44,7 +79,15 @@ flowchart LR
 
 ---
 
-## 📊 Analytics & Activity
+## 🏆 GitHub Achievements & Activity Metrics
+
+<p align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=Shadowell&theme=tokyonight&no-frame=true&margin-w=4&margin-h=4&column=7" alt="GitHub Trophies" />
+</p>
+
+<p align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Shadowell&theme=tokyo-night&hide_border=true&area=true" alt="Activity Graph" width="98%" />
+</p>
 
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=Shadowell&show_icons=true&theme=tokyonight&hide_border=true" alt="GitHub Stats" width="48%" />
@@ -52,7 +95,7 @@ flowchart LR
 </p>
 
 <p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Shadowell&theme=tokyonight&hide_border=true" alt="GitHub Streak" width="97%" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Shadowell&theme=tokyonight&hide_border=true" alt="GitHub Streak" width="98%" />
 </p>
 
 ---

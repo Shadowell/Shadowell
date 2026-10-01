@@ -11,12 +11,47 @@
 
 > 🎯 **终极目标与核心理念**：依托自主推理与控制（ARC）的核心理念，我的最高目标是打造具备自演进能力的自主 Agent 系统，使其能够在极其复杂的金融环境中实现独立的环境探索、持续的策略探索与稳健的交易执行。
 
-### 🔄 端到端量化全生命周期
+### 🔄 端到端量化与大数据分层架构
 
 ```mermaid
-flowchart LR
-    A["行情数据 Pipeline"] --> B["因子挖掘与特征工程"] --> C["策略研发 & Alpha 探索"]
-    C --> D["向量化/事件驱动回测"] --> E["模拟交易与信号审计"] --> F["自动化执行与风控"]
+flowchart TD
+    subgraph DataTier ["01. 数据基础设施层 (Big Data Tier)"]
+        direction LR
+        Tick["实时 Tick / 订单簿"] --> Flink["Apache Flink<br/>流式清洗 & 实时算子"]
+        KLine["历史 K 线 / 盘口"] --> Spark["Apache Spark & Hive<br/>PB级特征批处理"]
+        Flink --> Store[("ClickHouse / 时序存储")]
+        Spark --> Store
+    end
+
+    subgraph AlphaTier ["02. 因子挖掘与策略探索 (Alpha & Strategy Tier)"]
+        direction LR
+        Store --> FactorEngine["因子挖掘 & 特征工程<br/>(DolphinDB / PySpark)"]
+        FactorEngine --> StrategyEngine["多因子模型 & 趋势跟踪<br/>(Chronos / ML / Agent)"]
+    end
+
+    subgraph ARCTier ["03. ARC 自主进化推理引擎 (Autonomous Research Core)"]
+        direction LR
+        StrategyEngine --> MCTS["MCTS 策略解空间搜寻<br/>(AST 节点突变)"]
+        MCTS <--> RedBlue["红蓝对抗博弈<br/>(蓝队发掘 vs 红队攻防)"]
+        RedBlue --> Reflexion["Reflexion 记忆账本<br/>(多 Regime 因果归因)"]
+        Reflexion -. 负向约束反馈 .-> MCTS
+    end
+
+    subgraph ExecTier ["04. 回测、风控与自动化执行 (Execution & Risk Tier)"]
+        direction LR
+        MCTS --> Backtest["向量化 / 事件驱动回测"]
+        Backtest --> Audit["信号审计 & 成本建模"]
+        Audit --> Paper["模拟盘零触碰部署<br/>(Paper Trading)"]
+        Paper --> LiveGate["自动化执行风控网关<br/>(动态止损 & 敞口监控)"]
+    end
+
+    DataTier ==> AlphaTier ==> ARCTier ==> ExecTier
+    ExecTier -. 运行日志与 Regime 表现反馈 .-> ARCTier
+
+    classDef tierStyle fill:#161b22,stroke:#30363d,stroke-width:1.5px,color:#e6edf3;
+    classDef nodeStyle fill:#21262d,stroke:#58a6ff,stroke-width:1px,color:#f0f6fc;
+    class DataTier,AlphaTier,ARCTier,ExecTier tierStyle;
+    class Tick,Flink,KLine,Spark,Store,FactorEngine,StrategyEngine,MCTS,RedBlue,Reflexion,Backtest,Audit,Paper,LiveGate nodeStyle;
 ```
 
 ### ⚡ 核心基础设施与技术栈
@@ -44,7 +79,15 @@ flowchart LR
 
 ---
 
-## 📊 数据面板与研发活跃度
+## 🏆 GitHub 荣誉勋章与研发活跃度
+
+<p align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=Shadowell&theme=tokyonight&no-frame=true&margin-w=4&margin-h=4&column=7" alt="GitHub Trophies" />
+</p>
+
+<p align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Shadowell&theme=tokyo-night&hide_border=true&area=true" alt="Activity Graph" width="98%" />
+</p>
 
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=Shadowell&show_icons=true&theme=tokyonight&hide_border=true" alt="GitHub Stats" width="48%" />
@@ -52,7 +95,7 @@ flowchart LR
 </p>
 
 <p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Shadowell&theme=tokyonight&hide_border=true" alt="GitHub Streak" width="97%" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Shadowell&theme=tokyonight&hide_border=true" alt="GitHub Streak" width="98%" />
 </p>
 
 ---
