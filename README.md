@@ -52,32 +52,13 @@ Dedicated to building practical, end-to-end quantitative infrastructures that se
 
 ---
 
-## GitHub Activity & Engineering Metrics
+## What I'm Building & Exploring
 
-<p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=Shadowell&theme=tokyonight&no-frame=true&margin-w=4&margin-h=4&column=7" alt="GitHub Trophies" />
-</p>
+I am actively building and exploring practical systems around autonomous reasoning, quantitative strategy discovery, and real-world product engineering:
 
-<p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Shadowell&theme=tokyo-night&hide_border=true&area=true" alt="Activity Graph" width="98%" />
-</p>
+### Autonomous Agents & Program Synthesis
 
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Shadowell&show_icons=true&theme=tokyonight&hide_border=true" alt="GitHub Stats" width="48%" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Shadowell&layout=compact&theme=tokyonight&hide_border=true" alt="Top Languages" width="48%" />
-</p>
-
-<p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Shadowell&theme=tokyonight&hide_border=true" alt="GitHub Streak" width="98%" />
-</p>
-
----
-
-## What I'm Building
-
-I am actively developing and maintaining a suite of quantitative research tools and production-grade software:
-
-### [HyperTrade](https://github.com/Shadowell/HyperTrade)
+#### [HyperTrade](https://github.com/Shadowell/HyperTrade)
 
 A production-grade, governed quantitative research and strategy incubation Agent Runtime powered by the universal **ARC (Autonomous Research Core)** engine:
 
@@ -86,28 +67,25 @@ A production-grade, governed quantitative research and strategy incubation Agent
 - **Multi-Regime Causal Attribution & Reflexion**: Deconstructs performance across market regimes (trending, volatile, range-bound) and distills structured negative constraints for continuous prompt feedback.
 - **Voyager-Style Skill Distillation & Paper Trading**: Automatically distills validated code sub-functions into an immutable skill library, deploying robust candidate strategies to paper trading environments zero-touch.
 
-### [HyperARC](https://github.com/Shadowell/HyperARC)
+#### [HyperARC](https://github.com/Shadowell/HyperARC) · Private Research
 
-A universal autonomous program synthesis and AGI reasoning engine designed for the full ARC-AGI benchmark suite (ARC-AGI-1, 2, and 3 / ARC Prize 2026):
+**Competitions:** [ARC-AGI-2 (Kaggle)](https://www.kaggle.com/competitions/arc-prize-2026-arc-agi-2) · [ARC-AGI-3 (Kaggle)](https://www.kaggle.com/competitions/arc-prize-2026-arc-agi-3) · [ARC Prize 2026](https://arcprize.org/competitions/2026)
 
-- **Universal ARC Benchmark Suite**: Standardized task models (`ARCTask`) and automated dataset loaders supporting ARC-AGI-1, 2, and 3.
-- **Parallel MCTS Solver Engine**: Multi-threaded AST search engine (`HyperARCParallelMCTSEngine`) executing parallel program mutation rollouts over 2D spatial grid transformations.
-- **2D Grid DSL Primitives**: Rich domain-specific primitives for spatial operations (`rotate_90`, `flip_horizontal`, `replace_color`, `crop_bounding_box`).
-- **Self-Healing Harness & Exact Matching**: Scaffolding with error recovery (`HyperARCHarness`) that enforces 100% pixel-exact matching on training grid examples before predicting unseen test grids.
+An autonomous program synthesis and AGI reasoning research system designed for the full ARC-AGI benchmark suite (ARC-AGI-1/2 program synthesis and ARC-AGI-3 interactive-Agent experiments):
 
-### [StockPro](https://github.com/Shadowell/StockPro)
+- **Grid-Transformation DSL & MCTS Solver**: 2D spatial primitives (`rotate_90`, `flip_horizontal`, `replace_color`, `crop_bounding_box`) combined with multi-threaded AST search (`HyperARCParallelMCTSEngine`).
+- **Exact-Match Validation**: Self-healing harness scaffolding (`HyperARCHarness`) enforcing 100% pixel-exact matching on training grid examples before predicting unseen test grids.
+- **Visual-State Abstraction & Trajectory Evaluation**: State abstraction, action history backtracking, skill routing, and trajectory-based evaluation.
 
-A-share research and monitoring platform covering real-time market data, AI stock evaluation, factor research, strategy development, and simulation trading.
+### Quantitative Research & Infrastructure
 
-### [QuantBase](https://github.com/Shadowell/QuantBase)
+- **[Alpha](https://github.com/Shadowell/Alpha)** — Self-evolving A-share stock selection system combining Kronos K-line forecasting models, Hermes Agent loops, and a three-pool funnel workflow.
+- **[StockPro](https://github.com/Shadowell/StockPro)** — Real-time A-share research and monitoring platform covering real-time market data, AI stock evaluation, factor research, strategy development, and simulation trading.
+- **[QuantBase](https://github.com/Shadowell/QuantBase)** — Open-source quantitative research workbench focused on real market data, backtesting, paper trading, signal audit, and risk-first strategy development.
 
-Open-source quantitative research workbench focused on real market data, backtesting, paper trading, signal audit, and risk-first strategy development.
+### Independent Products
 
-### [Alpha](https://github.com/Shadowell/Alpha)
-
-Self-evolving A-share stock selection system combining Kronos K-line forecasting, Hermes Agent loops, and a three-pool funnel workflow.
-
-### [配料君 (WeChat Mini Program)](#%E5%B0%8F%E7%A8%8B%E5%BA%8F%3A%2F%2F%E9%85%8D%E6%96%99%E5%90%9B%2FBxq9NHM7YIjXgxe)
+#### [配料君 (WeChat Mini Program)](#%E5%B0%8F%E7%A8%8B%E5%BA%8F%3A%2F%2F%E9%85%8D%E6%96%99%E5%90%9B%2FBxq9NHM7YIjXgxe)
 
 A food-ingredient analysis and health-literacy mini program that I continuously operate and improve, covering data organization, product iteration, and promotion through WeChat Search.
 

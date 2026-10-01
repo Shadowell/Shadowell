@@ -52,32 +52,13 @@
 
 ---
 
-## GitHub 研发活跃度与技术指标
+## 我在构建与探索的有趣项目
 
-<p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=Shadowell&theme=tokyonight&no-frame=true&margin-w=4&margin-h=4&column=7" alt="GitHub Trophies" />
-</p>
+围绕自主推理、量化策略发现与真实产品工程，我正在持续构建和推进以下方向：
 
-<p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Shadowell&theme=tokyo-night&hide_border=true&area=true" alt="Activity Graph" width="98%" />
-</p>
+### 自主 AI Agent 与程序合成
 
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Shadowell&show_icons=true&theme=tokyonight&hide_border=true" alt="GitHub Stats" width="48%" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Shadowell&layout=compact&theme=tokyonight&hide_border=true" alt="Top Languages" width="48%" />
-</p>
-
-<p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Shadowell&theme=tokyonight&hide_border=true" alt="GitHub Streak" width="98%" />
-</p>
-
----
-
-## 我在构建的项目
-
-我正在积极开发和维护一系列量化研究工具与生产级软件：
-
-### [HyperTrade](https://github.com/Shadowell/HyperTrade)
+#### [HyperTrade](https://github.com/Shadowell/HyperTrade)
 
 面向多资产量化研究与策略孵化的受治理 Agent Runtime，由通用 **ARC (Autonomous Research Core)** 控制内核驱动，实现从自然语言目标到自演进策略研发与模拟盘自动上线的全流程闭环：
 
@@ -86,30 +67,27 @@
 - **多 Regime 定量因果归因 & Reflexion 账本**：拆解牛熊震荡市场下的性能表现，提取结构化否定约束注入进化 Prompt。
 - **Voyager 技能蒸馏与模拟盘孵化**：自动提取优良子函数注册为不可变技能库，通过攻防测试的策略自动部署上线模拟盘运行。
 
-### [HyperARC](https://github.com/Shadowell/HyperARC)
+#### [HyperARC](https://github.com/Shadowell/HyperARC) · 私有研究
 
-面向 ARC-AGI (1, 2 & 3 / ARC Prize 2026) 基准套件的通用自主程序合成与 AGI 推理引擎，源自 HyperTrade 的高吞吐 MCTS 搜寻与工业级控制架：
+**竞赛项目：** [ARC-AGI-2 (Kaggle)](https://www.kaggle.com/competitions/arc-prize-2026-arc-agi-2) · [ARC-AGI-3 (Kaggle)](https://www.kaggle.com/competitions/arc-prize-2026-arc-agi-3) · [ARC Prize 2026](https://arcprize.org/competitions/2026)
 
-- **通用 ARC 测评基准集成**：统一支持 ARC-AGI-1、ARC-AGI-2 及 ARC-AGI-3 标准任务模型 (`ARCTask`) 与自动化数据集加载器。
-- **并行 MCTS 程序搜寻**：多线程 AST 树节点突变与并行 Rollout 求解引擎，高维探索二维空间图形变换解空间。
-- **2D 网格 DSL 算子原语**：内置旋转、镜像、颜色替换、边界框裁剪等原子级图形变换 DSL Primitive。
-- **自愈控制架与像素级匹配**：具备自愈错误恢复机制（`HyperARCHarness`），要求合成程序在训练集上达成 100% 像素完全精确匹配后应用于测试集。
+面向 ARC-AGI 全系列基准套件（ARC-AGI-1/2 程序合成与 ARC-AGI-3 交互式 Agent 实验）的通用自主程序合成与 AGI 推理系统：
 
-### [StockPro](https://github.com/Shadowell/StockPro)
+- **网格变换 DSL 与并行 MCTS 求解**：自研 2D 空间图形算子原语（`rotate_90`、`flip_horizontal`、`replace_color`、`crop_bounding_box` 等），结合多线程 AST 树搜索引擎（`HyperARCParallelMCTSEngine`）。
+- **自愈控制架与 100% 像素精确匹配**：具备自愈错误恢复机制（`HyperARCHarness`），要求合成程序在训练集上达成 100% 像素级精确匹配后方可预测测试集。
+- **视觉状态抽象与轨迹评估**：结合视觉状态抽象、行动历史回溯、技能路由与轨迹评估。
 
-A股研究与监控平台，涵盖实时行情接入、AI 股票评估、因子研究、策略研发与模拟交易。
+### 量化策略与基础设施
 
-### [QuantBase](https://github.com/Shadowell/QuantBase)
+- **[Alpha](https://github.com/Shadowell/Alpha)** — 开源自演进 A 股选股系统，结合 Kronos K 线预测模型、Hermes Agent 循环与多阶段漏斗筛选流程。
+- **[StockPro](https://github.com/Shadowell/StockPro)** — 实时 A 股研究与监控平台，涵盖实时行情接入、AI 股票评估、因子研究、策略研发与模拟交易。
+- **[QuantBase](https://github.com/Shadowell/QuantBase)** — 开源量化研究工作台，专注于真实市场数据分析、稳健的回测引擎、模拟交易验证、信号审计与风控优先策略开发。
 
-开源量化研究工作台，专注于真实市场数据分析、稳健的回测引擎、模拟交易验证、信号审计与风控优先的策略开发。
+### 独立产品研发
 
-### [Alpha](https://github.com/Shadowell/Alpha)
+#### [配料君 (微信小程序)](#%E5%B0%8F%E7%A8%8B%E5%BA%8F%3A%2F%2F%E9%85%8D%E6%96%99%E5%90%9B%2FBxq9NHM7YIjXgxe)
 
-自演进 A股选股系统，结合 Kronos K线预测模型、Hermes Agent 循环与多阶段漏斗筛选流程。
-
-### [配料君 (微信小程序)](#%E5%B0%8F%E7%A8%8B%E5%BA%8F%3A%2F%2F%E9%85%8D%E6%96%99%E5%90%9B%2FBxq9NHM7YIjXgxe)
-
-持续运营与迭代的食品配料分析与健康认知微信小程序，涵盖数据整理、产品迭代与微信搜一搜推广。
+持续独立运营与迭代的食品配料分析与健康认知微信小程序，涵盖数据整理、产品迭代与微信搜一搜推广。
 
 <img src="./assets/wechat-mini-program-peiliaojun.png" alt="配料君微信小程序码" width="320" />
 
