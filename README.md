@@ -11,22 +11,6 @@ Dedicated to building practical, end-to-end quantitative infrastructures that se
 
 > **Ultimate Vision**: Powered by Autonomous Reasoning & Control (ARC) principles, my ultimate goal is to engineer self-evolving, autonomous agent systems capable of independent exploration, continuous strategy discovery, and adaptive execution within highly complex financial environments.
 
-### End-to-End Quantitative Pipeline
-
-```text
-[ Market Data Pipeline ] ──> [ Factor Mining & Feature Engineering ] ──> [ Strategy & Alpha Research ]
-                                                                                   │
-[ Automated Execution  ] <── [ Paper Trading & Signal Audit        ] <── [ Backtesting & Simulation  ]
-```
-
-| Pipeline Stage | Primary Focus | Core Tooling & Infrastructure |
-| :--- | :--- | :--- |
-| **01. Market Data** | Tick/Bar streaming ETL, orderbook replay & high-throughput time-series storage | `Flink` · `Kafka` · `ClickHouse` |
-| **02. Factor Mining** | Cross-sectional factor mining, microstructural features & IC/IR evaluation | `PySpark` · `DolphinDB` · `NumPy` |
-| **03. Strategy Discovery** | Multi-factor Alpha models, time-series forecasting & ARC MCTS AST search | `MCTS` · `Chronos` · `Red-Teaming` |
-| **04. Backtesting** | Vectorized screening, event-driven matching & realistic fee/slippage modeling | `Backtrader` · `Custom Matching Engine` |
-| **05. Paper & Risk** | Zero-touch paper trading deployment, real-time signal audit & exposure guards | `Paper Trading` · `Execution Gateway` |
-
 ### Core Infrastructure & Technical Stack
 
 <p>
