@@ -9,9 +9,9 @@
 
 致力于构建实用且贯穿研发与交易全生命周期的端到端量化基础设施与大数据平台。
 
-> 🎯 **终极目标与核心理念**：依托自主推理与控制（ARC）的核心理念，我的最高目标是打造具备自演进能力的自主 Agent 系统，使其能够在极其复杂的金融环境中实现独立的环境探索、持续的策略探索与稳健的交易执行。
+> **终极目标与核心理念**：依托自主推理与控制（ARC）的核心理念，我的最高目标是打造具备自演进能力的自主 Agent 系统，使其能够在极其复杂的金融环境中实现独立的环境探索、持续的策略探索与稳健的交易执行。
 
-### 🔄 端到端量化与大数据分层架构
+### 端到端量化与大数据分层架构
 
 ```mermaid
 flowchart TD
@@ -54,7 +54,7 @@ flowchart TD
     class Tick,Flink,KLine,Spark,Store,FactorEngine,StrategyEngine,MCTS,RedBlue,Reflexion,Backtest,Audit,Paper,LiveGate nodeStyle;
 ```
 
-### ⚡ 核心基础设施与技术栈
+### 核心基础设施与技术栈
 
 <p>
   <img src="https://img.shields.io/badge/Apache%20Flink-E6526F?style=flat-square&logo=apacheflink&logoColor=white" alt="Flink"/>
@@ -79,7 +79,7 @@ flowchart TD
 
 ---
 
-## 🏆 GitHub 荣誉勋章与研发活跃度
+## GitHub 研发活跃度与技术指标
 
 <p align="center">
   <img src="https://github-profile-trophy.vercel.app/?username=Shadowell&theme=tokyonight&no-frame=true&margin-w=4&margin-h=4&column=7" alt="GitHub Trophies" />

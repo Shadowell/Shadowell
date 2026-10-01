@@ -9,9 +9,9 @@ I am a **Big Data Engineer** specializing in quantitative research infrastructur
 
 Dedicated to building practical, end-to-end quantitative infrastructures that seamlessly integrate the entire research and trading lifecycle.
 
-> 🎯 **Ultimate Vision**: Powered by Autonomous Reasoning & Control (ARC) principles, my ultimate goal is to engineer self-evolving, autonomous agent systems capable of independent exploration, continuous strategy discovery, and adaptive execution within highly complex financial environments.
+> **Ultimate Vision**: Powered by Autonomous Reasoning & Control (ARC) principles, my ultimate goal is to engineer self-evolving, autonomous agent systems capable of independent exploration, continuous strategy discovery, and adaptive execution within highly complex financial environments.
 
-### 🔄 End-to-End Quantitative & Data Architecture
+### End-to-End Quantitative & Data Architecture
 
 ```mermaid
 flowchart TD
@@ -54,7 +54,7 @@ flowchart TD
     class Tick,Flink,KLine,Spark,Store,FactorEngine,StrategyEngine,MCTS,RedBlue,Reflexion,Backtest,Audit,Paper,LiveGate nodeStyle;
 ```
 
-### ⚡ Core Infrastructure & Technical Stack
+### Core Infrastructure & Technical Stack
 
 <p>
   <img src="https://img.shields.io/badge/Apache%20Flink-E6526F?style=flat-square&logo=apacheflink&logoColor=white" alt="Flink"/>
@@ -79,7 +79,7 @@ flowchart TD
 
 ---
 
-## 🏆 GitHub Achievements & Activity Metrics
+## GitHub Activity & Engineering Metrics
 
 <p align="center">
   <img src="https://github-profile-trophy.vercel.app/?username=Shadowell&theme=tokyonight&no-frame=true&margin-w=4&margin-h=4&column=7" alt="GitHub Trophies" />
