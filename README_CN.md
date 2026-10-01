@@ -3,12 +3,6 @@
   <strong>简体中文</strong>
 </p>
 
-<p align="center">
-  <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=00F2FE&center=true&vcenter=true&width=750&lines=%E5%A4%A7%E6%95%B0%E6%8D%AE%E5%BC%80%E5%8F%91%E5%B7%A5%E7%A8%8B%E5%B8%88;%E9%87%8F%E5%8C%96%E7%A0%94%E7%A9%B6%E5%9F%BA%E7%A1%80%E8%AE%BE%E6%96%BD;%E8%87%AA%E4%B8%BB+AI+Agent+%E6%99%B9%E8%83%BD%E4%BD%93;ARC-AGI+%E7%A8%8B%E5%BA%8F%E5%90%88%E6%88%90%E4%B8%8E%E6%8E%A8%E7%90%86" alt="Typing SVG" />
-  </a>
-</p>
-
 ## 关于我
 
 我是一名专注于**量化研究基础设施、数据 Pipelines 与 AI 驱动交易系统**的**大数据开发工程师**。

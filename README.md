@@ -3,12 +3,6 @@
   <a href="README_CN.md">简体中文</a>
 </p>
 
-<p align="center">
-  <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=00F2FE&center=true&vcenter=true&width=750&lines=Big+Data+Engineer;Quantitative+Research+Infrastructure;Autonomous+AI+Agents;ARC-AGI+Program+Synthesis+%26+Reasoning" alt="Typing SVG" />
-  </a>
-</p>
-
 ## About Me
 
 I am a **Big Data Engineer** specializing in quantitative research infrastructure, data pipelines, and AI-driven trading systems.
