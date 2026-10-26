@@ -5,6 +5,12 @@
 
 ## About Me
 
+<p>
+  <a href="https://platform.worldquantbrain.com/profile/public/FJ90804"><img src="https://img.shields.io/badge/WorldQuant_BRAIN-FJ90804-002D62?style=flat-square" alt="WorldQuant BRAIN"/></a>
+  <a href="https://huggingface.co/Shadowell"><img src="https://img.shields.io/badge/HuggingFace-Shadowell-FFD21E?style=flat-square&logo=huggingface&logoColor=black" alt="HuggingFace"/></a>
+  <a href="https://www.kaggle.com/shadowell888"><img src="https://img.shields.io/badge/Kaggle-shadowell888-20BEFF?style=flat-square&logo=kaggle&logoColor=white" alt="Kaggle"/></a>
+</p>
+
 I am a **Big Data Engineer** specializing in quantitative research infrastructure, data pipelines, and AI-driven trading systems.
 
 Dedicated to building practical, end-to-end quantitative infrastructures that seamlessly integrate the entire research and trading lifecycle.
