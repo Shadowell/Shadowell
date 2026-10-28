@@ -9,6 +9,7 @@
   <a href="https://platform.worldquantbrain.com/profile/public/FJ90804"><img src="https://img.shields.io/badge/WorldQuant_BRAIN-FJ90804-002D62?style=flat-square" alt="WorldQuant BRAIN"/></a>
   <a href="https://huggingface.co/Shadowell"><img src="https://img.shields.io/badge/HuggingFace-Shadowell-FFD21E?style=flat-square&logo=huggingface&logoColor=black" alt="HuggingFace"/></a>
   <a href="https://www.kaggle.com/shadowell888"><img src="https://img.shields.io/badge/Kaggle-shadowell888-20BEFF?style=flat-square&logo=kaggle&logoColor=white" alt="Kaggle"/></a>
+  <a href="https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/leaderboard"><img src="https://img.shields.io/badge/RSNA%20Knee-Bronze%20Medal%20%7C%20Top%208.9%25-CD7F32?style=flat-square&logo=kaggle&logoColor=white" alt="RSNA Knee Abnormality Detection Bronze Medal"/></a>
 </p>
 
 我是一名专注于**量化研究基础设施、数据 Pipelines 与 AI 驱动交易系统**的**大数据开发工程师**。
@@ -39,6 +40,13 @@
 - **PB 级离线数仓与批处理**：`Apache Spark` · `Hive` · `Hadoop` · `ODS ➔ DWD ➔ DWS 分层建模`
 - **任务调度与链路治理**：`Airflow` · `自研分布式调度系统` · `千级任务 DAG 依赖治理` · `SLA 保障 & 自动补算/重跑`
 - **存储、时序与量化执行**：`ClickHouse` · `HBase` · `PostgreSQL` · `MySQL` · `执行网关` · `实时风控`
+
+### 竞赛与荣誉
+
+- **🥉 [RSNA Knee Abnormality Detection (Kaggle)](https://www.kaggle.com/competitions/rsna-knee-abnormality-detection)** — **Kaggle 铜牌 (Bronze Medal)**（最终排名 **558** / 6,299，前 **8.86%**）
+  - 针对多模态 3D 膝关节 MRI 影像中 12 类临床异常病灶的端到端目标与病灶检测。
+  - 依托多实例学习（MIL）与稳健的多模型融合集成，在 Private 榜单实现 **+248 位逆势跃升（Shakeup 跃升至 558 名）**，展现出极强的泛化与抗震荡能力。
+- **[ARC Prize 2026](https://arcprize.org/competitions/2026)** — 依托 [HyperARC](https://github.com/Shadowell/HyperARC) 持续推进 [ARC-AGI-2](https://www.kaggle.com/competitions/arc-prize-2026-arc-agi-2) 与 [ARC-AGI-3](https://www.kaggle.com/competitions/arc-prize-2026-arc-agi-3) 竞赛研究。
 
 ---
 

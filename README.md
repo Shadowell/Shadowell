@@ -9,6 +9,7 @@
   <a href="https://platform.worldquantbrain.com/profile/public/FJ90804"><img src="https://img.shields.io/badge/WorldQuant_BRAIN-FJ90804-002D62?style=flat-square" alt="WorldQuant BRAIN"/></a>
   <a href="https://huggingface.co/Shadowell"><img src="https://img.shields.io/badge/HuggingFace-Shadowell-FFD21E?style=flat-square&logo=huggingface&logoColor=black" alt="HuggingFace"/></a>
   <a href="https://www.kaggle.com/shadowell888"><img src="https://img.shields.io/badge/Kaggle-shadowell888-20BEFF?style=flat-square&logo=kaggle&logoColor=white" alt="Kaggle"/></a>
+  <a href="https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/leaderboard"><img src="https://img.shields.io/badge/RSNA%20Knee-Bronze%20Medal%20%7C%20Top%208.9%25-CD7F32?style=flat-square&logo=kaggle&logoColor=white" alt="RSNA Knee Abnormality Detection Bronze Medal"/></a>
 </p>
 
 I am a **Big Data Engineer** specializing in quantitative research infrastructure, data pipelines, and AI-driven trading systems.
@@ -39,6 +40,13 @@ Dedicated to building practical, end-to-end quantitative infrastructures that se
 - **PB-Scale DWH & Batch Processing**: `Apache Spark` · `Hive` · `Hadoop` · `ODS ➔ DWD ➔ DWS Layered DWH`
 - **Workflow Scheduling & Governance**: `Airflow` · `In-House Distributed Scheduler` · `1,000+ Job DAG Governance` · `SLA Monitoring & Recovery`
 - **Storage, Analytics & Execution**: `ClickHouse` · `HBase` · `PostgreSQL` · `MySQL` · `Execution Gateways` · `Risk Controls`
+
+### Competitions & Honors
+
+- **🥉 [RSNA Knee Abnormality Detection (Kaggle)](https://www.kaggle.com/competitions/rsna-knee-abnormality-detection)** — **Bronze Medal** (Rank **558** / 6,299 · **Top 8.9%**)
+  - Multi-label multimodal 3D knee MRI abnormality detection across 12 clinical findings.
+  - Demonstrated exceptional out-of-distribution generalization with a **+248 rank leap** (from 806th Public to 558th Private) through robust multi-instance learning (MIL) and calibrated model ensembling.
+- **[ARC Prize 2026](https://arcprize.org/competitions/2026)** — Researching autonomous program synthesis and interactive reasoning with [HyperARC](https://github.com/Shadowell/HyperARC) across [ARC-AGI-2](https://www.kaggle.com/competitions/arc-prize-2026-arc-agi-2) & [ARC-AGI-3](https://www.kaggle.com/competitions/arc-prize-2026-arc-agi-3).
 
 ---
 
