@@ -41,12 +41,17 @@ Dedicated to building practical, end-to-end quantitative infrastructures that se
 - **Workflow Scheduling & Governance**: `Airflow` · `In-House Distributed Scheduler` · `1,000+ Job DAG Governance` · `SLA Monitoring & Recovery`
 - **Storage, Analytics & Execution**: `ClickHouse` · `HBase` · `PostgreSQL` · `MySQL` · `Execution Gateways` · `Risk Controls`
 
-### Competitions & Honors
+---
 
-- **🥉 [RSNA Knee Abnormality Detection (Kaggle)](https://www.kaggle.com/competitions/rsna-knee-abnormality-detection)** — **Bronze Medal** (Rank **558** / 6,299 · **Top 8.9%**)
+## 🏆 Achievements
+
+<p>
+  <img src="https://img.shields.io/badge/Kaggle_Competitions-1_Bronze_🥉-CD7F32?style=flat-square&logo=kaggle&logoColor=white" alt="Kaggle Bronze"/>
+</p>
+
+- 🥉 **[RSNA Knee Abnormality Detection (Kaggle)](https://www.kaggle.com/competitions/rsna-knee-abnormality-detection)** — **Bronze Medal** (Rank **558** / 6,299 · **Top 8.9%**)
   - Multi-label multimodal 3D knee MRI abnormality detection across 12 clinical findings.
-  - Demonstrated exceptional out-of-distribution generalization with a **+248 rank leap** (from 806th Public to 558th Private) through robust multi-instance learning (MIL) and calibrated model ensembling.
-- **[ARC Prize 2026](https://arcprize.org/competitions/2026)** — Researching autonomous program synthesis and interactive reasoning with [HyperARC](https://github.com/Shadowell/HyperARC) across [ARC-AGI-2](https://www.kaggle.com/competitions/arc-prize-2026-arc-agi-2) & [ARC-AGI-3](https://www.kaggle.com/competitions/arc-prize-2026-arc-agi-3).
+  - Achieved a **+248 rank leap** on the private leaderboard (from 806th Public to 558th Private) through robust multi-instance learning (MIL) and calibrated model ensembling.
 
 ---
 
