@@ -56,7 +56,7 @@
   - 积分成功累积突破 **10,000 分** 荣获金牌等级（Gold Level），解锁 BRAIN 研究顾问（Research Consultant）签约邀请资格；
   - 获得由 WorldQuant 首席战略官（CSO）Nitish Maini 签署并授予的成就证书（Certificate of Accomplishment）。
   <br/>
-  <details>
+  <details open>
     <summary>📜 <b>查看金牌成就证书 (Certificate of Accomplishment)</b></summary>
     <br/>
     <img src="./assets/worldquant-challenge-gold-level.png" alt="WorldQuant Challenge 金牌证书" width="600" />

@@ -56,7 +56,7 @@ Dedicated to building practical, end-to-end quantitative infrastructures that se
   - Earned official qualification and invitation for the **Research Consultant** role.
   - Authorized and presented by **Nitish Maini**, Chief Strategy Officer of WorldQuant.
   <br/>
-  <details>
+  <details open>
     <summary>📜 <b>View Certificate of Accomplishment</b></summary>
     <br/>
     <img src="./assets/worldquant-challenge-gold-level.png" alt="WorldQuant Challenge Gold Level Certificate" width="600" />
