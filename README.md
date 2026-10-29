@@ -6,6 +6,7 @@
 ## About Me
 
 <p>
+  <a href="https://platform.worldquantbrain.com/profile/public/FJ90804"><img src="https://img.shields.io/badge/WorldQuant_Challenge-Gold_Level_🥇-D4AF37?style=flat-square" alt="WorldQuant Challenge Gold Level"/></a>
   <a href="https://platform.worldquantbrain.com/profile/public/FJ90804"><img src="https://img.shields.io/badge/WorldQuant_BRAIN-FJ90804-002D62?style=flat-square" alt="WorldQuant BRAIN"/></a>
   <a href="https://huggingface.co/Shadowell"><img src="https://img.shields.io/badge/HuggingFace-Shadowell-FFD21E?style=flat-square&logo=huggingface&logoColor=black" alt="HuggingFace"/></a>
   <a href="https://www.kaggle.com/shadowell888"><img src="https://img.shields.io/badge/Kaggle-shadowell888-20BEFF?style=flat-square&logo=kaggle&logoColor=white" alt="Kaggle"/></a>
@@ -46,8 +47,20 @@ Dedicated to building practical, end-to-end quantitative infrastructures that se
 ## 🏆 Achievements
 
 <p>
+  <img src="https://img.shields.io/badge/WorldQuant_Challenge-Gold_Level_🥇-D4AF37?style=flat-square" alt="WorldQuant Challenge Gold Level"/>
   <img src="https://img.shields.io/badge/Kaggle_Competitions-1_Bronze_🥉-CD7F32?style=flat-square&logo=kaggle&logoColor=white" alt="Kaggle Bronze"/>
 </p>
+
+- 🥇 **[WorldQuant Challenge®](https://platform.worldquantbrain.com/profile/public/FJ90804)** — **Gold Level** (10,000+ Points)
+  - Successfully accumulated **10,000+ points** by engineering high-Sharpe, market-neutral, and low-correlation quantitative alpha models on WorldQuant BRAIN.
+  - Earned official qualification and invitation for the **Research Consultant** role.
+  - Authorized and presented by **Nitish Maini**, Chief Strategy Officer of WorldQuant.
+  <br/>
+  <details>
+    <summary>📜 <b>View Certificate of Accomplishment</b></summary>
+    <br/>
+    <img src="./assets/worldquant-challenge-gold-level.png" alt="WorldQuant Challenge Gold Level Certificate" width="600" />
+  </details>
 
 - 🥉 **[RSNA Knee Abnormality Detection (Kaggle)](https://www.kaggle.com/competitions/rsna-knee-abnormality-detection)** — **Bronze Medal** (Rank **558** / 6,299 · **Top 8.9%**)
   - Multi-label multimodal 3D knee MRI abnormality detection across 12 clinical findings.

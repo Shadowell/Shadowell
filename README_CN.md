@@ -6,6 +6,7 @@
 ## 关于我
 
 <p>
+  <a href="https://platform.worldquantbrain.com/profile/public/FJ90804"><img src="https://img.shields.io/badge/WorldQuant_Challenge-Gold_Level_🥇-D4AF37?style=flat-square" alt="WorldQuant Challenge Gold Level"/></a>
   <a href="https://platform.worldquantbrain.com/profile/public/FJ90804"><img src="https://img.shields.io/badge/WorldQuant_BRAIN-FJ90804-002D62?style=flat-square" alt="WorldQuant BRAIN"/></a>
   <a href="https://huggingface.co/Shadowell"><img src="https://img.shields.io/badge/HuggingFace-Shadowell-FFD21E?style=flat-square&logo=huggingface&logoColor=black" alt="HuggingFace"/></a>
   <a href="https://www.kaggle.com/shadowell888"><img src="https://img.shields.io/badge/Kaggle-shadowell888-20BEFF?style=flat-square&logo=kaggle&logoColor=white" alt="Kaggle"/></a>
@@ -46,8 +47,20 @@
 ## 🏆 成就
 
 <p>
+  <img src="https://img.shields.io/badge/WorldQuant_Challenge-Gold_Level_🥇-D4AF37?style=flat-square" alt="WorldQuant Challenge Gold Level"/>
   <img src="https://img.shields.io/badge/Kaggle_Competitions-1_Bronze_🥉-CD7F32?style=flat-square&logo=kaggle&logoColor=white" alt="Kaggle Bronze"/>
 </p>
+
+- 🥇 **[WorldQuant Challenge®](https://platform.worldquantbrain.com/profile/public/FJ90804)** — **金牌荣誉 (Gold Level)**（积分突破 10,000+ 分）
+  - 在 WorldQuant BRAIN 平台上持续构建并提交了一批高夏普、稳健收益、低相关性的全市场中性化量化 Alpha 因子；
+  - 积分成功累积突破 **10,000 分** 荣获金牌等级（Gold Level），解锁 BRAIN 研究顾问（Research Consultant）签约邀请资格；
+  - 获得由 WorldQuant 首席战略官（CSO）Nitish Maini 签署并授予的成就证书（Certificate of Accomplishment）。
+  <br/>
+  <details>
+    <summary>📜 <b>查看金牌成就证书 (Certificate of Accomplishment)</b></summary>
+    <br/>
+    <img src="./assets/worldquant-challenge-gold-level.png" alt="WorldQuant Challenge 金牌证书" width="600" />
+  </details>
 
 - 🥉 **[RSNA Knee Abnormality Detection (Kaggle)](https://www.kaggle.com/competitions/rsna-knee-abnormality-detection)** — **Kaggle 铜牌 (Bronze Medal)**（最终排名 **558** / 6,299，前 **8.86%**）
   - 针对多模态 3D 膝关节 MRI 影像中 12 类临床异常病灶的端到端检测；
