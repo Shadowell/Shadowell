@@ -65,6 +65,12 @@ Dedicated to building practical, end-to-end quantitative infrastructures that se
 - 🥉 **[RSNA Knee Abnormality Detection (Kaggle)](https://www.kaggle.com/competitions/rsna-knee-abnormality-detection)** — **Bronze Medal** (Rank **558** / 6,299 · **Top 8.9%**)
   - Multi-label multimodal 3D knee MRI abnormality detection across 12 clinical findings.
   - Achieved a **+248 rank leap** on the private leaderboard (from 806th Public to 558th Private) through robust multi-instance learning (MIL) and calibrated model ensembling.
+  <br/>
+  <details open>
+    <summary>📜 <b>View Certificate of Achievement</b></summary>
+    <br/>
+    <img src="./assets/kaggle-rsna-bronze-certificate.png" alt="Kaggle RSNA Knee Abnormality Detection Bronze Medalist Certificate" width="600" />
+  </details>
 
 ---
 
