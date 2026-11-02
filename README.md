@@ -56,21 +56,13 @@ Dedicated to building practical, end-to-end quantitative infrastructures that se
   - Earned official qualification and invitation for the **Research Consultant** role.
   - Authorized and presented by **Nitish Maini**, Chief Strategy Officer of WorldQuant.
   <br/>
-  <details open>
-    <summary>📜 <b>View Certificate of Accomplishment</b></summary>
-    <br/>
-    <img src="./assets/worldquant-challenge-gold-level.png" alt="WorldQuant Challenge Gold Level Certificate" width="600" />
-  </details>
+  <img src="./assets/worldquant-challenge-gold-level.png" alt="WorldQuant Challenge Gold Level Certificate" width="600" />
 
 - 🥉 **[RSNA Knee Abnormality Detection (Kaggle)](https://www.kaggle.com/competitions/rsna-knee-abnormality-detection)** — **Bronze Medal** (Rank **558** / 6,299 · **Top 8.9%**)
   - Multi-label multimodal 3D knee MRI abnormality detection across 12 clinical findings.
   - Achieved a **+248 rank leap** on the private leaderboard (from 806th Public to 558th Private) through robust multi-instance learning (MIL) and calibrated model ensembling.
   <br/>
-  <details open>
-    <summary>📜 <b>View Certificate of Achievement</b></summary>
-    <br/>
-    <img src="./assets/kaggle-rsna-bronze-certificate.png" alt="Kaggle RSNA Knee Abnormality Detection Bronze Medalist Certificate" width="600" />
-  </details>
+  <img src="./assets/kaggle-rsna-bronze-certificate.png" alt="Kaggle RSNA Knee Abnormality Detection Bronze Medalist Certificate" width="600" />
 
 ---
 

@@ -56,21 +56,13 @@
   - 积分成功累积突破 **10,000 分** 荣获金牌等级（Gold Level），解锁 BRAIN 研究顾问（Research Consultant）签约邀请资格；
   - 获得由 WorldQuant 首席战略官（CSO）Nitish Maini 签署并授予的成就证书（Certificate of Accomplishment）。
   <br/>
-  <details open>
-    <summary>📜 <b>查看金牌成就证书 (Certificate of Accomplishment)</b></summary>
-    <br/>
-    <img src="./assets/worldquant-challenge-gold-level.png" alt="WorldQuant Challenge 金牌证书" width="600" />
-  </details>
+  <img src="./assets/worldquant-challenge-gold-level.png" alt="WorldQuant Challenge 金牌证书" width="600" />
 
 - 🥉 **[RSNA Knee Abnormality Detection (Kaggle)](https://www.kaggle.com/competitions/rsna-knee-abnormality-detection)** — **Kaggle 铜牌 (Bronze Medal)**（最终排名 **558** / 6,299，前 **8.86%**）
   - 针对多模态 3D 膝关节 MRI 影像中 12 类临床异常病灶的端到端检测；
   - 依托稳健的多实例学习（MIL）与集成策略，在 Private 榜实现 **+248 位逆势跃升**（从 806 跃升至 558），具备极强泛化能力。
   <br/>
-  <details open>
-    <summary>📜 <b>查看 Kaggle 铜牌成就证书 (Certificate of Achievement)</b></summary>
-    <br/>
-    <img src="./assets/kaggle-rsna-bronze-certificate.png" alt="Kaggle RSNA 铜牌证书" width="600" />
-  </details>
+  <img src="./assets/kaggle-rsna-bronze-certificate.png" alt="Kaggle RSNA 铜牌证书" width="600" />
 
 ---
 
