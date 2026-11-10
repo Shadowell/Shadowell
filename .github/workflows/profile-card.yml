@@ -1,8 +1,6 @@
 name: Update Paper profile snapshot
 
 on:
-  schedule:
-    - cron: '7-59/10 * * * *'
   workflow_dispatch:
   push:
     branches: [main]
